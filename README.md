@@ -12,9 +12,10 @@ specific situations should be referred to legal counsel.
 The [original version of the DoD OSS
 FAQ](http://dodcio.defense.gov/OpenSourceSoftwareFAQ.aspx) is
 currently still available on the DoD CIO web site.  This version is
-being posted to GitHub as an experiment in collaborative tools.
-Suggestions for changes or additions to the document by military,
-civilian, contractors, and private citizens may be submitted as pull
+being posted to GitHub as an experiment in collaborative tools for
+public engagement of government policy documents.  Suggestions for
+changes or additions to this document by military or civilian
+personnel, contractors, and private citizens may be submitted as pull
 requests to the ['gh-pages'
 branch](https://github.com/risacher/DoD-OSS-FAQ/tree/gh-pages).
 
