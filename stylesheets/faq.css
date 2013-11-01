@@ -1,0 +1,44 @@
+a.page {
+	color: #333333;
+}
+
+div#toc {
+	top: 0px;
+	right: 0px;
+	line-height: 110%;
+}
+
+div#toc a {
+	display: list-item;
+	margin-left: 16px;
+	font-size: 90%;
+	margin-top: 5px;
+}
+
+div#toc a.indent {
+	margin-left: 3em;
+}
+
+div#toc a.extraindent {
+	margin-left: 4em;
+}
+
+/* div#toc a:visited {
+	background-image: url(pix/icon_visitedlink_sitenav.gif);
+} */
+
+div#innertoc div {
+	border:  1px solid #999999;
+	border-width: 1px 0;
+	padding: 10px 0;
+	padding-bottom: 25px;
+	background-color: #ffffff;
+	display: none;
+}
+
+span#contentheader {
+	cursor: pointer;
+	float: right;
+	font-size: 90%;
+}
+
