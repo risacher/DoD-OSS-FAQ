@@ -161,14 +161,12 @@ OSS and DoD Policy
 
 The following policies apply:
 
-1.  The [Federal Source Code Policy, OMB Memo 16-21]
-    (https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2016/m_16_21.pdf), 
+1.  The [Federal Source Code Policy, OMB Memo 16-21](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2016/m_16_21.pdf), 
     establishes policy regarding consideration of acquiring custom-developed code, 
     requiring agencies to consider the value of publishing custom code as OSS, 
     and establishing a OSS Pilot Program to release 20% of all custom-developed 
     code as OSS.  The DoD was later directed to implement this program by Section 
-    875 of the [National Defense Authorization Act for FY2018]
-    (https://www.congress.gov/115/plaws/publ91/PLAW-115publ91.pdf).
+    875 of the [National Defense Authorization Act for FY2018](https://www.congress.gov/115/plaws/publ91/PLAW-115publ91.pdf).
 2.  The DoD CIO issued a memorandum titled ["Clarifying Guidance Regarding Open
     Source Software
     (OSS)"](http://dodcio.defense.gov/Portals/0/Documents/FOSS/2009OSS.pdf) on 16
@@ -205,99 +203,53 @@ regarding commercial software continue to apply to OSS.
 
 ### Q: Isn't using open source software (OSS) forbidden by DoD Information Assurance (IA) Policy?
 
-No. DoD policy requires commercial software (including OSS) to come with
-*either* a warranty *or* source code, so that the software can be
-maintained when necessary by the supplier or the government. Since OSS
-provides source code, there is no problem.
+No. At a high-level, DoD policy requires commercial software
+(including OSS) to come with *either* a warranty *or* source code, so
+that the software can be maintained when necessary by the supplier or
+the government. Since OSS provides source code, there is no problem.
 
-This misconception comes from a misinterpretation of DoD Instruction
-8500.2, “Information Assurance (IA) Implementation”, Enclosure 4,
-control DCPD-1. The control in question reads:
+Specifically, the federal government's IA controls, as documented in
+[NIST SP 800-53 revision
+5](http://csrc.nist.gov/publications/PubsSPs.html) includes a control
+enhancement, CM-7(8).  Control enhancement CM-7(8) states that an
+organization must prohibit "the use of binary or machine-executable
+code from sources with limited or no warranty or without the provision
+of source code".  This control enhancement is based in the need for
+some way to update software to fix problems after they are discovered.
+For commercial software, such needed fixes could be provided by a
+software vendor as part of a warranty, or in the case of OSS, by the
+government (or its contractors).
 
-> DCPD-1 Public Domain Software Controls 
->
->  Binary or machine executable public domain software products and
-> other software products with limited or no warranty such as those
-> commonly known as freeware or shareware are not used in DoD
-> information systems unless they are necessary for mission
-> accomplishment and there are no alternative IT solutions available.
-> Such products are assessed for information assurance impacts, and
-> approved for use by the DAA. The assessment addresses the fact that
-> such software products are difficult or impossible to review, repair,
-> or extend, given that the Government does not have access to the
-> original source code and there is no owner who could make such repairs
-> on behalf of the Government.
-
-This control is intended to limit the use of certain kinds of “binary or
-machine executable” software when “the Government does not have access
-to the original source code”. As clarified in the 2009 DoD CIO
-Memorandum attachment 2(2)(c), this control does not prohibit the use of
-open source software, since with open source software the government
-*does* have access to the original source code.
-
-Note that the federal government's IA controls, as documented in [NIST
-SP 800-53 revision 3](http://csrc.nist.gov/publications/PubsSPs.html)
-includes an equivalent control enhancement, SA-6(1) (under "Software
-Usage Restrictions"). Control enhancement SA-6(1) states that an
-organization must prohibit "the use of binary or machine executable code
-from sources with limited or no warranty without accompanying source
-code". The control enhancement's guidance states that a special
-assessment is needed because software where there is no source code and
-no warranty "are difficult or impossible to review, repair, or extend,
-given that the organization does not have access to the original source
-code and there is no owner who could make such repairs on behalf of the
-organization." The [draft NIST SP 800-53 revision 4 of February
-2012](http://csrc.nist.gov/publications/drafts/800-53-rev4/sp800-53-rev4-ipd.pdf)
-moves this text from SA-6(1) to control enhancement SI-7(15). Since the
-government has access to the source code of OSS, by definition,
-organizations using this control enhancement do not need to make any
-special assessment of OSS.
-
-The [Application Security and Development Security Technical
-Implementation Guide
-(STIG)](http://iase.disa.mil/stigs/app_security/app_sec/app_sec.html)
-Version 3, Release 4 (October 28, 2011) corrects this misunderstanding
-(older versions *did* promulgate this misunderstanding). This version
-includes these two italicized policy bullets, which specifically note
-that special DAA acceptance of risk is not required when source code is
-available to review, repair, and extend the software (as is true for
-open source software):
-
--   (APP2090.1: CAT II) The Program Manager will obtain DAA acceptance
-    of risk for all public domain, shareware, freeware, and other
-    software products/libraries with both (1) no source code to review,
-    repair, and extend, and (2) limited or no warranty, but are required
-    for mission accomplishment.
--   (APP2090.2: CAT II) The Designer will document for DAA approval all
-    , public domain, shareware, freeware, and other software
-    products/libraries with both (1) no source code to review, repair,
-    and extend, and (2) limited or no warranty, but are required for
-    mission accomplishment.
 
 General information about OSS
 -----------------------------
 
-### Q: Is open source software commercial software? Is it COTS?
+### Q: Is OSS commercial software? Is it COTS?
 
-Nearly all OSS is commercial software, and if it used unchanged (or with
-only minor changes), it is almost always COTS.
+As explained in detail below, nearly all OSS is "commercial computer
+software" as defined in US law and the Defense Federal Acquisition
+Regulation Supplement, and if it used unchanged (or with only minor
+changes), it is almost always COTS.
 
 Open source software that has at least one non-governmental use, and is
 licensed to the public, is commercial software. If it is already
 available to the public and is used unchanged, it is usually COTS.
 
-U.S. law governing federal procurement
-[U.S. Code Title 41, Section 103](http://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title41-section103&num=0&edition=prelim) defines "commercial item"
-as including "an item, other than real property, that—
-(A) is of a type customarily used by the general public or by nongovernmental entities for purposes other than governmental purposes; and
-(B) has been sold, leased, or *licensed*, or offered for sale, lease, or license, to the general public...". Thus, as long as the software has at least
-one non-governmental use, software licensed (or offered for license) to
-the public is a commercial item for procurement purposes.
+U.S. law governing federal procurement [U.S. Code Title 41, Section
+103](http://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title41-section103&num=0&edition=prelim)
+defines "commercial product" as including "a product, other than real
+property, that— (A) is of a type customarily used by the general
+public or by nongovernmental entities for purposes other than
+governmental purposes; and (B) has been sold, leased, or *licensed*,
+or offered for sale, lease, or license, to the general
+public...". Thus, as long as the software has at least one
+non-governmental use, software licensed (or offered for license) to
+the public is a commercial product for procurement purposes.
 
 Similarly,
 [U.S. Code Title 41, Section 104](http://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title41-section104&num=0&edition=prelim) defines the term
 "Commercially available off-the-shelf (COTS) item"; software is COTS if
-it is (a) a "commercial item", (b) sold in substantial quantities in the
+it is (a) a "commercial product", (b) sold in substantial quantities in the
 commercial marketplace, and (c) is offered to the Federal Government, without
 modification, in the same form in which it is sold in the commercial
 marketplace. Thus, OSS available to the public and used unchanged is
@@ -308,16 +260,16 @@ namely the [Federal Acquisition Regulation
 (FAR)](http://www.acquisition.gov/far/) and the [Defense Federal
 Acquisition Regulation Supplement
 (DFARS)](http://www.acq.osd.mil/dpap/dars/dfarspgi/current/index.html).
-[DFARS 252.227-7014 Rights in Noncommercial Computer Software and
-Noncommercial Computer Software
-Documentation](http://www.acq.osd.mil/dpap/dars/dfars/html/current/252227.htm)
+[40 CFR, Section 252.227-7014 Rights in Noncommercial Computer
+Software and Noncommercial Computer Software
+Documentation](https://www.acq.osd.mil/dpap/dars/dfars/html/current/252227.htm#252.227-7014)
 defines "Commercial computer software" as "software developed or
 regularly used for non-governmental purposes which: (i) Has been sold,
 leased, or licensed to the public; (ii) Has been offered for sale,
 lease, or license to the public; (iii) Has not been offered, sold,
 leased, or licensed to the public but will be available for commercial
-sale, lease, or license in time to satisfy the delivery requirements of
-this contract; or (iv) Satisfies a criterion expressed in paragraph
+sale, lease, or license in time to satisfy the delivery requirements
+of this contract; or (iv) Satisfies a criterion expressed in paragraph
 (a)(1)(i), (ii), or (iii) of this clause and would require only minor
 modification to meet the requirements of this contract."
 
@@ -337,18 +289,19 @@ This is confirmed by "Clarifying Guidance Regarding Open Source Software
 (OSS)" (2009) and the Department of the Navy "Open Source Software
 Guidance" (signed June 5, 2007). For more discussion on this topic, see
 the article [Open Source Software Is
-Commercial](http://journal.thedacs.com/issue/56/151).
+Commercial](https://www.csiac.org/journal-article/open-source-software-is-commercial/).
 
-By definition, software that does not meet the U.S. government's
-definition of "commercial software" is not considered commercial
-software by the U.S. government's acquisition processes. For example,
-software that is released to the public as OSS is not considered
-commercial if it is a type of software is *only* used for governmental
-purposes. In contracts where this issue is important, you should examine
-the contract to find the specific definition of "commercial software"
-that is being used. But in practice, publicly-released OSS nearly always
-meets the various government definitions for "commercial software" --
-and thus is nearly always considered commercial software.
+Obviously, software that does not meet the U.S. government's
+definition of "commercial computer software" is not considered
+commercial software by the U.S. government's acquisition
+processes. For example, software that is released to the public as OSS
+is not considered commercial if it is a type of software that is
+*only* used for governmental purposes. In contracts where this issue
+is important, you should examine the contract to find the specific
+definitions that are being used. But in practice, publicly-released
+OSS nearly always meets the various government definitions for
+"commercial computer software" -- and thus is nearly always considered
+commercial software.
 
 ### Q: Why is it important to understand that open source software is commercial software?
 
@@ -358,43 +311,47 @@ regarding commercial software. Failing to understand that open source
 software is commercial software would result in failing to follow the
 laws, regulations, policies, and so on regarding commercial software.
 
-In particular, U.S. law
-([10 USC 2377](http://uscode.house.gov/view.xhtml?req=%28title:10%20section:2377%20edition:prelim%29%20OR%20%28granuleid:USC-prelim-title10-section2377%29&f=treesort&edition=prelim&num=0&jumpTo=true)) requires a preference for commercial items for procurement
-of supplies or services. 10 USC 2377 requires that the head of an agency
+In particular, U.S. law ([10 USC
+2377](http://uscode.house.gov/view.xhtml?req=%28title:10%20section:2377%20edition:prelim%29%20OR%20%28granuleid:USC-prelim-title10-section2377%29&f=treesort&edition=prelim&num=0&jumpTo=true))
+requires a preference for commercial products for procurement of
+supplies or services. 10 USC 2377 requires that the head of an agency
 shall ensure that procurement officials in that agency, to the maximum
 extent practicable:
 
-1.  "acquire commercial items or nondevelopmental items other than
-    commercial items to meet the needs of the agency;
-2.  require prime contractors and subcontractors at all levels under the
-    agency contracts to incorporate commercial items or nondevelopmental
-    items other than commercial items as components of items supplied to
-    the agency;
+1.  "acquire commercial services, commercial products, or
+    nondevelopmental items other than commercial products to meet the
+    needs of the agency;
+2.  require prime contractors and subcontractors at all levels under
+    the agency contracts to incorporate commercial services,
+    commercial products, or nondevelopmental items other than
+    commercial products as components of items supplied to the agency;
 3.  modify requirements in appropriate cases to ensure that the
-    requirements can be met by commercial items or, to the extent that
-    commercial items suitable to meet the agency’s needs are not
-    available, nondevelopmental items other than commercial items;
-4.  state specifications in terms that enable and encourage bidders and
-    offerors to supply commercial items or, to the extent that
-    commercial items suitable to meet the agency’s needs are not
-    available, nondevelopmental items other than commercial items in
-    response to the agency solicitations;
-5.  revise the agency’s procurement policies, practices, and procedures
-    not required by law to reduce any impediments in those policies,
-    practices, and procedures to the acquisition of commercial items;
-    and
+    requirements can be met by commercial services or commercial
+    products or, to the extent that commercial products suitable to
+    meet the agency’s needs are not available, nondevelopmental items
+    other than commercial products in response to agency solicitations;
+4.  state specifications in terms that enable and encourage bidders
+    and offerors to supply commercial services or commercial products
+    or, to the extent that commercial products suitable to meet the
+    agency's needs are not available, nondevelopmental items other
+    than commercial products in response to the agency solicitations;
+5.  revise the agency's procurement policies, practices, and
+    procedures not required by law to reduce any impediments in those
+    policies, practices, and procedures to the acquisition of
+    commercial products and commercial services; and
 6.  require training of appropriate personnel in the acquisition of
-    commercial items."
+    commercial products and commercial services."
 
-Similarly, it requires preliminary market research to determine "whether
-there are commercial items or, to the extent that commercial items
-suitable to meet the agency’s needs are not available, nondevelopmental
-items other than commercial items available" that "(A) meet the agency’s
-requirements; (B) could be modified to meet the agency’s requirements;
-or (C) could meet the agency’s requirements if those requirements were
-modified to a reasonable extent." This market research should occur
-"before developing new specifications for a procurement by that agency;
-and before soliciting bids or proposals for a contract in excess of the
+Similarly, it requires preliminary market research to determine
+"whether there are commercial services or commercial products or, to
+the extent that commercial products suitable to meet the agency’s
+needs are not available, nondevelopmental items other than commercial
+items available" that "(A) meet the agency’s requirements; (B) could
+be modified to meet the agency’s requirements; or (C) could meet the
+agency’s requirements if those requirements were modified to a
+reasonable extent." This market research should occur "before
+developing new specifications for a procurement by that agency; and
+before soliciting bids or proposals for a contract in excess of the
 simplified acquisition threshold."
 
 An agency that failed to consider open source software, and instead only
@@ -419,13 +376,12 @@ as software that does *not* qualify as "commercial computer
 software". In addition, important open source software is typically
 supported by one or more commercial firms.
 
-Also, do not use the terms "freeware" or "shareware" as a synonym for
-"open source software". DoD Instruction 8500.2, “Information Assurance
-(IA) Implementation”, Enclosure 4, control DCPD-1, states that these
-terms apply to software where "the Government does not have access to
-the original source code".  The government ''does ''have access to the
-original source code of open source software, so by definition OSS is
-not "freeware" or "shareware".
+As of 2021, the terms "freeware" and "shareware", do not appear to
+have official definitions used by the United States Government, but
+historically (for example in the now-superseded DoD Instruction
+8500.2) these terms have been used specifically for software
+distributed without cost where the Government does not have access to
+the original source code.
 
 ### Q: How is OSS typically developed?
 
@@ -467,19 +423,19 @@ improvements are made, more people can use the product, creating more
 potential users as developers - like a snowball that gains mass as it
 rolls downhill.
 
-This enables cost-sharing between users, as with proprietary development
-models.  However, this cost-sharing is done in a rather different way
-than in proprietary development.  In particular, note that the costs
-borne by a particular organization are typically only those for whatever
-improvements or services are used (e.g., installation, configuration,
-help desk, etc.). In contrast, typical proprietary software costs are
-per-seat, not per-improvement or service. However, it must be noted that
-the OSS model is much more reflective of the actual costs borne by
-development organizations. It costs essentially nothing to send a file
-or burn a CD-ROM of software; once it exists, all software costs are due
-to maintenance and support of software. In short, OSS more accurately
-reflects the economics of software development; some speculate that this
-is one reason why OSS has become so common so quickly.
+This enables cost-sharing between users, as with proprietary
+development models. However, this cost-sharing is done in a rather
+different way than in proprietary development. In particular, note
+that the costs borne by a particular organization are typically only
+those for whatever improvements or services are used (e.g.,
+installation, configuration, help desk, etc.). In contrast, typical
+proprietary software costs are per-seat, not per-improvement or
+service. However, it must be noted that the OSS model is much more
+reflective of the actual costs borne by development organizations. It
+costs essentially nothing to download a file.  Once software exists,
+all costs are due to maintenance and support of software. In short,
+OSS more accurately reflects the economics of software development;
+some speculate that this is one reason why OSS has become so common.
 
 ![OSS Development Model](images/oss-development-model.png "image")
 
@@ -534,21 +490,19 @@ In the DoD, the [GIG Technical Guidance Federation ](https://gtg.csd.disa.mil/) 
 resource for identifying recommended standards (which tend to be open
 standards). The GTG-F is a collection of web-based applications
 supporting the continuing evolution of the Department of Defense (DoD)
-Information Technology Standards. [DAU has some
-information about
-GTG-F](https://acc.dau.mil/CommunityBrowser.aspx?id=148577). The DASD(Systems Engineering)
-[Open Systems Architecture web
-page](http://www.acq.osd.mil/se/initiatives/init_osa.html) also provides some useful
+Information Technology Standards. The DDR&E, Advanced Capabilities
+[Modular Open Systems Approach web
+page](https://ac.cto.mil/mosa/) also provides some useful
 background.
 
-Increasingly, many DoD capabilities are accessible via web browsers
-using open standards such as TCP/IP, HTTP, HTML, and CSS; in such cases,
-it is relatively easy to use or switch to open source software
+Many DoD capabilities are accessible via web browsers using open
+standards such as TCP/IP, HTTP, and HTML; in such cases, it is
+relatively easy to use or switch to open source software
 implementations (since the platforms used to implement the client or
-server become less relevant).  As noted by the OSJTF definition for open
-systems, be sure to test such systems with more than one web browser
-(e.g., Internet Explorer and Firefox), to reduce the risk of vendor
-lock-in.
+server become less relevant). As noted by the OSJTF definition for
+open systems, be sure to test such systems with more than one web
+browser (e.g., Google Chrome, Microsoft Edge and Firefox), to reduce
+the risk of vendor lock-in.
 
 ### Q: How does open source software work with open systems/open standards?
 
@@ -585,19 +539,19 @@ OSS aids open standards, too:
     implementations to limit their prices, and such lower prices for
     proprietary software also encourages use of the standard.
 
-With practically no exceptions, successful open standards have OSS
-implementations.
+With practically no exceptions, successful open standards for software
+have OSS implementations.
 
 So, while open systems/open standards are different from open source
 software, they are complementary and can work well together.
 
-### Q: How does open source software relate to the Buy America Act?
+### Q: How does open source software relate to the Buy American Act?
 
 As noted by the 16 October 2009 policy memorandum from the DoD CIO, in
 almost all cases OSS is a commercial item as defined by US Law (Title
 41) and regulation (the FAR).
 
-The Buy America Act does not apply to information technology that is a
+The Buy American Act does not apply to information technology that is a
 commercial item, so there is usually no problem for OSS. As stated in
 FAR 25.103 Exceptions item (e), "The restriction on purchasing foreign
 end products does not apply to the acquisition of information technology
@@ -661,6 +615,24 @@ be rendered meaningless absent the ability to enforce through injunctive
 relief." In short, it determined that the OSS license at issue in the
 case (the Artistic license) was indeed an enforceable license.
 
+In 2017, the United States District Court for the Northern District of
+California, in Artifex Software, Inc. v. Hancom, Inc., issued a
+ruling confirming the enforceability of the GNU General Public
+License. The ruling was a denial of a motion for summary judgement,
+and the parties ultimately settled the claim out-of-court.
+
+In 2015, a series of decisions regarding the GNU General Public
+License were issued by the United States District Courts for the
+Western District of Texas as well as the Northern District of
+California.  These decisions largely held that the GNU General Public
+License, version 2 was enforceable in a series of five related legal
+cases loosely referred to as "Versata v. Ameriprise", although there
+were related suits against Versata by XimpleWare.  These cases were
+eventually settled by the parties, but not before certain claims
+regarding the GPLv2 were decided.  The cases are too complicated to
+summarize here, other than to say that the GPLv2 was clearly regarded
+as enforceable by the courts.
+
 ["Enforcing the GNU GPL" by Eben
 Moglen](http://www.gnu.org/philosophy/enforcing-gpl.html) is a brief
 essay that argues why the GNU General Public License (GPL),
@@ -684,7 +656,7 @@ OSS licenses can be grouped into three main categories: Permissive,
 strongly protective, and weakly protective. Here is an explanation of
 these categories, along with common licenses used in each category (see
 [The Free-Libre / Open Source Software (FLOSS) License
-Slide](http://www.dwheeler.com/essays/floss-license-slide.html)):
+Slide](https://dwheeler.com/essays/floss-license-slide.html)):
 
 -   Permissive: These licenses permit the software to become proprietary
     (i.e., not OSS). This includes the [MIT
@@ -734,7 +706,7 @@ Resources for further information include:
 -   [GPL FAQ](http://www.gnu.org/licenses/gpl-faq.html#AllCompatibility)
     (Focuses on compatibility between versions of the GPL and LGPL)
 -   [The Free-Libre / Open Source Software (FLOSS) License
-    Slide](http://www.dwheeler.com/essays/floss-license-slide.html)
+    Slide](https://dwheeler.com/essays/floss-license-slide.html)
 -   [Various Licenses and Comments about
     Them](http://www.gnu.org/licenses/license-list.html)
 -   [Maintaining Permissive-Licensed Files in a GPL-Licensed Project:
@@ -877,11 +849,11 @@ effect if they cannot be enforced in court.
 See [GPL FAQ, "Who has the power to enforce the
 GPL?"](http://www.gnu.org/licenses/gpl-faq.html#WhoHasThePower).
 
-### Q: Do choice of venue clauses automatically disqualify OSS licences?
+### Q: Do "choice of venue" clauses automatically disqualify OSS licences?
 
 No. A "choice of venue" clause is a clause that states where a dispute
 is to be resolved (e.g., which court). Many OSS licenses do not have a
-choice of venue clause, and thus cannot have an issue.
+choice of venue clause, and thus cannot have an issue, although some do. 
 
 If your contract has FAR clause 52.212-4 (which it is normally required
 to do), then choice of venue clauses in software licenses are
@@ -985,42 +957,45 @@ must be examined on its own merits.
 ### Q: What are indicators that a specific OSS program will have fewer unintentional vulnerabilities?
 
 As noted in the [Secure Programming for Linux and Unix
-HOWTO](http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/open-source-security.html#OPEN-SOURCE-SECURITY-BOTTOM-LINE),
+HOWTO](https://dwheeler.com/secure-programs/Secure-Programs-HOWTO/open-source-security.html#OPEN-SOURCE-SECURITY-BOTTOM-LINE),
 three conditions reduce the risks from unintentional vulnerabilities in
 OSS:
 
-1.  Developers/reviewers need security knowledge. Knowledge is moreimportant than the licensing scheme.
+1.  Developers/reviewers need security knowledge. Knowledge is
+    more important than the licensing scheme.
 2.  People have to actually review the code.
-    -   This has a reduced likelihood if the program is niche or
-        rarely-used, has few developers, uses a rare computer
-        language, or is not really OSS. Conversely, if it widely-used, has many developers, and so
-        on, the likelihood of review increases. Examine if it is truly
-        community-developed - or if there are only a very few
-        developers.
-    -   Review really does happen. Several static tool vendors support
-        analysis of OSS (such as Coverity and Fortify) as a way to
-        improve their tools and gain market use. There are many general
-        OSS review projects, such as those by OpenBSD and the Debian
-        Security Audit team. And of course, individual OSS projects
-        often have security review processes or methods (such as
-        Mozilla's bounty system). If there are reviewers from many
-        different backgrounds (e.g., different countries), this can also
-        reduce certain risks. When examining a specific OSS project,
-        look for evidence that review (both by humans and tools) does
-        take place.
-3.  Problems must be fixed. It is far better to fix vulnerabilities before deployment - are such efforts occuring? When the software is already deployed, does the project develop and deploy fixes?
+    - This has a reduced likelihood if the program is niche or
+      rarely-used, has few developers, uses a rare computer
+      language, or is not really OSS. Conversely, if it widely-used,
+      has many developers, and so on, the likelihood of review
+      increases. Examine if it is truly community-developed - or if
+      there are only a very few developers.
+    - Review really does happen. Several static tool vendors support
+      analysis of OSS (such as Coverity and Sonatype) as a way to
+      improve their tools and gain market use. There are many general
+      OSS review projects, such as those by OpenBSD and the Debian
+      Security Audit team. And of course, individual OSS projects
+      often have security review processes or methods (such as
+      Mozilla's bounty system). If there are reviewers from many
+      different backgrounds (e.g., different countries), this can also
+      reduce certain risks. When examining a specific OSS project,
+      look for evidence that review (both by humans and tools) does
+      take place.  
+3.  Problems must be fixed. It is far better to fix vulnerabilities
+    before deployment - are such efforts occuring?  When the software
+    is already deployed, does the project develop and deploy fixes?
 
 ### Q: Is there a risk of malicious code becoming embedded into OSS?
 
 The use of *any* commercially-available software, be it proprietary or
 OSS, creates the risk of executing malicious code embedded in the
-software.   Even if a commercial program did not originally have
+software. Even if a commercial program did not originally have
 vulnerabilities, both proprietary and OSS program binaries can be
 modified (e.g., with a "hex editor" or virus) so that it includes
-malicious code.  It may be illegal to modify proprietary software, but
+malicious code. It may be illegal to modify proprietary software, but
 that will normally not slow an attacker. Thankfully, there are ways to
 reduce the risk of executing malicious code when using commercial
-software (both proprietary and OSS).  It is impossible to completely
+software (both proprietary and OSS). It is impossible to completely
 eliminate all risks; instead, focus on reducing risks to acceptable
 levels.
  The use of software with a proprietary license provides absolutely no
@@ -1042,18 +1017,19 @@ the software may also be wise.
 
 Similarly, OSS (as well as proprietary software) may indeed have
 malicious code embedded in it. However, such malicious code cannot be
-directly inserted by "just anyone" into a well-established OSS project.
-As noted above, OSS projects have a "trusted repository" that only
-certain developers (the "trusted developers") can directly modify.  In
-addition, since the source code is publicly released, anyone can review
-it, including for the possibility of malicious code.  The public release
-also makes it easy to have copies of versions in many places, and to
-compare those versions, making it easy for many people to review
-changes.  Many perceive this openness as an advantage for OSS, since OSS
-better meets Saltzer & Schroeder's "Open design principle" ("the
-protection mechanism must not depend on attacker ignorance").  This is
-not merely theoretical; [in 2003 the Linux kernel development process
-resisted an attack](http://www.linux.com/feature/32539).  Similarly,
+directly inserted by "just anyone" into a well-established OSS
+project.  As noted above, OSS projects have a "trusted repository"
+that only certain developers (the "trusted developers") can directly
+modify.  In addition, since the source code is publicly released,
+anyone can review it, including for the possibility of malicious
+code.  The public release also makes it easy to have copies of
+versions in many places, and to compare those versions, making it easy
+for many people to review changes.  Many perceive this openness as an
+advantage for OSS, since OSS better meets Saltzer & Schroeder's "Open
+design principle" ("the protection mechanism must not depend on
+attacker ignorance").  This is not merely theoretical; [in 2003 the
+Linux kernel development process resisted an
+attack](https://www.linux.com/news/linux-kernel-development-process-thwarts-subversion-attempt/).  Similarly,
 SourceForge/Apache (in 2001) and Debian (in 2003) countered external
 attacks.
 
@@ -1108,7 +1084,7 @@ The Customs and Border Protection (CBP) has said, in an advisory ruling,
 that the country of origin of software is the place where the software
 is converted into object code (["Software comes from the place where
 it's converted into object code, says CBP",
-FierceGovernmentIT](http://www.fiercegovernmentit.com/story/software-comes-place-where-its-converted-object-code-says-cbp/2012-12-06)),
+FierceGovernmentIT](https://www.thecre.com/fnews/?p=3667)),
 for "purposes of granting waivers of certain 'Buy American' restrictions
 in U.S. law or practice or products offered for sale to the U.S.
 Government."
@@ -1148,7 +1124,7 @@ source software.
 
 The DoD is, of course, not the only user of OSS. [Gartner Group's Mark
 Driver stated in November
-2010](http://www.acq.osd.mil/dpap/dars/docs/DoD_Briefing_1.12.12_Notes.pdf)
+2010](https://web.archive.org/web/20170208184811/http://www.acq.osd.mil/dpap/dars/docs/DoD_Briefing_1.12.12_Notes.pdf)
 that, "Open source is ubiquitous, it's unavoidable... having a policy
 against open source is impractical and places you at a competitive
 disadvantage."
@@ -1158,10 +1134,10 @@ disadvantage."
 Yes. Widely-used programs include the Apache web server, Firefox web
 browser, Linux kernel, and many other programs. [Estimating the Total
 Development Cost of a Linux
-Distribution](http://www.linuxfoundation.org/publications/estimatinglinux.php)
+Distribution](https://www.static.linuxfound.org/sites/main/files/lfpub_cp_cost_estimate2015.pdf)
 estimates that the Fedora 9 Linux distribution, which contains over
 5,000 software packages, represents about $10.8 billion of development
-effort.
+effort in 2008 dollars.
 
 
 
@@ -1171,15 +1147,16 @@ No, the DoD does not have an official recommendation for any particular
 OSS product or set of products, nor a "Generally Recognized as
 Safe/Mature" list. The [2003 MITRE study, "Use of Free and Open Source
 Software (FOSS) in the U.S. Department of
-Defense"](http://dodcio.defense.gov/Portals/0/Documents/FOSS/dodfoss_pdf.pdf),
+Defense"](https://dodcio.defense.gov/Portals/0/Documents/FOSS/dodfoss_pdf.pdf),
 did suggest developing a "Generally Recognized As Safe" (GRAS) list, but
 such a list has not been developed.
 
-The US Army has a concept called
-"[Networthiness](https://www.us.army.mil/suite/page/137030/)" and will
-grant a "Certificate of Networthiness" to software that is approved for
-use. There are various OSS applications which already have such
-certification.
+The United States Air Force operates a service called "[Iron
+Bank](https://ironbank.dso.mil/)", which is a registry of hardened
+software containers, many of which are based on [open source
+products](https://repo1.dso.mil/dsop/opensource).  On approval, such
+containers are granted a "Certificate to Field" designation by the Air
+Force Chief Software Officer.
 
 Commercial software (including OSS) that has widespread use often has
 lower risk, since there are often good reasons for its widespread use.
@@ -1187,51 +1164,52 @@ The MITRE study did identify some of many OSS programs that the DoD is
 *already* using, and may prove helpful. Examples of OSS that are in
 widespread use include:
 
--   [Apache](http://www.apache.org) - Web server
--   Mozilla [Firefox](http://www.mozilla.com/firefox/) - Web browser
--   Mozilla [Thunderbird](http://www.mozillamessaging.com/thunderbird/),
-    Evolution - Email client
--   [OpenOffice.org](http://www.openoffice.org) - Office document suite
--   OpenSSH - Secure Shell
--   OpenSSL - SSL/cryptographic library implementation
--   bind - DNS server
--   Postfix, Sendmail - Mail servers
--   [gcc](http://gcc.gnu.org/) - Compiler suite
--   GNAT - Ada compiler suite (technically this is part of gcc)
--   perl, Python, PHP - Scripting languages
--   Samba - Windows - Unix/Linux interoperability
--   Mailman - mailing list manager
--   [MySQL](http://www.mysql.com/) and
-    [PostgreSQL](http://www.postgresql.org/) - Relational Database
-    Management Systems
--   [GIMP](http://www.gimp.org/) - Bitmap graphics editor
--   [MediaWiki](http://www.mediawiki.org/) - Wiki
+-  [Kubernetes](https://kubernetes.io) - container orchestration suite
+-  Apache [HTTP Server](https://www.apache.org) - Web server
+-  Mozilla [Firefox](https://www.mozilla.org/en-US/firefox/browsers/) - Web browser
+-  Apache [OpenOffice](https://www.openoffice.org/) - Office document suite
+-  OpenSSH - Secure Shell
+-  OpenSSL - SSL/cryptographic library implementation
+-  bind - DNS server
+-  Postfix, Sendmail - Mail servers
+-  [gcc](https://gcc.gnu.org/) - Compiler suite
+-  GNAT - Ada compiler suite (technically this is part of gcc)
+-  perl, Python, PHP, Ruby - Scripting languages
+-  Samba - Windows - Unix/Linux interoperability
+-  Mailman - mailing list manager
+-  [MySQL](https://www.mysql.com/) and
+   [PostgreSQL](https://www.postgresql.org/) - Relational Database
+   Management Systems
+-  [GIMP](https://www.gimp.org/) - Bitmap graphics editor
+-  [MediaWiki](https://www.mediawiki.org/) - Wiki engine
 
-
- There are many "Linux distributions" which provides suites of such
-software such as Red Hat Enterprise Linux, Fedora, Novell SuSE, Debian
+There are many "Linux distributions" which provides suites of such
+software such as Red Hat Enterprise Linux, Fedora, SUSE, Debian
 and Ubuntu. Other open source software implementations of Unix
-interfaces include Solaris, OpenBSD, NetBSD, and FreeBSD.
+interfaces include OpenBSD, NetBSD, FreeBSD, and Darwin
 
 Again, these are examples, and not official endorsements of any
 particular product or supplier.
 
 ### Q: What are some military-specific open source software programs?
 
-Some more military-specific OSS programs used in the military include:
+Some more military-specific OSS programs created-by or used in the military include:
 
 -   [FalconView](http://www.falconview.org/) - PC-based mapping
     application
+-   [The Distributed Data Framework](https://codice.org/ddf/) - data integration 
+    framework developed for the Distributed Common Ground/Surface System (DCGS) Family of Systems
 -   Open Source Software for Imagery & Mapping
     ([OSSIM](http://www.ossim.org/OSSIM/OSSIM_Home.html)) - geospatial
     image viewing (with classified plugins)
 -   OSSIM Mapping ARchieve System
     ([OMAR](http://www.ossim.org/OSSIM/OMAR.html)) - video indexing
--   [BRL-CAD](http://brlcad.org/) - solid modeling (Army)
--   [Optics](https://www.ballforge.net/) - MASINT toolset (with
-    classfied plugins)
--   [Delta3D](http://www.delta3d.org/) - Game/Simulation engine for
+-   [BRL-CAD](https://brlcad.org/) - solid modeling (Army)
+-   [Opticks](https://github.com/opticks-org/opticks) - Remote sensing platform & MASINT toolset
+-   [Delta3D](https://github.com/delta3d/delta3d/) - Game/Simulation engine for
     modeling and simulation (e.g., for military training/exercises)
+-   [Ozone Widget Framework / Ozone Platform](https://github.com/ozoneplatform/ozone) - framework for composable web applications
+-   [REDHAWK SDR](https://redhawksdr.org/) - a software-defined radio (SDR) framework
 
 There are many others.
 
@@ -1246,30 +1224,29 @@ If you are looking for an application that has wide use, one of the
 various lists of "open source alternatives" may help. These include:
 
 -   [Open Source Alternatives (Ben Balter et
-    al.)](http://benbalter.github.com/open-source-alternatives/)
--   [Open Source as Alternative](http://www.osalt.com/)
+    al.)](https://ben.balter.com/open-source-alternatives/)
+-   [Open Source as Alternative](https://www.osalt.com/)
 
 If you are looking for smaller pieces of code to reuse, search engines
 specifically for code may be helpful. Examples include:
 
--   [Grepcode.com](http://www.grepcode.com/)
--   [Koders.com](http://koders.com/)
--   [Google code search](http://code.google.com/codesearch)
+-   [Google code search](https://developers.google.com/code-search)
+-   [Searchcode](https://searchcode.com/)
 
 If you know of others who have similar needs, ask them for leads.
 
 ### Q: Is there any quantitative evidence that open source software can be as good as (or better than) proprietary software?
 
-Yes; [Why Open Source Software / Free Software (OSS/FS, FLOSS, or FOSS)?
-Look at the Numbers!](http://www.dwheeler.com/oss_fs_why.html) is a
-survey paper that "provides [quantitative
-data](quantitative data "wikilink") that, in many cases, using open
-source software / free software (abbreviated as OSS/FS, FLOSS, or FOSS)
-is a reasonable or even superior approach to using their proprietary
-competition according to various measures.. (its) goal is to show that
-you should consider using OSS/FS when acquiring software". It points to
-various studies related to market share, reliability, performance,
-scalability, security, and total cost of ownership.
+Yes; [Why Open Source Software / Free Software (OSS/FS, FLOSS, or
+FOSS)?  Look at the Numbers!](https://dwheeler.com/oss_fs_why.html) is
+a survey paper that "provides quantitative data that, in many cases,
+using open source software / free software (abbreviated as OSS/FS,
+FLOSS, or FOSS) is a reasonable or even superior approach to using
+their proprietary competition according to various measures.. (its)
+goal is to show that you should consider using OSS/FS when acquiring
+software". It points to various studies related to market share,
+reliability, performance, scalability, security, and total cost of
+ownership.
 
 This is in addition to the advantages from OSS because it can be
 reviewed, modified, and redistributed with few restrictions (inherent in
@@ -1282,14 +1259,14 @@ meeting those needs.
 
 ### Q: When a DoD contractor is developing a new system/software as a deliverable in a typical DoD contract, is it possible to include existing open source software?
 
-Yes, it's possible. In nearly all cases pre-existing OSS are "commercial
-components", and thus their use is governed by the rules for including
-any commercial components in the deliverable. The use of commercial
-components is generally encouraged, and when there are commercial
-components, the government expects that it will normally use whatever
+Yes, it's possible. In nearly all cases, pre-existing OSS are "commercial
+products", and thus their use is governed by the rules for including
+any commercial products in the deliverable. The use of commercial
+products is generally encouraged, and when there are commercial
+products, the government expects that it will normally use whatever
 license is offered to the public. Depending on the contract and its
 interpretation, contractors may be required to get governmental
-permission to include commercial components in their deliverable; where
+permission to include commercial components in their deliverables; where
 this applies, this would be true for OSS components as well as
 proprietary components. As with all commercial items, organizations must
 obey the terms of the commercial license, negotiate a different license
@@ -1310,7 +1287,7 @@ licensed under the GNU General Public License (GPL).
 The DoD already uses a wide variety of software licensed under the GPL.
 A [2003 MITRE study, "Use of Free and Open Source Software (FOSS) in the
 U.S. Department of
-Defense"](http://dodcio.defense.gov/Portals/0/Documents/FOSS/dodfoss_pdf.pdf),
+Defense"](https://dodcio.defense.gov/Portals/0/Documents/FOSS/dodfoss_pdf.pdf),
 identified many OSS programs that the DoD is *already* using that are
 licensed using the GPL. These included the Linux kernel, the gcc
 compilation suite (including the GNAT Ada compiler), the OpenOffice.org
@@ -1351,7 +1328,7 @@ Such mixing can sometimes only occur when certain kinds of separation
 are maintained - and thus this can become a design issue.
 
 The [2003 MITRE study section
-1.3.4](http://dodcio.defense.gov/Portals/0/Documents/FOSS/dodfoss_pdf.pdf)
+1.3.4](https://dodcio.defense.gov/Portals/0/Documents/FOSS/dodfoss_pdf.pdf)
 outlines several ways to legally mix GPL with proprietary or classified
 software:
 
@@ -1403,14 +1380,15 @@ classified, or export-controlled software into a single program
 arbitrarily, as long as the result is never conveyed outside the U.S.
 government. However, this approach should not be taken lightly. This
 approach may inhibit later release of the combined result to other
-parties (e.g., allies), as release to an ally probably would in many
-cases be considered distribution. In some cases, export controlled
-software may be permitted under the condition that the source code not
-be released; this would prevent release of software that had mixed GPL
-and export-controlled software. When taking this approach, contractors
-hired to modify the software must not retain copyright or other rights
-to the result (else the software would be conveyed outside the U.S.
-government); see [GPL version 3 section 2, paragraph
+parties (e.g., allies), as release to an ally would likely be
+considered distribution as defined in the GPL. In some cases,
+export-controlled software may be licensed for export under the
+condition that the source code not be released; this would prevent
+release of software that had mixed GPL and export-controlled
+software. When taking this approach, contractors hired to modify the
+software must not retain copyright or other rights to the result (else
+the software would be conveyed outside the U.S.  government); see [GPL
+version 3 section 2, paragraph
 2](http://www.gnu.org/licenses/gpl-3.0.html) which states this
 explicitly. Where possible, it may be better to divide such components
 into smaller components in a way that avoids this issue.
@@ -1418,13 +1396,13 @@ into smaller components in a way that avoids this issue.
 It can be argued that classified software can be arbitrarily combined
 with GPL code, beyond the approaches described above. The argument is
 that the classification rules are simply laws of the land (and not
-"additional" rules), the classification rules already forbid the release
-of the resulting binaries to those without proper clearances, and that
-the GPL only requires that source code be released to those who received
-a binary. While this argument may be valid, we know of no general
-counsel ruling confirming this. Anyone who is considering this approach
-should obtain a ruling from general counsel first (and please let the
-FAQ authors know!).
+"additional" rules), the classification rules already forbid the
+release of the resulting binaries to those without proper clearances,
+and that the GPL only requires that source code be released to those
+who received a binary. While this argument may be valid, we know of no
+court decision or legal opinion confirming this. Anyone who is
+considering this approach should obtain a determination from general
+counsel first (and please let the FAQ authors know!).
 
 If a legal method for using the GPL software for a particular
 application cannot be devised, and a different license cannot be
@@ -1439,34 +1417,27 @@ The GPL and government "unlimited rights" terms have similar goals, but
 differ in details. This isn't usually an issue because of how typical
 DoD contract clauses work under the DFARS.
 
-Any software that has a non-government use and is licensed to the public
-is *commercial software*, by definition, including OSS programs licensed
-to the government using the GPL. Normally the government only expects to
-get the usual commercial rights to commercial software, and not
-"unlimited rights". So if the software displays a license in a way that
-can't be legally disabled (as required by the GPL), there is no problem,
-because this is an ordinary commercial software license term. The same
-would be true if you used Microsoft Windows; you aren't normally
-permitted to disable the rights-display functions of Microsoft Windows
-either.
+The government normally gets "unlimited rights" in software when that
+software is created in the performance of a contract with government
+funds.  If such software includes third-party components that were not
+produced in performace of that contract, the contractor is generally
+responsible for acquiring those components with acceptable licenses
+that premit the government to use that software.  Thus, the government
+may receive custom-developed, non-commercial software as a deliverable
+and receive "unlimited rights" for that new code, but also acquire
+only commercial rights to the third-party (possibly OSS) components.
+This is not uncommon.
 
-In contrast, the government normally gets "unlimited rights" only when
-it pays for development of that software, in full or in part. Software
-developed by government funding would typically be termed "noncommercial
-software", and thus falls under different rules. The government *does*
-have the right to take software it has unlimited rights to, and link it
-with GPL software. After all, the government can use unlimited rights
-software in any way it wishes.
-
-Once the government has unlimited rights, it can release that software
-to the public in any it wishes - including by using the GPL. This is not
-a contradiction; it's quite common for different organizations to have
-different rights to the same software. The program available to the
-public may improve over time, through contributions not paid for by the
-U.S. government. In that case, the U.S. government can choose to use the
-version to which it has unlimited rights, or it can use the
-publicly-available commercial version available to the government
-through that version's commercial license (the GPL in this case).
+Once the government has unlimited rights, it may release that software
+to the public under any terms it wishes - including by using the
+GPL. This is not a contradiction; it's quite common for different
+organizations to have different rights to the same software. The
+program available to the public may improve over time, through
+contributions not paid for by the U.S. government. In that case, the
+U.S. government might choose to continue to use the version to which
+it has unlimited rights, or it might use the publicly-available
+commercial version available to the government through that version's
+commercial license (the GPL in this case).
 
 ### Q: Does the Antideficiency act (ADA) prohibit all use of OSS due to limitations on voluntary services?
 
@@ -1484,13 +1455,11 @@ that, “An officer or employee of the United States Government or of the
 District of Columbia government may not accept voluntary services for
 either government or employ personal services exceeding that authorized
 by law except for emergencies involving the safety of human life or the
-protection of property. This section does not apply to a corporation
-getting amounts to make loans (except paid in capital amounts) without
-legal liability of the United States Government...”
+protection of property." 
 
 The [US Government Accountability Office (GAO) Office of the General
 Counsel’s “Principles of Federal Appropriations Law” (aka the “Red
-Book”)](http://www.gao.gov/legal/redbook/redbook.html) explains federal
+Book”)](https://www.gao.gov/legal/appropriations-law/red-book) explains federal
 appropriation law. Volume II of its third edition, section 6.C.3,
 describes in detail this prohibition on voluntary services. Section
 6.C.3.a notes that the voluntary services provision is not new; it first
@@ -1519,7 +1488,7 @@ therefore likely to afford a basis for a future claim upon Congress. . .
 .”
 
 More recent decisions, such as [the 1982 decision B-204326 by the U.S.
-Comptroller General](http://www.gao.gov/assets/450/441639.pdf), continue
+Comptroller General](https://www.gao.gov/products/b-204326), continue
 to confirm this distinction between “gratuitous” and “voluntary”
 service.
 
@@ -1561,15 +1530,13 @@ following externally-developed evaluation processes or tips may be of
 use:
 
 -   [How to Evaluate Open Source Software / Free Software (OSS/FS)
-    Programs](http://www.dwheeler.com/oss_fs_eval.html)
--   [Navica's Open Source Maturity Model
-    (OSMM)](http://www.navicasoft.com/pages/osmm.htm)
+    Programs](https://dwheeler.com/oss_fs_eval.html)
+-   [OpenSource Maturity Model
+    (OMM)](https://en.wikipedia.org/wiki/OpenSource_Maturity_Model)
 -   [Capgemini's Open Source Maturity Model
-    (OSMM)](http://www.osspartner.com/portail/sections/accueil-public/evaluation-osmm)
+    (OSMM)](https://www.capgemini.com/wp-content/uploads/2017/07/the_value_of_open_source_software_is_undeniable-effectively_securing_and_managing_it_remains_a_challenge.pdf)
 -   [Top Tips For Selecting Open Source
     Software](http://www.oss-watch.ac.uk/resources/tips.xml)
--   [Business Readiness Rating™
-    (BRR)](http://www.openbrr.org/wiki/index.php/Home)
 -   [QSOS](http://www.qsos.org/)
 
 ### Q: How can I migrate to OSS?
@@ -1578,7 +1545,7 @@ Migrating from an existing system to an OSS approach requires addressing
 the same issues that any migration involves.
 
 [The IDA Open Source Migration
-Guidelines](http://ec.europa.eu/idabc/en/document/2623/5585.html) recommend:
+Guidelines](https://joinup.ec.europa.eu/sites/default/files/document/2012-02/ida-open-source-migration-guidelines-en.pdf) recommend:
 
 -   before starting have a clear understanding of the reasons to
     migrate;
@@ -1614,15 +1581,16 @@ aid.
 Commercial support can either be through companies with specialize in
 OSS support (in general or for specific products), or through
 contractors who specialize in supporting customers and provide the OSS
-support as part of a larger service. Examples of the former include Red
-Hat, Novell, HP, Oracle, IBM, DMSolutions, SourceLabs, OpenLogic,
-Carahsoft, and Mozilla.
+support as part of a larger service. Examples of the former include
+Red Hat, Canonical, HP Enterprise, Oracle, IBM, SourceLabs, OpenLogic,
+and Carahsoft.
 
 Some have found that community support can be very helpful. The 1997
 InfoWorld “Best Technical Support” award was won by the "Linux User
 Community". However, you should examine past experience and your
 intended uses before depending on this as a primary mechanism for
-support.
+support.  An Open Source Community can update the codebase, but they
+cannot patch your servers.
 
 ### Q: Am I required to have commercial support for OSS?
 
@@ -1639,7 +1607,7 @@ as a possibly-appropriate approach.
 
 As noted in the article [Open Source memo doesn't mandate a support
 vendor (by David Perera, FierceGovernmentIT, May 23,
-2012)](http://www.fiercegovernmentit.com/story/dod-official-open-source-memo-doesnt-mandate-support-vendor/2012-05-23),
+2012)](https://web.archive.org/web/20120528201042/http://www.fiercegovernmentit.com/story/dod-official-open-source-memo-doesnt-mandate-support-vendor/2012-05-23),
 the intent "of the memo was not to issue a blanket requirement that all
 open source software come bundled with contractor support or else it
 can't be used... If a Defense agency is able to sustain the open source
@@ -1649,14 +1617,14 @@ plan need be can also vary on the nature of the software itself... For
 command and control software, the degree would have to be greater than
 for something that's not so critical to mission execution...".
 
-Community OSS support is technically not enough by *itself* to provide
-this support, because the OSS community cannot patch your servers or
-workstations for you. However, support from in-house staff, augmented by
-the OSS community, may be (and often is) sufficient. However, if you're
-going to rely on the OSS community, you must make sure that the OSS
-community for that product is active, and that you have suitably
-qualified staff to implement the upgrades/enhancements developed by the
-community.
+Community OSS support is never enough by *itself* to provide this
+support, because the OSS community cannot patch your servers or
+workstations for you. However, support from in-house staff, augmented
+by the OSS community, may be (and often is) sufficient. However, if
+you're going to rely on the OSS community, you must make sure that the
+OSS community for that product is active, and that you have suitably
+qualified staff to implement the upgrades/enhancements developed by
+the community.
 
 If you have concerns about using in-house staff, augmented by the OSS
 community for those components, then select and pay a commercial
