@@ -1119,7 +1119,7 @@ Defense (DoD)] than has generally been recognized".
 Intellipedia is implemented using MediaWiki, the open source software
 developed to implement Wikipedia. This Open Source Software FAQ was
 originally developed on Intellipedia, using a variety of web browsers
-including Mozilla Firefox. Thus, this FAQ was developed using open
+including Mozilla Firefox. Thus, even this FAQ was developed using open
 source software.
 
 The DoD is, of course, not the only user of OSS. [Gartner Group's Mark
@@ -1140,7 +1140,6 @@ estimates that the Fedora 9 Linux distribution, which contains over
 effort in 2008 dollars.
 
 
-
 ### Q: Is there an "approved", "recommended" or "Generally Recognized as Safe/Mature" list of Open Source Software? What programs are already in widespread use?
 
 No, the DoD does not have an official recommendation for any particular
@@ -1152,11 +1151,11 @@ did suggest developing a "Generally Recognized As Safe" (GRAS) list, but
 such a list has not been developed.
 
 The United States Air Force operates a service called "[Iron
-Bank](https://ironbank.dso.mil/)", which is a registry of hardened
-software containers, many of which are based on [open source
-products](https://repo1.dso.mil/dsop/opensource).  On approval, such
-containers are granted a "Certificate to Field" designation by the Air
-Force Chief Software Officer.
+Bank](https://ironbank.dso.mil/)", which is the DoD Enterprise
+repository of hardened software containers, many of which are based on
+[open source products](https://repo1.dso.mil/dsop/opensource).  On
+approval, such containers are granted a "Certificate to Field"
+designation by the Air Force Chief Software Officer.
 
 Commercial software (including OSS) that has widespread use often has
 lower risk, since there are often good reasons for its widespread use.
@@ -1195,15 +1194,13 @@ particular product or supplier.
 
 Some more military-specific OSS programs created-by or used in the military include:
 
--   [FalconView](http://www.falconview.org/) - PC-based mapping
-    application
--   [The Distributed Data Framework](https://codice.org/ddf/) - data integration 
+-   [The Distributed Data Framework (DDF)](https://codice.org/ddf/) - data integration 
     framework developed for the Distributed Common Ground/Surface System (DCGS) Family of Systems
--   Open Source Software for Imagery & Mapping
-    ([OSSIM](http://www.ossim.org/OSSIM/OSSIM_Home.html)) - geospatial
+-   [Open Source Software for Imagery & Mapping
+    (OSSIM)](http://www.ossim.org/OSSIM/OSSIM_Home.html) - geospatial
     image viewing (with classified plugins)
--   OSSIM Mapping ARchieve System
-    ([OMAR](http://www.ossim.org/OSSIM/OMAR.html)) - video indexing
+-   [OSSIM Mapping ARchieve System
+    (OMAR)](http://www.ossim.org/OSSIM/OMAR.html) - video indexing
 -   [BRL-CAD](https://brlcad.org/) - solid modeling (Army)
 -   [Opticks](https://github.com/opticks-org/opticks) - Remote sensing platform & MASINT toolset
 -   [Delta3D](https://github.com/delta3d/delta3d/) - Game/Simulation engine for
@@ -1642,49 +1639,53 @@ multiple projects.  Thus, they are all strategies for sharing the
 development and maintenance costs of software, potentially reducing its
 cost.
 
-GOTS is especially appropriate when the software *must not* be released
-to the public (e.g., it is classified) or when licenses forbid more
-extensive sharing (e.g., the government only has government-purpose
-rights to the software). If the software is not released to the public
-at all and it provides a direct military advantage, then the U.S.
-military (and its allies) may obtain a distinct military advantage (note
-that such software would normally be classified).  Unlike proprietary
-COTS, GOTS has the advantage that the government has the right to change
-the software whenever the government chooses to do so. Unfortunately,
-the government must pay for *all* development and maintenance costs of
-GOTS; since these can be substantial, GOTS runs the risk of becoming
-obsolescent when the government cannot afford those costs. Also, since
-there are a limited number of users, there is limited opportunity to
-gain from user innovation - which again can lead to obsolescence.  Even
-where there is GOTS/classified software, such software is typically only
-a *portion* of the entire system, with other components implemented
-through COTS components.
+GOTS is especially appropriate when the software *must not* be
+released to the public (e.g., it is classified) or when licenses
+forbid more extensive sharing (e.g., the government only has
+government-purpose rights to the software). GOTS software should not
+be released when it implements a strategic innovation, i.e. when it
+implements novel functionality which is not already available to the
+public, and which significantly improves DoD mission outcomes or
+business processes.  (Note that such software would often be classifed.)
 
- Proprietary COTS is especially appropriate when there is an existing
+Unlike proprietary COTS, GOTS has the advantage that the government
+has the right to change the software whenever the government chooses
+to do so. Unfortunately, the government must pay for *all* development
+and maintenance costs of GOTS; since these can be substantial, GOTS
+runs the risk of becoming obsolete when the government cannot afford
+those costs. Also, since there are a limited number of users, there is
+limited opportunity to gain from user innovation - which again can
+lead to obsolescence. Even where there is GOTS/classified software,
+such software is typically only a *portion* of the entire system, with
+other components implemented through COTS components.
+
+Proprietary COTS is especially appropriate when there is an existing
 proprietary COTS product that meets the need. Proprietary COTS tend to
 be lower cost than GOTS, since the cost of development and maintenance
-is typically shared among a larger number of users (who typically pay to
-receive licenses to use the product). Unfortunately, this typically
-trades off flexibility; the government typically does not have the right
-to modify the software, so it often cannot fix serious security
-problems, add arbitrary improvements, or make the software work on
-platforms of its choosing.  If the supplier attains a monopoly or it is
-difficult to switch from the supplier, the costs may skyrocket.  What is
-more, the supplier may choose to abandon the product; software escrow
-can reduce these risks somewhat, but in these cases it becomes GOTS with
-its attendant costs.
- OSS COTS is especially appropriate when there is an existing OSS COTS
-product that meets the need, or one can be developed and supported by a
-wide range of users/co-developers.  OSS COTS tends to be lower cost than
-GOTS, in part for the same reasons as proprietary COTS: its costs are
-shared among more users.  It also often has lower total
-cost-of-ownership than proprietary COTS, since acquiring it initially is
-often free or low-cost, and all other support activities (training,
-installation, modification, etc.) can be competed.  Its flexibility is
-as high as GOTS, since it can be arbitrarily modified.  However, note
-that this cost discussion only applies if there are many users; if no
-user/co-developer community is built up, then it can be as costly as
-GOTS.
+is typically shared among a larger number of users (who typically pay
+to receive licenses to use the product). Unfortunately, this typically
+trades off flexibility; the government does not have the right to
+modify the software, so it cannot fix serious security problems, add
+arbitrary improvements, or make the software work on platforms of its
+choosing.  If the supplier attains a monopoly or it is difficult to
+switch from the supplier, the costs may skyrocket.  What is more, the
+supplier may choose to abandon the product; source-code escrow can
+reduce these risks somewhat, but in these cases the software becomes
+GOTS with its attendant costs.
+
+OSS COTS is especially appropriate when there is an existing OSS COTS
+product that meets the need, or one can be developed and supported by
+a wide range of users/co-developers.  OSS COTS tends to be lower cost
+than GOTS, in part for the same reasons as proprietary COTS: its costs
+are shared among more users.  It also often has lower total
+cost-of-ownership than proprietary COTS, since acquiring it initially
+is often free or low-cost, and all other support activities (training,
+installation, modification, etc.) can be competed, and the cost of
+some improvements may be borne by other users of the software. Its
+flexibility is as high as GOTS, since it can be arbitrarily modified.
+However, note that the advantages of cost-sharing only applies if
+there are many users; if no user/co-developer community is built up,
+then it can be as costly as GOTS.
 
 ### Q: What are the risks of failing to consider the use of OSS components or approaches?
 
@@ -1795,7 +1796,7 @@ by receiving certain authorization clauses in their contracts. [FAR
 52.227-1 (Authorization and
 Consent)](http://www.arnet.gov/far/current/html/52_227.html), as
 prescribed by [FAR
-27.201-2(a)(1)](http://www.arnet.gov/far/current/html/Subpart%2027_2.html#wp1035008),
+27.201-2(a)(1)](https://www.acquisition.gov/far/52.227-1),
 inserts the clause that the "Government authorizes and consents to all
 use and manufacturer... of any invention (covered by) U.S. patent". The
 related FAR 52.227-2 (Notice and Assistance Regarding Patent and
@@ -1805,12 +1806,12 @@ patent/copyright infrigement in reasonable written detail. Specific
 patents can also be authorized using clause FAR 52.227-5 or via listed
 exceptions of FAR 52.227-3. See also [DFARS subpart 227.70--infringement
 claims, licenses, and
-assignments](http://www.acq.osd.mil/dpap/dars/dfars/html/current/227_70.htm)
+assignments](https://www.acq.osd.mil/dpap/dars/dfars/html/current/227_70.htm)
 and
 [28 USC 1498](http://uscode.house.gov/view.xhtml?req=%28title:28%20section:1498%20edition:prelim%29%20OR%20%28granuleid:USC-prelim-title28-section1498%29&f=treesort&edition=prelim&num=0&jumpTo=true).
 
-As noted in [DFARS
-27.201-1](http://www.arnet.gov/far/current/html/Subpart%2027_2.html#wp1035008),
+As noted in [FAR
+27.201-1](https://www.acquisition.gov/far/27.201-1),
 "Pursuant to 28 U.S.C. 1498, the exclusive remedy for patent or
 copyright infringement by or on behalf of the Government is a suit for
 monetary damages against the Government in the Court of Federal Claims.
@@ -1833,12 +1834,12 @@ There are other ways to reduce the risk of software patent infringement
     patent filed within one year by that inventor, or (in theory) they
     cannot be patented. See [Prior Art and Its Uses: A Primer, by
     Theodore C.
-    McCullough](http://www.groklaw.net/articlebasic.php?story=20060414004039219)
+    McCullough](http://www.groklaw.net/article.php?story=20060414004039219)
 -   OSS can often be purchased (directly, or as a support contract), and
     such purchases often include some sort of indemnification.
 -   Various organizations have been formed to reduce patent risks for
     OSS. The [Open Invention
-    Network](http://www.openinventionnetwork.com/) (OIN^SM^) may in some
+    Network](http://www.openinventionnetwork.com/) (OIN) may in some
     cases provide some additional protection. OIN purchases patent
     rights; patents owned by OIN are available royalty-free to any
     company, institution or individual that agrees not to assert its
@@ -1883,16 +1884,14 @@ examples to list; a few examples are:
 -   [Security-Enhanced Linux
     (SELinux)](http://en.wikipedia.org/wiki/Selinux) - Security
     enhancements to Linux-based operating systems
--   [OpenVista](http://sourceforge.net/projects/openvista) and
+-   [VistA](https://en.wikipedia.org/wiki/VistA) and
     [Hardhats](http://www.hardhats.org/) - Implementations of US
     Veterans Affairs' enterprise grade health care information system
--   [Expect](http://expect.nist.gov/) - Tool for automating interactive
+-   [Expect](https://core.tcl-lang.org/expect/index) - Tool for automating interactive
     applications. Since Expect was developed at the National Institute
     of Standards and Technology by employees of the Federal Government
     in the course of their official duties, it is not subject to
     copyright protection and is in the public domain.
--   [EZRO](http://ezro.devis.com/) - System for managing text, video,
-    audio, and other content on the web
 -   [Evergreen](http://www.evergreen-ils.org/) - Library Management (by
     the State of Georgia)
 -   [OpenSSL](http://www.openssl.org/) - this improvement was a FIPS
@@ -1906,30 +1905,24 @@ examples to list; a few examples are:
     Transparent access to distributed resources ([this NASA Jet
     Propulsion Laboratory (JPL) project became a top level open source
     Apache Software Foundation project in
-    2011](http://www.serverwatch.com/news/article.php/3919891/NASA-Tech-Gets-Open-Source-Apache-Blessing.htm))
+    2011](https://www.developer.com/open-source/nasa-middleware-for-metadata-becomes-top-level-apache-project/))
 -   BSD TCP/IP suite - Provided the basis of the Internet
--   [Falconview](http://www.falconview.org) - Mapping Application
 -   [Geographic Resources Analysis Support System
     (GRASS)](http://grass.osgeo.org/) - Geographic Information System
     (GIS) software used for geospatial data management and analysis,
     image processing, graphics/maps production, spatial modeling, and
-    visualization
+    visualization developed by the Army Corps of Engineers' Construction Engineering Research Laboratory
 -   [Opticks](http://opticks.org/) - expandable remote sensing and
-    imagery analysis software platform
+    imagery analysis software platform, originally developed by Ball Aerospace for the Intelligence Community
 -   [OSSIM](http://www.ossim.org/OSSIM/OSSIM_Home.html) - geo-spatial
     image processing for remote sensing, photogrammetry, and Geographic
-    Information Systems (GIS).
--   [VSIPL](http://www.vsipl.org/) - Vector Signal Image Processing
-    Library
+    Information Systems (GIS), originally developed by Harris Corporation for the Intelligence Community.
 -   [BRL-CAD](http://brlcad.org/) - cross-platform combinatorial
     Constructive Solid Geometry (CSG) solid modeling system
--   [Globus Toolkit](http://www.globus.org/toolkit/about.html) -
-    enabling technology for the "Grid," letting people share computing
-    power, databases, and other tools securely online across corporate,
-    institutional, and geographic boundaries without sacrificing local
-    autonomy.
 -   [Paraview](http://www.paraview.org/) - multi-platform data analysis
-    and visualization application.
+    and visualization application, developed by Kitware Inc, for Los
+    Alamos National Laboratory, the DoE, Army Research Labs and Sandia
+    National Labs.
 
 ### Q: What are the risks of the government releasing software as OSS?
 
@@ -2011,7 +2004,7 @@ questions:
     materials properly marked?
 
 Source: [Publicly Releasing Open Source Software Developed for the U.S.
-Government](http://journal.thedacs.com/issue/56/180).
+Government](https://www.csiac.org/journal-article/publicly-releasing-open-source-software-developed-for-the-u-s-government/).
 
 The following questions discuss some specific cases.
 
@@ -2032,21 +2025,22 @@ However, software written entirely by federal government employees as
 part of their official duties *can* be released as “public domain”
 software. This is not a copyright license, it is the *absence* of a
 license. By some definitions this is technically not an open source
-license, because no license is needed, but such “public domain” software
-can be legally used, modified, and combined with other software without
-restriction. Thus, “public domain” software provides recipients all of
-the rights that open source software must provide. An example of such
-software is [Expect](http://expect.nist.gov/), which was developed and
-released by NIST as public domain software. Note that under the DoD
-definition of open source software, such public domain software *is*
-open source software.
+license, because no license is needed, but such “public domain”
+software can be legally used, modified, and combined with other
+software without restriction. Thus, “public domain” software provides
+recipients all of the rights that open source software must
+provide. An example of such software is
+[Expect](https://core.tcl-lang.org/expect/index), which was developed
+and released by NIST as public domain software. Note that under the
+DoD definition of open source software, such public domain software
+*is* open source software.
 
 Note that when government employees develop software as part of their
 official duties, it *can* be protected by copyright in other countries,
 but note that these can only be enforced outside the US. Also, there are
 rare exceptions for NIST and the US Postal Service employees where a US
 copyright can be obtained (see [CENDI's Frequently Asked Questions About
-Copyright](http://www.cendi.gov/publications/04-8copyright.html)).
+Copyright](https://www.cendi.gov/publications/FAQ_Copyright_30jan18.html)).
 
 Government employees may also modify existing open source software. If
 some portion of the software is protected by copyright, then the
@@ -2151,7 +2145,7 @@ software or computer software documentation in whole or in part, in any
 manner and for any purpose whatsoever, and to have or authorize others
 to do so". As noted in "Technical Data and Computer Software: A Guide to
 Rights and Responsibilities Under Federal Contracts, Grants and
-Cooperative Agreements" by the Council on Governmental Relations (CAGR),
+Cooperative Agreements" by the Council on Governmental Relations (COGR),
 "This unlimited license enables the government to act on its own behalf
 and to authorize others to do the same things that it can do, thus
 giving the government essentially the same rights as the copyright
@@ -2192,7 +2186,7 @@ for works produced under contract (e.g., because the FAR 52.227-17 or
 DFARS 252.227-7020 clauses apply to it), then the government can release
 the software as open source software, because the government owns the
 copyright. The [NASA FAR Supplement (NFS)
-1852.227-14](http://www.hq.nasa.gov/office/procurement/regs/5227.htm)
+1852.227-14](https://www.acquisition.gov/nfs/part-1852-solicitation-provisions-and-contract-clauses#Section_1852_227_14_T48_60423441165)
 gives NASA the right, under typical conditions, to demand that a
 contractor assert copyright and then assign the copyright to the
 government, which would again give the government the right to release
@@ -2220,49 +2214,56 @@ release may also be limited by patent and trademark law.
 
 (See also ["Publicly Releasing Open Source Software Developed for the
 U.S. Government" by Dr. David A. Wheeler, DoD Software Tech News,
-February 2011](http://journal.thedacs.com/issue/56/180).)
+February 2011](https://www.csiac.org/journal-article/publicly-releasing-open-source-software-developed-for-the-u-s-government/).)
 
 ### Q: Is there a standard marking for software where the government has unlimited rights?
 
 The FAR and DFARS do not currently mandate any specific marking for
-software where the government has unlimited rights. This can be a cause
-of great confusion, because without any markings, a recipient is often
-unaware that the government has unlimited rights to it. Yet if the
-government does not know it has certain rights, it becomes difficult for
-the government to exercise its rights. This is important for releasing
-OSS, because the government can release software as OSS if it has
-unlimited rights.
+software where the government has unlimited rights. This can be a
+cause of confusion, because without any markings, a recipient is often
+unaware that the government has unlimited rights to it, and if the
+government does not know it has certain rights, it becomes difficult
+for the government to exercise its rights. This is important for
+releasing OSS, because the government can release software as OSS if
+it has unlimited rights.
 
-The following marking should be added to software when the government
-has unlimited rights due to the use of the DFARS 252.227-7014 contract:
+The following marking should be added to software source code when the
+government has unlimited rights due to the use of the DFARS
+252.227-7014 contract:
 
 "The U.S. Government has Unlimited Rights in this computer software
 pursuant to the clause at DFARS 252.227-7014. Any reproduction of this
 computer software, or portions thereof, marked with this legend must
 also reproduce these markings."
 
+
 ### Q: Does releasing software under an OSS license count as commercialization?
 
-In most cases, yes. U.S. law governing federal procurement
-[U.S. Code Title 41, Chapter 7, Section 103](http://uscode.house.gov/view.xhtml?req=%28title:41%20section:103%20edition:prelim%29%20OR%20%28granuleid:USC-prelim-title41-section103%29&f=treesort&edition=prelim&num=0&jumpTo=true) defines "commercial item"
-as including "an item, other than real property, that-
-(A) is of a type customarily used by the general public or by nongovernmental entities for purposes other than governmental purposes; and
-(B) has been sold, leased, or licensed, or offered for sale, lease, or license, to the general public ...". Thus, as long as the software has at least one
-non-governmental use, software released (or offered for release) to the
-public is a commercial item for procurement purposes, *even if* it was
-originally developed using public funds.
+In most cases, yes. U.S. law governing federal procurement [U.S. Code
+Title 41, Chapter 7, Section
+103](http://uscode.house.gov/view.xhtml?req=%28title:41%20section:103%20edition:prelim%29%20OR%20%28granuleid:USC-prelim-title41-section103%29&f=treesort&edition=prelim&num=0&jumpTo=true)
+defines "commercial product" as "a product, other than real property,
+that- (A) is of a type customarily used by the general public or by
+nongovernmental entities for purposes other than governmental
+purposes; and (B) has been sold, leased, or licensed, or offered for
+sale, lease, or license, to the general public ...". Thus, as long as
+the software has at least one non-governmental use, software released
+(or offered for release) to the public is a commercial product for
+procurement purposes, *even if* it was originally developed using
+public funds.
 
-This does not mean that organizations will automatically arise to help
-develop/support it. Whether or not this will occur depends on factors
-such as the number of potential users (more potential users makes this
-more likely), the existence of competing OSS programs (which may
-out-compete the newly released component), and how difficult it is to
-install/use. Thus, components that have the potential to (eventually)
-support many users are more likely to succeed. Similarly, delaying a
-component's OSS release too long may doom it, if another OSS component
-is released first. If the OSS is intended for use on Linux/Unix systems,
-[follow standard source installation release
-practices](http://www.dwheeler.com/essays/releasing-floss-software.html)
+Releasing software as OSS does not mean that organizations will
+automatically arise to help develop/support it. Whether or not this
+will occur depends on factors such as the number of potential users
+(more potential users makes this more likely), the existence of
+competing OSS programs (which may out-compete the newly released
+component), and how difficult it is to install/use. Thus, components
+that have the potential to (eventually) support many users are more
+likely to succeed. Similarly, delaying a component's OSS release too
+long may doom it, if another OSS component is released first. If the
+OSS is intended for use on Linux/Unix systems, [follow standard source
+installation release
+practices](https://dwheeler.com/essays/releasing-floss-software.html)
 so that it is easier for users to install.
 
 
@@ -2271,14 +2272,15 @@ so that it is easier for users to install.
 It depends on the goals for the project, however, here are some
 guidelines:
 
--   **Copyright public domain where required by law.**  You *must*
-    release it without any copyright protection (e.g., as "copyright
-    public domain") if you release it at all and if it was developed by
-    US government employee(s) as part of their official duties. 
-    Otherwise, choose some existing OSS license, since all existing
-    licenses add some legal protections from lawsuits. (The "MIT
-    license" is similar to public domain release, but with some legal
-    protection from lawsuits.)
+- **Public domain where required by law.**  You *must* release it
+    without any copyright protection (e.g., as "not subject to
+    copyright protection in the United States") if you release it at
+    all and if it was developed wholly by US government employee(s) as
+    part of their official duties.   Otherwise, choose some existing
+    OSS license, since all existing licenses add some legal
+    protections from lawsuits. (The "MIT license" is similar to public
+    domain release, but with some legal protection from lawsuits.)
+
 -   **Release modifications under same license.**  If it is a
     modification of an existing project, or a plug-in to it, release it
     under the project's original license (and possibly other licenses).
