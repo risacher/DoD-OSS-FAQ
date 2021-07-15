@@ -1,6 +1,8 @@
 DoD-OSS-FAQ
 ===========
 
+_NOTE: the actual content is in the [index.html file in the gh-pages branch](https://github.com/risacher/DoD-OSS-FAQ/blob/gh-pages/index.html)_
+
 The [United States Department of Defense Open Source Software
 FAQ](http://risacher.github.io/DoD-OSS-FAQ) is an educational resource
 for government employees and government contractors to understand the
