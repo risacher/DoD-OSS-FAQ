@@ -1,6 +1,6 @@
 % DoD Open Source Software FAQ
 % Office of the DoD CIO
-% 2021-10-28
+% 2021-12-13
 
 Frequently Asked Questions regarding Open Source Software (OSS) and the Department of Defense (DoD)
 ---------------------------------------------------------------------------------------------------
@@ -146,11 +146,11 @@ The following policies apply:
 4.  The Open Technology Development Roadmap was released by the office
     of the Deputy Under Secretary of Defense for Advanced Systems and
     Concepts, on 7 Jun 2006. It is available at
-    [http://www.dtic.mil/dtic/tr/fulltext/u2/a450769.pdf](http://www.dtic.mil/dtic/tr/fulltext/u2/a450769.pdf) .
+    [https://www.acqnotes.com/Attachments/Open%20Open%20Technology%20Development%20Roadmap%20-%20April%202006.pdf](https://www.acqnotes.com/Attachments/Open%20Open%20Technology%20Development%20Roadmap%20-%20April%202006.pdf) .
 5.  The Office of Management and Budget issued a memorandum providing
     guidance on software acquisition which specifically addressed open
     source software on 1 Jul 2004. It may be found at
-    [http://www.whitehouse.gov/omb/memoranda/fy04/m04-16.html](http://www.whitehouse.gov/omb/memoranda/fy04/m04-16.html).
+    [https://georgewbush-whitehouse.archives.gov/omb/memoranda/fy04/m04-16.html](https://georgewbush-whitehouse.archives.gov/omb/memoranda/fy04/m04-16.html).
 5.  US Army Regulation 25-2, paragraph 4-6.h, provides guidance on
     software security controls that specifically addresses open source
     software. This regulation only applies to the US Army, but may be a
@@ -220,7 +220,7 @@ These definitions in U.S. law govern U.S. acquisition regulations,
 namely the [Federal Acquisition Regulation
 (FAR)](http://www.acquisition.gov/far/) and the [Defense Federal
 Acquisition Regulation Supplement
-(DFARS)](http://www.acq.osd.mil/dpap/dars/dfarspgi/current/index.html).
+(DFARS)](https://www.acquisition.gov/dfarspgi).
 [40 CFR, Section 252.227-7014 Rights in Noncommercial Computer
 Software and Noncommercial Computer Software
 Documentation](https://www.acq.osd.mil/dpap/dars/dfars/html/current/252227.htm#252.227-7014)
@@ -398,7 +398,7 @@ all costs are due to maintenance and support of software. In short,
 OSS more accurately reflects the economics of software development;
 some speculate that this is one reason why OSS has become so common.
 
-![OSS Development Model](images/oss-development-model.png "image")
+![OSS Development Model](images/oss-development-model.png "OSS Development Model")
 
 ### Q: Isn't OSS developed primarily by inexperienced students?
 
@@ -1840,7 +1840,7 @@ Yes, both entirely new programs and improvements of existing OSS have
 been developed using U.S. government funds. There are far too many
 examples to list; a few examples are:
 
--   [Delta3D](http://www.delta3d.org/) - Open Source Gaming and
+-   [Delta3D](https://github.com/delta3d/delta3d/) - Open Source Gaming and
     Simulation Engine
 -   [Security-Enhanced Linux
     (SELinux)](http://en.wikipedia.org/wiki/Selinux) - Security
@@ -1873,8 +1873,6 @@ examples to list; a few examples are:
     (GIS) software used for geospatial data management and analysis,
     image processing, graphics/maps production, spatial modeling, and
     visualization developed by the Army Corps of Engineers' Construction Engineering Research Laboratory
--   [Opticks](http://opticks.org/) - expandable remote sensing and
-    imagery analysis software platform, originally developed by Ball Aerospace for the Intelligence Community
 -   [OSSIM](http://www.ossim.org/OSSIM/OSSIM_Home.html) - geo-spatial
     image processing for remote sensing, photogrammetry, and Geographic
     Information Systems (GIS), originally developed by Harris Corporation for the Intelligence Community.
@@ -2001,7 +1999,7 @@ official duties, it *can* be protected by copyright in other countries,
 but note that these can only be enforced outside the US. Also, there are
 rare exceptions for NIST and the US Postal Service employees where a US
 copyright can be obtained (see [CENDI's Frequently Asked Questions About
-Copyright](https://www.cendi.gov/publications/FAQ_Copyright_30jan18.html)).
+Copyright](https://www.cendi.gov/working-groups/copyright-ip.shtml)).
 
 Government employees may also modify existing open source software. If
 some portion of the software is protected by copyright, then the
@@ -2233,97 +2231,102 @@ so that it is easier for users to install.
 It depends on the goals for the project, however, here are some
 guidelines:
 
-- **Public domain where required by law.**  You *must* release it
-    without any copyright protection (e.g., as "not subject to
-    copyright protection in the United States") if you release it at
-    all and if it was developed wholly by US government employee(s) as
-    part of their official duties.   Otherwise, choose some existing
-    OSS license, since all existing licenses add some legal
-    protections from lawsuits. (The "MIT license" is similar to public
-    domain release, but with some legal protection from lawsuits.)
+**Public domain where required by law.**  You *must* release it
+  without any copyright protection (e.g., as "not subject to
+  copyright protection in the United States") if you release it at
+  all and if it was developed wholly by US government employee(s) as
+  part of their official duties.   Otherwise, choose some existing
+  OSS license, since all existing licenses add some legal
+  protections from lawsuits. (The "MIT license" is similar to public
+  domain release, but with some legal protection from lawsuits.)
 
--   **Release modifications under same license.**  If it is a
-    modification of an existing project, or a plug-in to it, release it
-    under the project's original license (and possibly other licenses).
-    This way, the software can be incorporated in the existing project,
-    saving time and money in support.
--   **Consider anticipated uses.**  If it must work with other
-    components, or is anticipated to work with other components, ensure
-    that the license will permit those anticipated uses. In particular,
-    will it be directly linked with proprietary or classified code?
--   **Make sure it's really OSS.**  Choose a license that has passed
-    legal reviews and is clearly accepted as an OSS license. Choose a
-    license that is recognized as an [Open Source Software license by
-    the Open Source Initiative
-    (OSI)](http://www.opensource.org/licenses/category), a [Free
-    Software license by the Free Software Foundation
-    (FSF)](http://www.gnu.org/licenses/license-list.html#SoftwareLicenses),
-    *and* is acceptable to widely-used Linux distributions (such as
-    being a ["good" license for
-    Fedora](http://fedoraproject.org/wiki/Licensing#Software_License_List))**.**
--   **Use a widely-used existing license.**  Choose a widely-used
-    existing license; do *not* create a new license. This eliminates
-    future incompatibility and encourages future contributions by
-    others. [Bruce Perens noted back in
-    1999](http://www.oreilly.com/catalog/opensources/book/perens.html),
-    "Do not write a new license if it is possible to use (a common
-    existing license)... The propagation of many different and
-    incompatible licenses works to the detriment of Open Source software
-    because fragments of one program cannot be used in another program
-    with an incompatible license." [Many view OSS license proliferation
-    as a
-    problem](http://news.cnet.com/Open-source-board-eyes-fewer-licenses/2100-7344_3-5578799.html);
-    [Serdar Yegulalp's 2008 "Open Source Licensing Implosion"
-    (InformationWeek)](http://www.informationweek.com/blog/main/archives/2008/08/the_open_source_2.html)
-    noted that not only are there too many OSS licenses, but that the
-    "consequences for blithely creating new ones are finally becoming
-    concrete... the vast majority of open source products out there use
-    a small handful of licenses... Now that open source is becoming
-    (gasp) a mainstream phenomenon, using one of the less-common
-    licenses or coming up with one of your own works against you more
-    often than not". As an aid, the [Open Source Initiative (OSI)
-    maintains a list of "Licenses that are popular and widely used or
-    with strong
-    communities"](http://www.opensource.org/licenses/category). Another
-    useful source is the list of [licenses accepted by the Google code
-    hosting
-    service](http://www.theregister.co.uk/2008/07/25/googlecode_bans_mpl/).
-    See the licenses listed in the FAQ question "What are the major
-    types of open source software licenses?".
--   **Choose a GPL-compatible license.** The GNU General Public License
-    (GPL) is the most common OSS license; while you do not need to use
-    the GPL, it is often unwise to choose a license incompatible with
-    the majority of OSS. Thus, avoid releasing software under only the
-    original ("4-clause") BSD license (which has been replaced by the
-    "new" or "revised" 3-clause licence), the "Academic Free License"
-    (AFL), the now-abandoned "Common Public License" 1.0 (CPL), the
-    "Open Software License" (OSL), or the "Mozilla Public License
-    version 1.1" (MPL 1.1).
--   **Choose a license that best meets your goals.** Choosing between
-    the various options - particularly between permissive, weakly
-    protective, and strongly protective options - is perhaps the most
-    difficult, because this selection depends on your goals, and there
-    are many opinions on which licenses are most appropriate for
-    different circumstances. A "permissive" license permits arbitrary
-    use of the program, including making proprietary versions of it. A
-    "protective" license "protects" the software from becoming
-    proprietary, and instead enforces a "share and share alike" approach
-    between parties. A "weakly-protective" license is a compromise
-    between the two, preventing the covered library from becoming
-    proprietary yet permitting it to be embedded in larger proprietary
-    works. If the goal is maximize the use of a technology or standard
-    in a variety of different applications/implementations, including
-    proprietary ones, permissive licenses may be especially useful. 
-    However, if the goal is to encourage longevity and cost savings
-    through a commonly-maintained library or application, protective
-    licenses may have some advantages, because they encourage developers
-    to contribute their improvements back into a single common
-    project. In many cases, weakly protective licenses are used for
-    common libraries, while strongly protective licenses are used for
-    applications. Common licenses for each type are:
-    -   Permissive: MIT, BSD-new, Apache 2.0
-    -   Weakly protective: LGPL (version 2 or 3)
-    -   Strongly protective: GPL (version 2 or 3)
+  **Release modifications under same license.**  If it is a
+  modification of an existing project, or a plug-in to it, release it
+  under the project's original license (and possibly other licenses).
+  This way, the software can be incorporated in the existing project,
+  saving time and money in support.
+
+**Consider anticipated uses.**  If it must work with other
+  components, or is anticipated to work with other components, ensure
+  that the license will permit those anticipated uses. In particular,
+  will it be directly linked with proprietary or classified code?
+
+**Make sure it's really OSS.**  Choose a license that has passed
+  legal reviews and is clearly accepted as an OSS license. Choose a
+  license that is recognized as an [Open Source Software license by
+  the Open Source Initiative
+  (OSI)](http://www.opensource.org/licenses/category), a [Free
+  Software license by the Free Software Foundation
+  (FSF)](http://www.gnu.org/licenses/license-list.html#SoftwareLicenses),
+  *and* is acceptable to widely-used Linux distributions (such as
+  being a ["good" license for
+  Fedora](http://fedoraproject.org/wiki/Licensing#Software_License_List))**.**
+
+**Use a widely-used existing license.**  Choose a widely-used
+  existing license; do *not* create a new license. This eliminates
+  future incompatibility and encourages future contributions by
+  others. [Bruce Perens noted back in
+  1999](http://www.oreilly.com/catalog/opensources/book/perens.html),
+  "Do not write a new license if it is possible to use (a common
+  existing license)... The propagation of many different and
+  incompatible licenses works to the detriment of Open Source software
+  because fragments of one program cannot be used in another program
+  with an incompatible license." [Many view OSS license proliferation
+  as a
+  problem](http://news.cnet.com/Open-source-board-eyes-fewer-licenses/2100-7344_3-5578799.html);
+  [Serdar Yegulalp's 2008 "Open Source Licensing Implosion"
+  (InformationWeek)](http://www.informationweek.com/blog/main/archives/2008/08/the_open_source_2.html)
+  noted that not only are there too many OSS licenses, but that the
+  "consequences for blithely creating new ones are finally becoming
+  concrete... the vast majority of open source products out there use
+  a small handful of licenses... Now that open source is becoming
+  (gasp) a mainstream phenomenon, using one of the less-common
+  licenses or coming up with one of your own works against you more
+  often than not". As an aid, the [Open Source Initiative (OSI)
+  maintains a list of "Licenses that are popular and widely used or
+  with strong
+  communities"](http://www.opensource.org/licenses/category). Another
+  useful source is the list of [licenses accepted by the Google code
+  hosting
+  service](http://www.theregister.co.uk/2008/07/25/googlecode_bans_mpl/).
+  See the licenses listed in the FAQ question "What are the major
+  types of open source software licenses?".
+
+**Choose a GPL-compatible license.** The GNU General Public License
+  (GPL) is the most common OSS license; while you do not need to use
+  the GPL, it is often unwise to choose a license incompatible with
+  the majority of OSS. Thus, avoid releasing software under only the
+  original ("4-clause") BSD license (which has been replaced by the
+  "new" or "revised" 3-clause licence), the "Academic Free License"
+  (AFL), the now-abandoned "Common Public License" 1.0 (CPL), the
+  "Open Software License" (OSL), or the "Mozilla Public License
+  version 1.1" (MPL 1.1).
+
+**Choose a license that best meets your goals.** Choosing between
+  the various options - particularly between permissive, weakly
+  protective, and strongly protective options - is perhaps the most
+  difficult, because this selection depends on your goals, and there
+  are many opinions on which licenses are most appropriate for
+  different circumstances. A "permissive" license permits arbitrary
+  use of the program, including making proprietary versions of it. A
+  "protective" license "protects" the software from becoming
+  proprietary, and instead enforces a "share and share alike" approach
+  between parties. A "weakly-protective" license is a compromise
+  between the two, preventing the covered library from becoming
+  proprietary yet permitting it to be embedded in larger proprietary
+  works. If the goal is maximize the use of a technology or standard
+  in a variety of different applications/implementations, including
+  proprietary ones, permissive licenses may be especially useful. 
+  However, if the goal is to encourage longevity and cost savings
+  through a commonly-maintained library or application, protective
+  licenses may have some advantages, because they encourage developers
+  to contribute their improvements back into a single common
+  project. In many cases, weakly protective licenses are used for
+  common libraries, while strongly protective licenses are used for
+  applications. Common licenses for each type are:
+  -   Permissive: MIT, BSD-new, Apache 2.0
+  -   Weakly protective: LGPL (version 2 or 3)
+  -   Strongly protective: GPL (version 2 or 3)
 
 Licenses that meet all the criteria above include the [MIT
 license](http://www.opensource.org/licenses/mit-license.php), [revised
@@ -2388,7 +2391,7 @@ Some documents that may help include:
 -   [Software Release Practice
     HOWTO](http://tldp.org/HOWTO/Software-Release-Practice-HOWTO/index.html)
 -   [Recognizing and Avoiding Common Open Source Community
-    Pitfalls](http://michaeldehaan.net/2009/05/17/oss-pitfalls/)
+    Pitfalls](https://www.linux.com/news/recognizing-and-avoiding-common-open-source-community-pitfalls/)
 
 ### Q: In what form should I release open source software?
 
@@ -2411,11 +2414,9 @@ as described below:
 
 You may use existing industry OSS project hosting services such as
 [SourceForge](http://sourceforge.net/),
-[Savannah](http://savannah.gnu.org/), [Tigris](http://www.tigris.org/),
-[Google code](http://code.google.com/), [GitHub](https://github.com/),
-[Gitorious](http://gitorious.org/), [Apache Software
-Foundation](http://www.apache.org/) or [Microsoft
-CodePlex](http://www.codeplex.com/). [Wikipedia's "Comparison of OSS
+[Savannah](http://savannah.gnu.org/), [GitHub](https://github.com/), or
+[Apache Software
+Foundation](http://www.apache.org/). [Wikipedia's "Comparison of OSS
 hosting facilities"
 page](http://en.wikipedia.org/wiki/Comparison_of_open_source_software_hosting_facilities)
 may be helpful in identifying existing hosting facilities, as well as
@@ -2423,18 +2424,7 @@ some of their pros and cons. Each hosting service tends to be focused on
 particular kinds of projects, so prefer a hosting service that
 well-matches the project. Using industry OSS project hosting services
 makes it easier to collaborate with other parties outside the U.S. DoD
-or U.S. government. The [Government Services Administration (GSA) has an
-agreement with
-SourceForge](https://apps.gov/cloud/advantage/cloud/sa_details.do?BV_UseBVCookie=Yes&clid=160&catId=66).
-
-DISA's [Forge.mil](https://www.forge.mil/) is "a family of services
-provided to support the DoD's technology development community. The
-system currently enables the collaborative development and use of open
-source and DoD community source software. These initial software
-development capabilities are growing to support the full system
-life-cycle and enable continuous collaboration among all stakeholders
-including developers, testers, certifiers, operators, and users." It
-uses a variant of the software used by SourceForge.
+or U.S. government. 
 
 If the project is likely to become large, or must perform filtering for
 public release, it may be better to establish its own website. Note that
@@ -2468,7 +2458,7 @@ According to the U.S. Patent and Trademark Office (PTO):
 
 For more about trademarks, see the [U.S. Patent and Trademark Office
 (PTO) page "Trademark
-basics"](http://www.uspto.gov/trademarks/basics/index.jsp). Note:
+basics"](https://www.uspto.gov/trademarks/basics). Note:
 
 -   You don't have to register a trademark to have a trademark. If you
     claim rights to use a mark, "you may simply use the 'TM' (trademark)
@@ -2478,7 +2468,7 @@ basics"](http://www.uspto.gov/trademarks/basics/index.jsp). Note:
     for registering a trademark. You may only claim that a trademark is
     registered if it is actually registered. For more information, see
     the [U.S. Patent and Trademark Office (PTO) page "Should I register
-    my mark?"](http://www.uspto.gov/trademarks/basics/register.jsp)
+    my mark?"](https://www.uspto.gov/learning-and-resources/uspto-videos/basic-facts-should-i-register-my-mark)
 -   It can sometimes be a challenge to find a good name. Using a made-up
     word that has no Google hits is often a good start, but again, see
     the PTO site for more information.
@@ -2520,30 +2510,6 @@ to understand that GOSS is typically *not* OSS, though GOSS may be a
 stepping stone towards later OSS release. Since both terms are in use,
 the rest of this document will use the term OGOTS/GOSS.
 
-### Q: Does the U.S. government sometimes use OSS-like development processes internally?
-
-Yes. Examples of OGOTS/GOSS software include:
-
--   Ozone Widget Framework (OWF) - a presentation-tier integration
-    framework enabling widgets (light-weight web applications) to
-    interact within a user's browser, and its companion project
--   Ozone Marketplace (OMP) - provides an AppStore type of functionality
-    in which capabilities (widgets, as well as others) can be exposed in
-    a market for developers and end-users to discover.
--   Older versions of Falconview (though it is now OSS).
-
-Some systems have been set up within the government to store or
-collaboratively develop government-internal software. These include:
-
--   [Forge.mil](http://www.forge.mil); see especially
-    [software.forge.mil](http://software.forge.mil). Note that although
-    they use the Open Source model, forge.mil is NOT open source.
-    Downloading requires acceptance of their license that bans use,
-    modification, reproduction, release, performance, or display for
-    commercial or non-governmental purposes.
--   [Navy’s Software, Hardware Asset Reuse Enterprise
-    (SHARE)](https://acc.dau.mil/share)
-
 ### What is Open Technology Development (OTD)? What is its relationship to OSS?
 
 OTD is an approach to software/system development in which developers
@@ -2567,7 +2533,7 @@ Yes:
     government involvement.
 -   [Office of the Director of National Intelligence (ODNI) Government
     Open-Source Software (GOSS) “Handbook for
-    Govies”](http://mil-oss.org/resources/goss-govies_v1.7_29jun2011_released.pdf)
+    Govies”](./references/20110831_US-ODNI-Government-Open-Source-Handbook.pdf)
     includes guidance specific to OGOTS/GOSS.
 
 Other sources of information on OSS
@@ -2575,48 +2541,18 @@ Other sources of information on OSS
 
 ### Q: What additional material is available on OSS in the government or DoD?
 
-The [Free Open Source Software (FOSS) Community of Interest (COI) site
-at
-<http://dodcio.defense.gov/Home/Topics/UseofFreeOpenSourceSoftware%28FOSS%29.aspx>](http://dodcio.defense.gov/Home/Topics/UseofFreeOpenSourceSoftware%28FOSS%29.aspx)
-has relevant information, including this FAQ and:
-
--   *Clarifying Guidance Regarding Open Source Software (OSS)*
-    Memorandum by David M. Wennergren, 16 October 2009
--   *Open Technology Development (OTD): Lessons Learned & Best Practices
-    for Military Software*, OSD Report, May 2011
--   *Use of Free and Open-Source Software (FOSS) in the U.S. Department
-    of Defense*, a 2003 study by MITRE Corporation performed for DoD
-
 Other documents that you may find useful include:
 
+-   [*Code.mil*](https://code.mil): Information about Open Source Software in the DoD published by the [Defense Digital Service](https://www.dds.mil/).
 -   [*Frequently Asked Questions About Copyright and Computer Software -
     Issues affecting the U.S. Government with Special Emphasis on Open
-    Source Software*](http://www.cendi.gov/publications/index.html),
+    Source Software*](https://www.cendi.gov/working-groups/copyright-ip.shtml),
     CENDI (cendi.gov).
 -   [*Government Computer Software Acquisition and The GNU General
     Public
-    License*](https://acc.dau.mil/CommunityBrowser.aspx?id=475584&lang=en-US)
+    License*](https://softwarefreedom.org/resources/2011/government-acquisition-and-gpl.pdf)
     by B. Scott Michel (Lt. Cmdr., PhD, USN(RC)), Eben Moglen (Software
     Freedom Law Center), Mishi Choudhary (Software Freedom Law Center),
     and Dorothy Becker (Navy OGC, SPD Patent Counsel), October 1, 2011.
-
-### Q: Where do OSS developers congregate and what conferences should I go to?
-
-The DoD does not endorse any specific event or conference. That said,
-there are conferences and organizations specifically focused on OSS in
-the government or military context, at which DoD personnel have
-presented information on DoD policy and OSS. For example:
-
--   The [Military Open Source Software
-    (Mil-OSS)](http://www.mil-oss.dev/) was established to "connect and
-    empower an active community of civilian and military open source
-    software and hardware developers across the U.S.". It has hosted at
-    least three conferences: August 2009 (Atlanta, GA), August 2010
-    (Washington, DC), and August/September 2011 (Atlanta, GA).
--   The Government Open Source Conference ([GOSCON](http://goscon.org/))
-    has been held on November 2009 and August 2011 in Washington, DC.
-
-You may also find the external [Military - Open Source Software
-(MIL-OSS) DoD/IC discussion
-list](http://groups.google.com/group/mil-oss) useful.
+-   [Military - Open Source Software (MIL-OSS) DoD/IC discussion list](http://groups.google.com/group/mil-oss) 
 
