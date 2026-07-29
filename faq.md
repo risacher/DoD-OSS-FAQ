@@ -1,6 +1,6 @@
 % DoD Open Source Software FAQ
 % Office of the DoD CIO
-% 2021-12-13
+% 2026-07-28
 
 Frequently Asked Questions regarding Open Source Software (OSS) and the Department of Defense (DoD)
 ---------------------------------------------------------------------------------------------------
@@ -21,13 +21,16 @@ Defining Open Source Software (OSS)
 
 ### Q: What is open source software (OSS)?
 
-[Public Law 115-232](https://www.congress.gov/115/plaws/publ232/PLAW-115publ232.pdf) 
-defines OSS defines OSS as "software for which the human-readable source 
-code is available for use, study, re-use, modification, enhancement, and 
-re-distribution by the users of such software".  This definition is 
-essentially identical to what the DoD has been using since publication of 
-the 16 October 2009 memorandum from the DoD CIO, ["Clarifying Guidance
-Regarding Open Source Software (OSS)"](http://dodcio.defense.gov/Portals/0/Documents/FOSS/2009OSS.pdf).
+[Public Law 115-232](https://www.congress.gov/115/plaws/publ232/PLAW-115publ232.pdf)
+defines OSS as "software for which the human-readable source
+code is available for use, study, re-use, modification, enhancement, and
+re-distribution by the users of such software".  The DoD has used this same
+definition since the 16 October 2009 memorandum from the DoD CIO,
+"Clarifying Guidance Regarding Open Source Software (OSS)", and it is
+carried forward verbatim in the memorandum that superseded it, ["Software
+Development and Open Source
+Software"](https://dodcio.defense.gov/portals/0/documents/library/softwaredev-opensource.pdf)
+(DoD CIO, 24 January 2022).
 
 Careful legal review is required to determine if a given license is
 really an open source software license. The following organizations
@@ -122,40 +125,89 @@ OSS and DoD Policy
 
 The following policies apply:
 
-1.  The [Federal Source Code Policy, OMB Memo 16-21](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2016/m_16_21.pdf), 
-    establishes policy regarding consideration of acquiring custom-developed code, 
-    requiring agencies to consider the value of publishing custom code as OSS, 
-    and establishing a OSS Pilot Program to release 20% of all custom-developed 
-    code as OSS.  The DoD was later directed to implement this program by Section 
-    875 of the [National Defense Authorization Act for FY2018](https://www.congress.gov/115/plaws/publ91/PLAW-115publ91.pdf).
-2.  The DoD CIO issued a memorandum titled ["Clarifying Guidance Regarding Open
-    Source Software
-    (OSS)"](http://dodcio.defense.gov/Portals/0/Documents/FOSS/2009OSS.pdf) on 16
-    October 2009, which superseded a memo May 2003 memo from John
-    Stenbit.  An update to this guidance is in coordination as of July 2021.
-3.  The Department of Navy CIO issued a memorandum with guidance on open
-    source software on 5 Jun 2007. This memorandum only applies to Navy
-    and Marine Corps commands, but may be a useful reference for others.
-    This memo is available at
-    [http://www.doncio.navy.mil/contentview.aspx?id=312](http://www.doncio.navy.mil/contentview.aspx?id=312). The Department
-    of the Navy has also issued [SECNAVINST
-    5230.15](http://www.doncio.navy.mil/ContentView.aspx?id=998), which
+1.  The DoD CIO memorandum ["Software Development and Open Source
+    Software"](https://dodcio.defense.gov/portals/0/documents/library/softwaredev-opensource.pdf),
+    signed 24 January 2022, is the current DoD-wide policy on OSS. It
+    **supersedes** the 16 October 2009 memorandum "Clarifying Guidance
+    Regarding Open Source Software (OSS)" (which had itself superseded a
+    May 2003 memo from John Stenbit). Attachment 2 of the 2022 memorandum
+    provides detailed guidance in three areas: use of OSS, use of an open
+    source development approach, and contribution to OSS projects. Among
+    other things, it directs an "Adopt, Buy, Create" approach to software;
+    confirms that OSS meets the definition of "commercial computer
+    software" and must be given equal consideration with proprietary
+    commercial offerings; directs that non-national-security software
+    should be "open-by-default" and released under an OSS license unless
+    specific conditions apply; identifies Apache-2.0, BSD, GPL, LGPL, and
+    MIT as licenses acceptable for DoD use; and authorizes government
+    employees to contribute to OSS projects as part of their official
+    duties.
+2.  The [SHARE IT Act](https://www.congress.gov/118/plaws/publ187/PLAW-118publ187.pdf)
+    (Source code Harmonization And Reuse in Information Technology Act,
+    Public Law 118-187, 23 December 2024, codified at 44 U.S.C. 3501 note)
+    requires agencies to share custom-developed code across the federal
+    government, and requires agencies contracting for custom software
+    development to acquire rights sufficient to enable government-wide
+    access, sharing, use, and modification of that code. Note that the
+    SHARE IT Act requires *government-wide sharing*, which is not the same
+    thing as *public release* as OSS: code stored in a private repository
+    that is accessible to federal employees satisfies the Act. Classified
+    code, code developed primarily for national security systems, and code
+    of Intelligence Community elements are exempt.
+3.  The [Federal Source Code Policy, OMB Memo
+    M-16-21](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2016/m_16_21.pdf),
+    establishes policy regarding consideration of acquiring custom-developed code,
+    requires agencies to consider the value of publishing custom code as OSS,
+    and established an OSS Pilot Program to release 20% of all custom-developed
+    code as OSS.  The DoD was later directed to implement this program by Section
+    875 of the [National Defense Authorization Act for
+    FY2018](https://www.congress.gov/115/plaws/publ91/PLAW-115publ91.pdf).
+    The 2022 DoD CIO memorandum cites both as authority. (The three-year
+    pilot term established by M-16-21 has elapsed; the underlying policy
+    direction to consider and publish custom code as OSS has not.)
+4.  The Department of the Navy has issued [SECNAVINST
+    5230.15](https://www.doncio.navy.mil/ContentView.aspx?id=1897), which
     is focused on ensuring that Commercial Off The Shelf (COTS) Software
-    is supported throughout its fielded lifecycle. This SECNAVINST also
-    applies to OSS.
-4.  The Open Technology Development Roadmap was released by the office
+    is supported throughout its fielded lifecycle. This instruction only
+    applies to Navy and Marine Corps commands, but may be a useful
+    reference for others. This SECNAVINST also applies to OSS.
+5.  The Open Technology Development Roadmap was released by the office
     of the Deputy Under Secretary of Defense for Advanced Systems and
     Concepts, on 7 Jun 2006. It is available at
     [https://www.acqnotes.com/Attachments/Open%20Open%20Technology%20Development%20Roadmap%20-%20April%202006.pdf](https://www.acqnotes.com/Attachments/Open%20Open%20Technology%20Development%20Roadmap%20-%20April%202006.pdf) .
-5.  The Office of Management and Budget issued a memorandum providing
+6.  The Office of Management and Budget issued a memorandum providing
     guidance on software acquisition which specifically addressed open
     source software on 1 Jul 2004. It may be found at
     [https://georgewbush-whitehouse.archives.gov/omb/memoranda/fy04/m04-16.html](https://georgewbush-whitehouse.archives.gov/omb/memoranda/fy04/m04-16.html).
-5.  US Army Regulation 25-2, paragraph 4-6.h, provides guidance on
-    software security controls that specifically addresses open source
-    software. This regulation only applies to the US Army, but may be a
-    useful reference for others. The regulation is available at
-    [http://www.army.mil/usapa/epubs/pdf/r25_2.pdf](http://www.army.mil/usapa/epubs/pdf/r25_2.pdf) .
+7.  [US Army Regulation
+    25-2](https://armypubs.army.mil/ProductMaps/PubForm/Details.aspx?PUB_ID=1002626),
+    *Army Cybersecurity*, dated 4 April 2019, addresses open source
+    software at paragraph 4-12 ("System and services acquisition"), which
+    covers sustainment of open source components and approval of their
+    use. This regulation only applies to the US Army, but may be a useful
+    reference for others. The regulation may also be downloaded
+    [directly](https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN37506-AR_25-2-003-WEB-4.pdf),
+    though that link is version-specific and will change when the
+    regulation is revised.
+8.  [DA PAM
+    25-2-5](https://armypubs.army.mil/ProductMaps/PubForm/Details.aspx?PUB_ID=1022299),
+    *Army Cybersecurity: Software Assurance*, dated 15 September 2021,
+    provides Army procedures for software assurance that address OSS
+    directly. It uses the same definition of OSS as DoD policy (paragraph
+    2-1.b(3)), treats OSS as one of three software product types alongside
+    COTS and GOTS, and groups OSS licenses into the same permissive,
+    strongly protective, and weakly protective categories used in this FAQ
+    (paragraph 2-2.b(1)). Its glossary describes OSS as "a type of COTS
+    software", consistent with the treatment of OSS as commercial software
+    described below. Paragraph 2-1.c(2) also directs that all unclassified
+    custom-developed source code created or paid for by the Army on or
+    after August 2016 be registered at
+    [code.mil](https://code.mil/tell-us-about-your-code.html), regardless
+    of data rights or open source status. Like AR 25-2, this pamphlet
+    applies only to the Army, but may be a useful reference for others.
+    The pamphlet may also be downloaded
+    [directly](https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN36807-PAM_25-2-5-001-WEB-2.pdf),
+    though as with AR 25-2 that link is version-specific.
 
 In nearly all cases, OSS is commercial software, so the policies
 regarding commercial software continue to apply to OSS.
@@ -181,6 +233,187 @@ For commercial software, such needed fixes could be provided by a
 software vendor as part of a warranty, or in the case of OSS, by the
 government (or its contractors).
 
+### Q: What is the SHARE IT Act, and what does it require?
+
+The [Source code Harmonization And Reuse in Information Technology (SHARE
+IT) Act](https://www.congress.gov/118/plaws/publ187/PLAW-118publ187.pdf),
+Public Law 118-187, was enacted 23 December 2024 and is codified at 44
+U.S.C. 3501 note. Its purpose is to stop the federal government from
+repeatedly paying to develop software it already owns.
+
+The Act imposes four main requirements:
+
+1.  **Storage and access (section 3(a)).** Each agency must ensure that
+    its custom-developed code — along with "documentation, data models,
+    schemas, metadata, architecture designs, configuration scripts, and
+    artifacts required to develop, build, test, and deploy the code" — is
+    stored in at least one public or private repository, is accessible to
+    federal employees, and is owned by the agency.
+2.  **Rights in procurement (section 3(b)).** An agency that enters into a
+    contract for the custom development of software "shall acquire and
+    exercise rights sufficient to enable the governmentwide access to,
+    sharing of, use of, and modification of any custom-developed code
+    created in the development of such software."
+3.  **Discoverability (section 3(c)).** Agencies must make metadata about
+    their custom-developed code publicly accessible. Note that this is
+    metadata about the code, not the code itself.
+4.  **Accountability (section 3(d)).** Each agency CIO, in consultation
+    with the agency's Chief Acquisition Officer and the Administrator of
+    the Office of Electronic Government, must issue an agency-wide policy
+    implementing the Act, including procedures for determining exemptions
+    and for federal employees to gain access to repositories. Agencies
+    report exemptions annually, and the Act directs OMB to issue
+    government-wide best practices and the Federal Acquisition Regulation
+    to be revised as necessary to implement it.
+
+The SHARE IT Act complements, rather than replaces, the Federal Source
+Code Policy (OMB M-16-21) and Section 875 of the FY2018 NDAA. It also
+complements the DoD CIO's 2022 memorandum, which independently directs
+that non-national-security software should be open-by-default.
+
+### Q: Does the SHARE IT Act require the government to release software as open source software?
+
+No. This is the most common misreading of the Act, and the distinction
+matters.
+
+The SHARE IT Act requires *government-wide sharing*. Section 3(a)(1)
+requires storage in "not less than 1 public repository **or** private
+repository", and section 3(a)(2) requires that the code be accessible to
+federal employees. A private repository that federal employees can reach
+fully satisfies the Act. Public release under an open source license is
+one way to comply, and often a good one, but it is not what the statute
+compels.
+
+Section 6 of the Act reinforces this: nothing in it "may be construed as
+requiring the disclosure of information or records that are exempt from
+public disclosure" under the Freedom of Information Act.
+
+Separately, the DoD CIO memorandum "Software Development and Open Source
+Software" (24 January 2022) *does* direct that software developed for
+systems other than National Security Systems "should be open-by-default
+and released (under an open source software license)" unless specific
+conditions apply. So a DoD program may well have an obligation to
+consider public release — but that obligation comes from DoD policy, not
+from the SHARE IT Act.
+
+### Q: What software does the SHARE IT Act apply to?
+
+The Act applies to "custom-developed code", which section 2(3) defines as
+source code that is either produced in the performance of a contract with
+an agency or otherwise exclusively funded by the federal government, or
+developed by a federal employee as part of the employee's official
+duties.
+
+The definition expressly **includes** source code, or segregable portions
+of source code, "for which the Federal Government *could* obtain
+unlimited rights under part 27 of the Federal Acquisition Regulation or
+any relevant supplemental acquisition regulations of an agency" (emphasis
+added). Note that this reaches code for which the government could have
+obtained unlimited rights, which is broader than the code for which it
+actually did.
+
+The definition expressly **excludes**:
+
+-   source code that is "solely exploratory or disposable in nature",
+    such as code written by a developer experimenting with a new language
+    or library; and
+-   commercial computer software, commercially available off-the-shelf
+    software, and configuration scripts for such software.
+
+Because nearly all OSS is commercial computer software (see the questions
+above), pre-existing OSS that the Department merely uses is outside the
+scope of the Act. The Act is concerned with the custom code the
+government pays to have written.
+
+The Act applies prospectively. Under section 7, it reaches custom-developed
+code developed or revised by a federal employee on or after 21 June 2025
+(180 days after enactment), or developed under a contract awarded pursuant
+to a solicitation issued on or after that date.
+
+### Q: What is exempt from the SHARE IT Act?
+
+Section 4 provides two kinds of exemption.
+
+**Automatic exemptions (section 4(a)(1))** apply by operation of law and
+require no determination:
+
+-   classified source code;
+-   source code developed primarily for use in a national security system,
+    as defined in [40 U.S.C.
+    11103](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title40-section11103&num=0&edition=prelim);
+-   source code developed by an agency, or part of an agency, that is an
+    element of the intelligence community, as defined in 50 U.S.C.
+    3003(4); and
+-   source code whose disclosure is exempt under the Freedom of
+    Information Act.
+
+**Discretionary exemptions (section 4(a)(2))** may be granted by the
+agency CIO, in consultation with the Federal Privacy Council, where
+either the agency is prohibited from providing the source code under
+another federal law or regulation — the Act specifically names the Export
+Administration Regulations, the International Traffic in Arms
+Regulations, TSA rules on Sensitive Security Information, and laws
+governing classified information not already covered — or where sharing
+or public accessibility "would create an identifiable risk to the privacy
+of an individual."
+
+Agencies must report exemptions annually with a narrative justification
+for each, and those reports go to Congress.
+
+For the DoD, the national security system and classified exemptions carve
+out a substantial share of the Department's software. But note that
+"national security system" is a defined term in 40 U.S.C. 11103, not a
+synonym for "military" or "operational" — a great deal of DoD
+custom-developed software is not an NSS and is therefore squarely within
+the Act. Do not assume an exemption applies; the determination belongs to
+the Component CIO under the procedures required by section 3(d)(1)(A)(ii)(I).
+
+### Q: What does the SHARE IT Act change for software acquisition?
+
+Section 3(b) is the provision with the most direct effect on contracting.
+It requires that an agency contracting for custom software development
+"acquire **and exercise** rights sufficient to enable the governmentwide
+access to, sharing of, use of, and modification of any custom-developed
+code created in the development of such software."
+
+Two points are worth drawing out. First, the obligation is not merely to
+acquire rights but to exercise them — rights that are acquired and then
+left unused do not satisfy the provision. Second, the standard is
+government-wide, not agency-specific: rights sufficient for the
+contracting agency alone are not enough.
+
+In DoD practice, "unlimited rights" under DFARS 252.227-7014 already
+exceed this standard, and Government Purpose Rights may or may not,
+depending on the terms negotiated. Programs acquiring non-commercial
+software should already be planning to take delivery of source code under
+10 U.S.C. 2322a and the 2022 DoD CIO memorandum; section 3(b) adds a
+statutory floor beneath that planning. Section 8 of the Act directs that
+the Federal Acquisition Regulation be revised as necessary to implement
+these requirements.
+
+### Q: How is the DoD implementing the SHARE IT Act?
+
+Implementing guidance is in development. Because section 3(d)(1) requires
+an agency-wide policy issued by the CIO, the authoritative answer for any
+particular program will come from that policy and from Component CIO
+direction beneath it, and readers should check for current guidance rather
+than relying on this FAQ for implementation detail.
+
+In general terms, the Department's approach is expected to begin with
+visibility: establishing an enterprise registry of custom-developed
+software projects, so that the Department knows what software it has
+already paid to develop before it pays to develop it again. Related
+themes include validation of releasability determinations by Component
+CIOs consistent with existing policy on distribution statements and
+controlled unclassified information, designated repositories for
+components that do not already have one, and structuring software along
+modular open systems lines so that reusable components can be separated
+from those carrying dissemination restrictions.
+
+Note that a reporting obligation already exists independent of the SHARE
+IT Act: under the 2022 DoD CIO memorandum, whenever a DoD Component first
+releases a software codebase as OSS or for government-wide re-use, it must
+report that to its Component CIO.
 
 General information about OSS
 -----------------------------
@@ -197,7 +430,7 @@ licensed to the public, is commercial software. If it is already
 available to the public and is used unchanged, it is usually COTS.
 
 U.S. law governing federal procurement [U.S. Code Title 41, Section
-103](http://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title41-section103&num=0&edition=prelim)
+103](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title41-section103&num=0&edition=prelim)
 defines "commercial product" as including "a product, other than real
 property, that— (A) is of a type customarily used by the general
 public or by nongovernmental entities for purposes other than
@@ -208,7 +441,7 @@ non-governmental use, software licensed (or offered for license) to
 the public is a commercial product for procurement purposes.
 
 Similarly,
-[U.S. Code Title 41, Section 104](http://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title41-section104&num=0&edition=prelim) defines the term
+[U.S. Code Title 41, Section 104](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title41-section104&num=0&edition=prelim) defines the term
 "Commercially available off-the-shelf (COTS) item"; software is COTS if
 it is (a) a "commercial product", (b) sold in substantial quantities in the
 commercial marketplace, and (c) is offered to the Federal Government, without
@@ -223,7 +456,7 @@ Acquisition Regulation Supplement
 (DFARS)](https://www.acquisition.gov/dfarspgi).
 [40 CFR, Section 252.227-7014 Rights in Noncommercial Computer
 Software and Noncommercial Computer Software
-Documentation](https://www.acq.osd.mil/dpap/dars/dfars/html/current/252227.htm#252.227-7014)
+Documentation](https://www.acquisition.gov/dfars/252.227-7014-rights-noncommercial-computer-software-and-noncommercial-computer-software-documentation.)
 defines "Commercial computer software" as "software developed or
 regularly used for non-governmental purposes which: (i) Has been sold,
 leased, or licensed to the public; (ii) Has been offered for sale,
@@ -240,15 +473,23 @@ software:
 -   OSS is increasingly commercially developed and supported.
 -   OSS projects typically seek financial gain in the form of
     improvements.
-    [U.S. Code Title 17, section 101](http://uscode.house.gov/view.xhtml?req=%28title:17%20section:101%20edition:prelim%29%20OR%20%28granuleid:USC-prelim-title17-section101%29&f=treesort&edition=prelim&num=0&jumpTo=true) (part of copyright law) explicitly
+    [U.S. Code Title 17, section 101](https://uscode.house.gov/view.xhtml?req=%28title:17%20section:101%20edition:prelim%29%20OR%20%28granuleid:USC-prelim-title17-section101%29&f=treesort&edition=prelim&num=0&jumpTo=true) (part of copyright law) explicitly
     defines the term “financial gain” as including “receipt, or
     expectation of receipt, of anything of value, including the receipt
     of other copyrighted works.”
 -   OSS licenses and projects clearly approve of commercial support
 
-This is confirmed by "Clarifying Guidance Regarding Open Source Software
-(OSS)" (2009) and the Department of the Navy "Open Source Software
-Guidance" (signed June 5, 2007). For more discussion on this topic, see
+This is confirmed by DoD policy. The 2022 DoD CIO memorandum "Software
+Development and Open Source Software", Attachment 2, paragraph 2.A(1),
+states that "OSS meets the definition of 'commercial computer software'
+and therefore, shall be given equal consideration with proprietary
+commercial offerings, in accordance with Section 2377 of Title 10,
+U.S.C." (now [10 U.S.C.
+3453](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title10-section3453&num=0&edition=prelim)),
+citing also FAR 2.101(b), 12.000, and 12.101, and DFARS 212.212, 208.74,
+227.7202, and 252.227-7014(a)(1). The same conclusion was reached by the
+superseded 2009 memorandum "Clarifying Guidance Regarding Open Source
+Software (OSS)". For more discussion on this topic, see
 the article [Open Source Software Is
 Commercial](https://www.csiac.org/journal-article/open-source-software-is-commercial/).
 
@@ -272,10 +513,11 @@ regarding commercial software. Failing to understand that open source
 software is commercial software would result in failing to follow the
 laws, regulations, policies, and so on regarding commercial software.
 
-In particular, U.S. law ([10 USC
-2377](http://uscode.house.gov/view.xhtml?req=%28title:10%20section:2377%20edition:prelim%29%20OR%20%28granuleid:USC-prelim-title10-section2377%29&f=treesort&edition=prelim&num=0&jumpTo=true))
+In particular, U.S. law ([10 U.S.C.
+3453](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title10-section3453&num=0&edition=prelim),
+formerly 10 U.S.C. 2377, renumbered by Public Law 116-283 § 1821(a)(2))
 requires a preference for commercial products for procurement of
-supplies or services. 10 USC 2377 requires that the head of an agency
+supplies or services. 10 U.S.C. 3453 requires that the head of an agency
 shall ensure that procurement officials in that agency, to the maximum
 extent practicable:
 
@@ -330,7 +572,7 @@ Do not mistakenly use the term "non-commercial software" as a synonym
 for "open source software". As noted above, in nearly all cases, open
 source software is considered "commercial software" by U.S. law, the
 FAR, and the DFARS.  [DFARS
-252.227-7014](http://www.acq.osd.mil/dpap/dars/dfars/html/current/252227.htm#252.227-7014)
+252.227-7014](https://www.acquisition.gov/dfars/252.227-7014-rights-noncommercial-computer-software-and-noncommercial-computer-software-documentation.)
 specifically defines "commercial computer software" in a way that
 includes nearly all OSS, and defines "noncommercial computer software”
 as software that does *not* qualify as "commercial computer
@@ -404,7 +646,7 @@ some speculate that this is one reason why OSS has become so common.
 
 No, OSS is developed by a wide variety of software developers, and the
 average developer is quite experienced. A [Boston Consulting
-Group](http://flosshub.org/sites/flosshub.org/files/lakhaniwolf.pdf) study found
+Group](https://web.archive.org/web/20241214160517/https://flosshub.org/sites/flosshub.org/files/lakhaniwolf.pdf) study found
 that the average age of OSS developers was 30 years old, the majority
 had training in information technology and/or computer science, and on
 average had 11.8 years of computer programming experience.
@@ -433,28 +675,47 @@ replaceable components. Indeed, according to
 [Walli](http://www.usenix.org/events/usenix05/tech/slides/walli.pdf),
 "Standards exist to encourage & enable multiple implementations". Many
 governments, not just the U.S., view open systems as critically
-necessary. DoD Directive 5000.1 states that open systems “shall be
-employed, where feasible”, and the European Commission identifies open
-standards as a major policy thrust.
+necessary. [10 U.S.C.
+4401](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title10-section4401&num=0&edition=prelim)
+(formerly 10 U.S.C. 2446a) requires that a major defense acquisition
+program receiving Milestone A or Milestone B approval after 1 January
+2019 “shall be designed and developed, to the maximum extent practicable,
+with a modular open system approach to enable incremental development and
+enhance competition, innovation, and interoperability”, and provides that
+other defense acquisition programs shall also be so designed and
+developed. DoD Directive 5000.01 treats modular and open design as a
+means of preserving competition, noting at paragraph 1.2.e(2) that
+“planning and contracting for appropriate amounts of data rights, and
+incorporating a modular and open design to enable upgrades, technology
+refreshes, and future re-competes may enhance competition throughout the
+life cycle”. The European Commission identifies open standards as a major
+policy thrust.
 
 There are many definitions for the term "open standard". Fundamentally,
 a standard is a specification, so an "open standard" is a specification
-that is "open". Public definitions include those of the [European
+that is "open". Public definitions include the [European
 Interoperability Framework
-(EIF)](http://europa.eu.int/idabc/en/document/3761), the [Digistan
-definition of open
-standard](http://www.digistan.org/open-standard:definition) (based on
-the EIF), and [Bruce Perens’ “Open Standards: Principles and
-Practice”](http://perens.com/OpenStandards/Definition.html).
+(EIF)](https://interoperable-europe.ec.europa.eu/collection/iopeu-monitoring/european-interoperability-framework-eif),
+maintained by the European Commission, and the [Free Software Foundation
+Europe definition of Open
+Standards](https://fsfe.org/freesoftware/standards/def.en.html). [Bruce
+Perens’ “Open Standards: Principles and
+Practice”](https://web.archive.org/web/20130923231730/http://perens.com/OpenStandards/Definition.html)
+is another widely-cited definition; it is linked here through the Internet
+Archive, as Perens’ site is no longer online.
 
-In the DoD, the [GIG Technical Guidance Federation ](https://gtg.csd.disa.mil/) is a useful
-resource for identifying recommended standards (which tend to be open
-standards). The GTG-F is a collection of web-based applications
-supporting the continuing evolution of the Department of Defense (DoD)
-Information Technology Standards. The DDR&E, Advanced Capabilities
-[Modular Open Systems Approach web
-page](https://ac.cto.mil/mosa/) also provides some useful
-background.
+In the DoD, [Joint Assessments and Standards Management
+(JASM)](https://jasm.apps.mil/) is a useful resource for identifying
+recommended standards (which tend to be open standards). JASM is a
+collection of web-based applications supporting the continuing evolution
+of Department of Defense (DoD) Information Technology Standards, and
+hosts the DoD Information Technology Standards Registry (DISR). JASM
+replaces the former GIG Technical Guidance Federation (GTG-F). Note that
+JASM requires DoD PKI authentication and is not accessible to the general
+public. The [Modular Open Systems Approach web
+page](https://www.cto.mil/sea/mosa/), maintained by Systems Engineering
+and Architecture under Research and Engineering, also provides some
+useful background.
 
 Many DoD capabilities are accessible via web browsers using open
 standards such as TCP/IP, HTTP, and HTML; in such cases, it is
@@ -508,9 +769,10 @@ software, they are complementary and can work well together.
 
 ### Q: How does open source software relate to the Buy American Act?
 
-As noted by the 16 October 2009 policy memorandum from the DoD CIO, in
-almost all cases OSS is a commercial item as defined by US Law (Title
-41) and regulation (the FAR).
+As noted by the 24 January 2022 policy memorandum from the DoD CIO,
+"Software Development and Open Source Software", in almost all cases OSS
+is a commercial product as defined by US Law (Title 41) and regulation
+(the FAR).
 
 The Buy American Act does not apply to information technology that is a
 commercial item, so there is usually no problem for OSS. As stated in
@@ -553,7 +815,7 @@ Yes, in general. For advice about a *specific* situation, however,
 consult with legal counsel.
 
 The [U.S. Court of Appeals for the Federal Circuit's 2008 ruling on
-Jacobsen v. Katzer](http://www.cafc.uscourts.gov/opinions/08-1001.pdf)
+Jacobsen v. Katzer](https://cafc.uscourts.gov/opinions-orders/08-1001.pdf)
 made it clear that OSS licenses are enforceable, even if money is not
 exchanged.  It noted that a copyright holder may dedicate a "certain
 work to free public use and yet enforce an 'open source' copyright
@@ -577,9 +839,12 @@ relief." In short, it determined that the OSS license at issue in the
 case (the Artistic license) was indeed an enforceable license.
 
 In 2017, the United States District Court for the Northern District of
-California, in Artifex Software, Inc. v. Hancom, Inc., issued a
-ruling confirming the enforceability of the GNU General Public
-License. The ruling was a denial of a motion for summary judgement,
+California, in Artifex Software, Inc. v. Hancom, Inc., No. 16-cv-06982
+(N.D. Cal.), issued a ruling confirming the enforceability of the GNU
+General Public License. The court treated the GPL as an enforceable
+*contract*, in addition to a copyright license, and held that the
+absence of a monetary licensing fee did not preclude a claim for
+damages. The ruling was a denial of a motion for summary judgement,
 and the parties ultimately settled the claim out-of-court.
 
 In 2015, a series of decisions regarding the GNU General Public
@@ -594,22 +859,42 @@ regarding the GPLv2 were decided.  The cases are too complicated to
 summarize here, other than to say that the GPLv2 was clearly regarded
 as enforceable by the courts.
 
+A more recent case, Software Freedom Conservancy, Inc. v. Vizio, Inc.
+(Superior Court of California, County of Orange, filed 2021), raises a
+distinct question: whether a *recipient* of OSS, and not only the
+copyright holder, may enforce the license. The Software Freedom
+Conservancy sued as a purchaser of Vizio televisions rather than as a
+copyright holder, arguing that GPLv2 and LGPLv2.1 create contractual
+obligations enforceable by recipients of the software as third-party
+beneficiaries. In December 2023 the court denied Vizio's motion for
+summary judgment, holding that the breach of contract claim was not
+preempted by the Copyright Act. In December 2025 the court granted
+summary adjudication to Vizio on a separate question, holding that
+GPLv2 and LGPLv2.1 do not require a distributor to enable
+reinstallation of modified software onto the original device (an
+obligation that GPLv3 addresses expressly). As of this writing the
+third-party beneficiary question has not been finally resolved, and
+trial is scheduled for August 2026. Should that theory ultimately
+succeed, its practical significance would be considerable, since it
+would mean that recipients of OSS, not merely copyright holders, can
+enforce license terms.
+
 ["Enforcing the GNU GPL" by Eben
 Moglen](http://www.gnu.org/philosophy/enforcing-gpl.html) is a brief
 essay that argues why the GNU General Public License (GPL),
 specifically, is enforceable. U.S. courts have determined that the GPL
 does not violate anti-trust laws. In [Wallace vs.
-FSF](http://sco.tuxrocks.com/Docs/Wallace_v_FSF/Wallace_v_FSF-41.pdf),
+FSF](https://web.archive.org/web/20241203121706/http://sco.tuxrocks.com/Docs/Wallace_v_FSF/Wallace_v_FSF-41.pdf),
 Judge Daniel Tinder stated that "the GPL encourages, rather than
 discourages, free competition and the distribution of computer operating
 systems..." and found no anti-trust issues with the GPL. Similarly, in
 [Wallace v. IBM, Red Hat, and
-Novell](http://www.internetcases.com/library/cases/2006-11-09_wallace_v_ibm.pdf),
-the U.S. Court of Appeals for the Seventh Circuit found in November 2006
-that the GNU General Public License (GPL) "and open-source software have
-nothing to fear from the antitrust laws". [German courts have enforced
+Novell](https://www.internetlibrary.com/pdf/Wallace-IBM-7th-Cir.pdf),
+467 F.3d 1104 (7th Cir. 2006), the U.S. Court of Appeals for the Seventh
+Circuit found in November 2006 that the GNU General Public License (GPL)
+"and open-source software have nothing to fear from the antitrust laws". [German courts have enforced
 the
-GPL](http://www.wilmerhale.com/publications/whPubsDetail.aspx?publication=346).
+GPL](https://web.archive.org/web/20160506005835/https://www.wilmerhale.com/publications/whPubsDetail.aspx?publication=346).
 
 ### Q: What are the major types of open source software licenses?
 
@@ -790,7 +1075,7 @@ as well).
 In addition, a third party who breaches a software license (including
 for OSS) granted by the government risks losing rights they would
 normally have due to the "doctrine of unclean hands". The [doctrine of
-unclean hands](http://dictionary.law.com/definition.asp?selected=2182),
+unclean hands](https://www.law.cornell.edu/wex/unclean_hands),
 per law.com, is "a legal doctrine which is a defense to a complaint,
 which states that a party who is asking for a judgment cannot have the
 help of the court if he/she has done anything unethical in relation to
@@ -1182,7 +1467,7 @@ If you are looking for an application that has wide use, one of the
 various lists of "open source alternatives" may help. These include:
 
 -   [Open Source Alternatives (Ben Balter et
-    al.)](https://ben.balter.com/open-source-alternatives/)
+    al.)](https://web.archive.org/web/20241214160516/https://ben.balter.com/open-source-alternatives/)
 -   [Open Source as Alternative](https://www.osalt.com/)
 
 If you are looking for smaller pieces of code to reuse, search engines
@@ -1408,7 +1693,7 @@ Congress will subsequently recognize a moral obligation to pay for the
 benefits conferred.
 
 Part of the ADA, Pub.L. 97-258, 96 Stat. 923, is in
-[31 U.S.C. § 1342, Limitation on voluntary services](http://uscode.house.gov/view.xhtml?req=%28title:31%20section:1342%20edition:prelim%29%20OR%20%28granuleid:USC-prelim-title31-section1342%29&f=treesort&edition=prelim&num=0&jumpTo=true). This statute says
+[31 U.S.C. § 1342, Limitation on voluntary services](https://uscode.house.gov/view.xhtml?req=%28title:31%20section:1342%20edition:prelim%29%20OR%20%28granuleid:USC-prelim-title31-section1342%29&f=treesort&edition=prelim&num=0&jumpTo=true). This statute says
 that, “An officer or employee of the United States Government or of the
 District of Columbia government may not accept voluntary services for
 either government or employ personal services exceeding that authorized
@@ -1492,7 +1777,7 @@ use:
 -   [OpenSource Maturity Model
     (OMM)](https://en.wikipedia.org/wiki/OpenSource_Maturity_Model)
 -   [Capgemini's Open Source Maturity Model
-    (OSMM)](https://www.capgemini.com/wp-content/uploads/2017/07/the_value_of_open_source_software_is_undeniable-effectively_securing_and_managing_it_remains_a_challenge.pdf)
+    (OSMM)](https://web.archive.org/web/20240318180826/https://www.capgemini.com/wp-content/uploads/2017/07/the_value_of_open_source_software_is_undeniable-effectively_securing_and_managing_it_remains_a_challenge.pdf)
 -   [Top Tips For Selecting Open Source
     Software](http://www.oss-watch.ac.uk/resources/tips.xml)
 -   [QSOS](http://www.qsos.org/)
@@ -1553,15 +1838,26 @@ cannot patch your servers.
 ### Q: Am I required to have commercial support for OSS?
 
 No, DoD policy does not require you to have commercial support for OSS,
-but you must have *some* plan for support. The 2009 DoD CIO memo on open
-source software says, in attachment 2, 2(d), "The use of any software
-without appropriate maintenance and support presents an information
-assurance risk. Before approving the use of software (including OSS),
-system/program managers, and ultimately Designated Approving Authorities
-(DAAs), must ensure that the plan for software support (e.g., commercial
-or Government program office support) is adequate for mission need."
-Note that Government program office support is specifically identified
-as a possibly-appropriate approach.
+but you must have *some* plan for support. The 2022 DoD CIO memorandum
+"Software Development and Open Source Software" says, in Attachment 2,
+paragraph 2.F, that "OSS components of DoD systems require product
+support and sustainment planning as much as proprietary components. OSS
+components should be included in the Life Cycle Product Support Strategy
+(PSS), as described in DoDI 5000.87... For OSS, this strategy should
+address the ongoing balance between development contractor support,
+organic contractor logistics support, and support of the OSS community."
+Paragraph 2.C(1) likewise identifies "commercial or in-house support for
+the OSS component" as alternative risk mitigations. Note that organic
+and in-house government support are specifically identified as
+possibly-appropriate approaches.
+
+The superseded 2009 memo stated the same principle in different terms
+(attachment 2, 2(d)): "The use of any software without appropriate
+maintenance and support presents an information assurance risk. Before
+approving the use of software (including OSS), system/program managers,
+and ultimately Designated Approving Authorities (DAAs), must ensure that
+the plan for software support (e.g., commercial or Government program
+office support) is adequate for mission need."
 
 As noted in the article [Open Source memo doesn't mandate a support
 vendor (by David Perera, FierceGovernmentIT, May 23,
@@ -1591,6 +1887,40 @@ choose to use commercial support, and in many cases that is the best
 approach. However, using a support vendor is not the only approach or
 the best approach in all cases; system/program managers and DAAs must
 look at the specific situation to make a determination.
+
+**Navy and Marine Corps commands should note an additional requirement.**
+The answer above describes DoD-wide policy. [SECNAVINST
+5230.15](https://www.doncio.navy.mil/ContentView.aspx?id=1897) establishes
+as Department of the Navy policy that "all COTS software in use across the
+Department shall be vendor supported", and paragraph 4.c applies that
+policy to OSS: "This policy is applicable to all Open Source Software
+(OSS) applications and tools licensed to the general public as well as to
+the Federal Government. OSS shall be treated as COTS."
+
+For DON commands, this changes the default. Organic support remains
+permissible — the instruction states that OSS support may be acquired from
+within the Department of the Navy or from a third party provider — but an
+OSS application that is not acquired under commercial vendor support
+requires a *waiver*, which must be granted by the appropriate DON Deputy
+CIO (Navy or Marine Corps). Waiver requests are submitted under paragraph
+9 of the instruction; waivers for joint programs and systems are approved
+only by the DON CIO, and waiver requests, approvals, and rejections are
+tracked in DADMS/DITPR-DON. A DON program intending to sustain OSS with
+in-house staff should therefore plan for the waiver as part of its support
+planning, rather than assuming that a support plan alone is sufficient.
+
+**Army commands should note a different additional requirement.** [AR
+25-2](https://armypubs.army.mil/ProductMaps/PubForm/Details.aspx?PUB_ID=1002626),
+*Army Cybersecurity*, provides at paragraph 4-12.a(4) that "in the case of
+open source or custom software, a qualified DOD software sustainment
+organization, such as the software centers under AMC, or vetted government
+contractor vendor must be engaged to properly maintain the open source
+components." As with the Navy, this does not require *commercial* support
+— a government sustainment organization satisfies it — but it does mean
+that informal or ad hoc self-support is not sufficient for Army systems.
+AR 25-2 further provides, at paragraph 4-12.a(5), that "use of open source
+software must be approved by the AO with purview over the system or
+product, when the risk is above low."
 
 ### Q: How do GOTS, Proprietary COTS, and OSS COTS compare?
 
@@ -1755,7 +2085,7 @@ their contract. This greatly reduces contractors' risks, enabling them
 to get work done (given this complex environment). They can obtain this
 by receiving certain authorization clauses in their contracts. [FAR
 52.227-1 (Authorization and
-Consent)](http://www.arnet.gov/far/current/html/52_227.html), as
+Consent)](https://www.acquisition.gov/far/52.227-1), as
 prescribed by [FAR
 27.201-2(a)(1)](https://www.acquisition.gov/far/52.227-1),
 inserts the clause that the "Government authorizes and consents to all
@@ -1767,9 +2097,9 @@ patent/copyright infrigement in reasonable written detail. Specific
 patents can also be authorized using clause FAR 52.227-5 or via listed
 exceptions of FAR 52.227-3. See also [DFARS subpart 227.70--infringement
 claims, licenses, and
-assignments](https://www.acq.osd.mil/dpap/dars/dfars/html/current/227_70.htm)
+assignments](https://www.acquisition.gov/dfars/part-227-patents-data-and-copyrights#227_71)
 and
-[28 USC 1498](http://uscode.house.gov/view.xhtml?req=%28title:28%20section:1498%20edition:prelim%29%20OR%20%28granuleid:USC-prelim-title28-section1498%29&f=treesort&edition=prelim&num=0&jumpTo=true).
+[28 USC 1498](https://uscode.house.gov/view.xhtml?req=%28title:28%20section:1498%20edition:prelim%29%20OR%20%28granuleid:USC-prelim-title28-section1498%29&f=treesort&edition=prelim&num=0&jumpTo=true).
 
 As noted in [FAR
 27.201-1](https://www.acquisition.gov/far/27.201-1),
@@ -1866,7 +2196,7 @@ examples to list; a few examples are:
     Transparent access to distributed resources ([this NASA Jet
     Propulsion Laboratory (JPL) project became a top level open source
     Apache Software Foundation project in
-    2011](https://www.developer.com/open-source/nasa-middleware-for-metadata-becomes-top-level-apache-project/))
+    2011](https://web.archive.org/web/20240926225157/https://www.developer.com/open-source/nasa-middleware-for-metadata-becomes-top-level-apache-project/))
 -   BSD TCP/IP suite - Provided the basis of the Internet
 -   [Geographic Resources Analysis Support System
     (GRASS)](http://grass.osgeo.org/) - Geographic Information System
@@ -1999,7 +2329,7 @@ official duties, it *can* be protected by copyright in other countries,
 but note that these can only be enforced outside the US. Also, there are
 rare exceptions for NIST and the US Postal Service employees where a US
 copyright can be obtained (see [CENDI's Frequently Asked Questions About
-Copyright](https://www.cendi.gov/working-groups/copyright-ip.shtml)).
+Copyright](https://cendi.gov/pdf/FAQ_Copyright_30jan18.pdf)).
 
 Government employees may also modify existing open source software. If
 some portion of the software is protected by copyright, then the
@@ -2200,7 +2530,7 @@ also reproduce these markings."
 
 In most cases, yes. U.S. law governing federal procurement [U.S. Code
 Title 41, Chapter 7, Section
-103](http://uscode.house.gov/view.xhtml?req=%28title:41%20section:103%20edition:prelim%29%20OR%20%28granuleid:USC-prelim-title41-section103%29&f=treesort&edition=prelim&num=0&jumpTo=true)
+103](https://uscode.house.gov/view.xhtml?req=%28title:41%20section:103%20edition:prelim%29%20OR%20%28granuleid:USC-prelim-title41-section103%29&f=treesort&edition=prelim&num=0&jumpTo=true)
 defines "commercial product" as "a product, other than real property,
 that- (A) is of a type customarily used by the general public or by
 nongovernmental entities for purposes other than governmental
@@ -2273,7 +2603,7 @@ guidelines:
   because fragments of one program cannot be used in another program
   with an incompatible license." [Many view OSS license proliferation
   as a
-  problem](http://news.cnet.com/Open-source-board-eyes-fewer-licenses/2100-7344_3-5578799.html);
+  problem](https://web.archive.org/web/20150424054435/http://news.cnet.com/Open-source-board-eyes-fewer-licenses/2100-7344_3-5578799.html);
   [Serdar Yegulalp's 2008 "Open Source Licensing Implosion"
   (InformationWeek)](http://www.informationweek.com/blog/main/archives/2008/08/the_open_source_2.html)
   noted that not only are there too many OSS licenses, but that the
@@ -2387,9 +2717,9 @@ Some documents that may help include:
     for Military
     Software](http://dodcio.defense.gov/Portals/0/Documents/FOSS/OTD-lessons-learned-military-signed.pdf)
 -   [Free Software Project Management
-    HOWTO](http://tldp.org/HOWTO/Software-Proj-Mgmt-HOWTO/index.html)
+    HOWTO](https://tldp.org/HOWTO/Software-Proj-Mgmt-HOWTO/index.html)
 -   [Software Release Practice
-    HOWTO](http://tldp.org/HOWTO/Software-Release-Practice-HOWTO/index.html)
+    HOWTO](https://tldp.org/HOWTO/Software-Release-Practice-HOWTO/index.html)
 -   [Recognizing and Avoiding Common Open Source Community
     Pitfalls](https://www.linux.com/news/recognizing-and-avoiding-common-open-source-community-pitfalls/)
 
@@ -2408,7 +2738,7 @@ as described below:
 -   [GNU Coding Standards, especially on the release
     process](http://www.gnu.org/prep/standards/html_node/Managing-Releases.html)
 -   [Software Release Practice
-    HOWTO](http://en.tldp.org/HOWTO/Software-Release-Practice-HOWTO/)
+    HOWTO](https://tldp.org/HOWTO/Software-Release-Practice-HOWTO/)
 
 ### Q: Where can I release open source software that are new projects to the public?
 
@@ -2468,7 +2798,7 @@ basics"](https://www.uspto.gov/trademarks/basics). Note:
     for registering a trademark. You may only claim that a trademark is
     registered if it is actually registered. For more information, see
     the [U.S. Patent and Trademark Office (PTO) page "Should I register
-    my mark?"](https://www.uspto.gov/learning-and-resources/uspto-videos/basic-facts-should-i-register-my-mark)
+    my mark?"](https://www.uspto.gov/trademarks/basics)
 -   It can sometimes be a challenge to find a good name. Using a made-up
     word that has no Google hits is often a good start, but again, see
     the PTO site for more information.
@@ -2543,10 +2873,10 @@ Other sources of information on OSS
 
 Other documents that you may find useful include:
 
--   [*Code.mil*](https://code.mil): Information about Open Source Software in the DoD published by the [Defense Digital Service](https://www.dds.mil/).
+-   [*Code.mil*](https://code.mil): Information about Open Source Software in the DoD.
 -   [*Frequently Asked Questions About Copyright and Computer Software -
     Issues affecting the U.S. Government with Special Emphasis on Open
-    Source Software*](https://www.cendi.gov/working-groups/copyright-ip.shtml),
+    Source Software*](https://cendi.gov/pdf/FAQ_Copyright_30jan18.pdf),
     CENDI (cendi.gov).
 -   [*Government Computer Software Acquisition and The GNU General
     Public
