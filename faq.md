@@ -1,18 +1,19 @@
-% DoD Open Source Software FAQ
-% Office of the DoD CIO
+% DoW Open Source Software FAQ
+% Office of the DoW CIO
 % 2026-07-28
 
-Frequently Asked Questions regarding Open Source Software (OSS) and the Department of Defense (DoD)
----------------------------------------------------------------------------------------------------
+Frequently Asked Questions regarding Open Source Software (OSS) and the Department of War (DoW)
+-----------------------------------------------------------------------------------------------
 
 This page is an educational resource for government employees and
 government contractors to understand the policies and legal issues
-relating to the use of open source software (OSS) in the United States Department of
-Defense (DoD). The information on this page does not constitute legal
-advice and any legal questions relating to specific situations should be
-referred to legal counsel. References to specific products or
-organizations are for information only, and do not constitute an
-endorsement of the product/company.
+relating to the use of open source software (OSS) in the United States
+Department of War (DoW), also known as the Department of Defense (DoD).
+The information on this page does not constitute legal advice and any
+legal questions relating to specific situations should be referred to
+legal counsel. References to specific products or organizations are for
+information only, and do not constitute an endorsement of the
+product/company.
 
 
 
@@ -24,7 +25,7 @@ Defining Open Source Software (OSS)
 [Public Law 115-232](https://www.congress.gov/115/plaws/publ232/PLAW-115publ232.pdf)
 defines OSS as "software for which the human-readable source
 code is available for use, study, re-use, modification, enhancement, and
-re-distribution by the users of such software".  The DoD has used this same
+re-distribution by the users of such software".  The DoW has used this same
 definition since the 16 October 2009 memorandum from the DoD CIO,
 "Clarifying Guidance Regarding Open Source Software (OSS)", and it is
 carried forward verbatim in the memorandum that superseded it, ["Software
@@ -85,7 +86,7 @@ in this context. ("Free" in "Free software" refers to freedom, not
 price.) The term "open source software" is sometimes hyphenated as
 "open-source software".
 
-The DoD has chosen to use the term "open source software" (OSS) in its
+The DoW has chosen to use the term "open source software" (OSS) in its
 official policy documents.
 
 ### Q: What are antonyms for open source software?
@@ -118,16 +119,16 @@ software", "open-box software", "visible-source software", and
 "disclosed-source software". (Such terms might *include* open source
 software, but could also include other software). 
 
-OSS and DoD Policy
+OSS and DoW Policy
 ------------------
 
-### Q: What policies address the use of open source software (OSS) in the Department of Defense?
+### Q: What policies address the use of open source software (OSS) in the Department of War?
 
 The following policies apply:
 
 1.  The DoD CIO memorandum ["Software Development and Open Source
     Software"](https://dodcio.defense.gov/portals/0/documents/library/softwaredev-opensource.pdf),
-    signed 24 January 2022, is the current DoD-wide policy on OSS. It
+    signed 24 January 2022, is the current DoW-wide policy on OSS. It
     **supersedes** the 16 October 2009 memorandum "Clarifying Guidance
     Regarding Open Source Software (OSS)" (which had itself superseded a
     May 2003 memo from John Stenbit). Attachment 2 of the 2022 memorandum
@@ -193,7 +194,7 @@ The following policies apply:
     25-2-5](https://armypubs.army.mil/ProductMaps/PubForm/Details.aspx?PUB_ID=1022299),
     *Army Cybersecurity: Software Assurance*, dated 15 September 2021,
     provides Army procedures for software assurance that address OSS
-    directly. It uses the same definition of OSS as DoD policy (paragraph
+    directly. It uses the same definition of OSS as DoW policy (paragraph
     2-1.b(3)), treats OSS as one of three software product types alongside
     COTS and GOTS, and groups OSS licenses into the same permissive,
     strongly protective, and weakly protective categories used in this FAQ
@@ -214,9 +215,9 @@ regarding commercial software continue to apply to OSS.
 
 
 
-### Q: Isn't using open source software (OSS) forbidden by DoD Information Assurance (IA) Policy?
+### Q: Isn't using open source software (OSS) forbidden by DoW Information Assurance (IA) Policy?
 
-No. At a high-level, DoD policy requires commercial software
+No. At a high-level, DoW policy requires commercial software
 (including OSS) to come with *either* a warranty *or* source code, so
 that the software can be maintained when necessary by the supplier or
 the government. Since OSS provides source code, there is no problem.
@@ -292,8 +293,8 @@ Separately, the DoD CIO memorandum "Software Development and Open Source
 Software" (24 January 2022) *does* direct that software developed for
 systems other than National Security Systems "should be open-by-default
 and released (under an open source software license)" unless specific
-conditions apply. So a DoD program may well have an obligation to
-consider public release — but that obligation comes from DoD policy, not
+conditions apply. So a DoW program may well have an obligation to
+consider public release — but that obligation comes from DoW policy, not
 from the SHARE IT Act.
 
 ### Q: What software does the SHARE IT Act apply to?
@@ -360,10 +361,10 @@ of an individual."
 Agencies must report exemptions annually with a narrative justification
 for each, and those reports go to Congress.
 
-For the DoD, the national security system and classified exemptions carve
+For the DoW, the national security system and classified exemptions carve
 out a substantial share of the Department's software. But note that
 "national security system" is a defined term in 40 U.S.C. 11103, not a
-synonym for "military" or "operational" — a great deal of DoD
+synonym for "military" or "operational" — a great deal of DoW
 custom-developed software is not an NSS and is therefore squarely within
 the Act. Do not assume an exemption applies; the determination belongs to
 the Component CIO under the procedures required by section 3(d)(1)(A)(ii)(I).
@@ -382,7 +383,7 @@ left unused do not satisfy the provision. Second, the standard is
 government-wide, not agency-specific: rights sufficient for the
 contracting agency alone are not enough.
 
-In DoD practice, "unlimited rights" under DFARS 252.227-7014 already
+In DoW practice, "unlimited rights" under DFARS 252.227-7014 already
 exceed this standard, and Government Purpose Rights may or may not,
 depending on the terms negotiated. Programs acquiring non-commercial
 software should already be planning to take delivery of source code under
@@ -391,7 +392,7 @@ statutory floor beneath that planning. Section 8 of the Act directs that
 the Federal Acquisition Regulation be revised as necessary to implement
 these requirements.
 
-### Q: How is the DoD implementing the SHARE IT Act?
+### Q: How is the DoW implementing the SHARE IT Act?
 
 Implementing guidance is in development. Because section 3(d)(1) requires
 an agency-wide policy issued by the CIO, the authoritative answer for any
@@ -479,7 +480,7 @@ software:
     of other copyrighted works.”
 -   OSS licenses and projects clearly approve of commercial support
 
-This is confirmed by DoD policy. The 2022 DoD CIO memorandum "Software
+This is confirmed by DoW policy. The 2022 DoD CIO memorandum "Software
 Development and Open Source Software", Attachment 2, paragraph 2.A(1),
 states that "OSS meets the definition of 'commercial computer software'
 and therefore, shall be given equal consideration with proprietary
@@ -704,7 +705,7 @@ Practice”](https://web.archive.org/web/20130923231730/http://perens.com/OpenSt
 is another widely-cited definition; it is linked here through the Internet
 Archive, as Perens’ site is no longer online.
 
-In the DoD, [Joint Assessments and Standards Management
+In the DoW, [Joint Assessments and Standards Management
 (JASM)](https://jasm.apps.mil/) is a useful resource for identifying
 recommended standards (which tend to be open standards). JASM is a
 collection of web-based applications supporting the continuing evolution
@@ -717,7 +718,7 @@ page](https://www.cto.mil/sea/mosa/), maintained by Systems Engineering
 and Architecture under Research and Engineering, also provides some
 useful background.
 
-Many DoD capabilities are accessible via web browsers using open
+Many DoW capabilities are accessible via web browsers using open
 standards such as TCP/IP, HTTP, and HTML; in such cases, it is
 relatively easy to use or switch to open source software
 implementations (since the platforms used to implement the client or
@@ -1056,7 +1057,7 @@ Typically enforcement actions are based on copyright violations, and
 only copyright holders can raise a copyright claim in U.S. court. In the
 commercial world, the copyright holders are typically the individuals
 and organizations that originally developed the software. Under the
-current DoD contracting regime, the contractor usually retains the
+current DoW contracting regime, the contractor usually retains the
 copyright for software developed with government funding, so in such
 cases the contractor (not the government) has the right to sue for
 copyright violation. In some cases, the government obtains the
@@ -1134,7 +1135,7 @@ consult your attorney to discuss your specific situation.
 OSS and Security/Software Assurance/System Assurance/Supply Chain Risk Management
 ---------------------------------------------------------------------------------
 
-### Q: Does the DoD use OSS for security functions?
+### Q: Does the DoW use OSS for security functions?
 
 Yes. The [2003 MITRE study, "Use of Free and Open Source Software (FOSS)
 in the U.S. Department of
@@ -1190,12 +1191,12 @@ respond to vulnerabilities (because changing software is more difficult
 without the source code), but this is obviously *not* a security
 advantage. In general, “Security by Obscurity” is widely denigrated.
 
-This does *not* mean that the DoD will reject using proprietary COTS
+This does *not* mean that the DoW will reject using proprietary COTS
 products. There are valid business reasons, unrelated to security, that
 may lead a commercial company selling proprietary software to choose to
 hide source code (e.g., to reduce the risk of copyright infringement or
 the revelation of trade secrets).  What it does mean, however, is that
-the DoD will not reject consideration of a COTS product merely because
+the DoW will not reject consideration of a COTS product merely because
 it is OSS. Some OSS is very secure, while others are not; some
 proprietary software is very secure, while others are not. Each product
 must be examined on its own merits.
@@ -1350,10 +1351,10 @@ programming a PROM performed a substantial transformation. Under the
 same reasoning, the CBP determined that building an object file from
 source code performed a substantial transformation into a new article.
 
-Using OSS in DoD systems
+Using OSS in DoW systems
 ------------------------
 
-### Q: Does the DoD already use open source software?
+### Q: Does the DoW already use open source software?
 
 Yes, extensively. The [2003 MITRE study, "Use of Free and Open Source
 Software (FOSS) in the U.S. Department of
@@ -1368,7 +1369,7 @@ originally developed on Intellipedia, using a variety of web browsers
 including Mozilla Firefox. Thus, even this FAQ was developed using open
 source software.
 
-The DoD is, of course, not the only user of OSS. [Gartner Group's Mark
+The DoW is, of course, not the only user of OSS. [Gartner Group's Mark
 Driver stated in November
 2010](https://web.archive.org/web/20170208184811/http://www.acq.osd.mil/dpap/dars/docs/DoD_Briefing_1.12.12_Notes.pdf)
 that, "Open source is ubiquitous, it's unavoidable... having a policy
@@ -1388,7 +1389,7 @@ effort in 2008 dollars.
 
 ### Q: Is there an "approved", "recommended" or "Generally Recognized as Safe/Mature" list of Open Source Software? What programs are already in widespread use?
 
-No, the DoD does not have an official recommendation for any particular
+No, the DoW does not have an official recommendation for any particular
 OSS product or set of products, nor a "Generally Recognized as
 Safe/Mature" list. The [2003 MITRE study, "Use of Free and Open Source
 Software (FOSS) in the U.S. Department of
@@ -1500,7 +1501,7 @@ proprietary software in all cases by all measures. Each government
 program must determine its needs, and then evaluate its options for
 meeting those needs.
 
-### Q: When a DoD contractor is developing a new system/software as a deliverable in a typical DoD contract, is it possible to include existing open source software?
+### Q: When a DoW contractor is developing a new system/software as a deliverable in a typical DoW contract, is it possible to include existing open source software?
 
 Yes, it's possible. In nearly all cases, pre-existing OSS are "commercial
 products", and thus their use is governed by the rules for including
@@ -1522,12 +1523,12 @@ application; instead of including commercially-available components such
 as the operating system or database system as part of the deliverable,
 the deliverable could simply state what it requires.
 
-### Q: When a DoD contractor is developing a new system/software as a deliverable in a typical DoD contract, is it possible to use existing software licensed using the GNU General Public License (GPL)? Can the DoD used GPL-licensed software?
+### Q: When a DoW contractor is developing a new system/software as a deliverable in a typical DoW contract, is it possible to use existing software licensed using the GNU General Public License (GPL)? Can the DoW used GPL-licensed software?
 
-Yes. There is no DoD policy forbidding or limiting the use of software
+Yes. There is no DoW policy forbidding or limiting the use of software
 licensed under the GNU General Public License (GPL).
 
-The DoD already uses a wide variety of software licensed under the GPL.
+The DoW already uses a wide variety of software licensed under the GPL.
 A [2003 MITRE study, "Use of Free and Open Source Software (FOSS) in the
 U.S. Department of
 Defense"](https://dodcio.defense.gov/Portals/0/Documents/FOSS/dodfoss_pdf.pdf),
@@ -1536,10 +1537,10 @@ licensed using the GPL. These included the Linux kernel, the gcc
 compilation suite (including the GNAT Ada compiler), the OpenOffice.org
 office suite, the emacs text editor, the Nmap network scanner, OpenSSH
 and OpenSSH for encryption, and Samba for Unix/Linux/Windows
-interoperability. This should not be surprising; the DoD uses OSS
+interoperability. This should not be surprising; the DoW uses OSS
 extensively, and the GPL is the most popular OSS license.
 
-As with all commercial items, the DoD must comply with the item's
+As with all commercial items, the DoW must comply with the item's
 license when using the item. There are two versions of the GPL in
 widespread use: version 2 and version 3. The key issue with both
 versions of the GPL is that, unlike most other OSS licenses, the GPL
@@ -1556,7 +1557,7 @@ reverse-engineering) the program, so the GPL actually provides
 *additional* rights not present in most proprietary software. So if the
 program is being used and not modified (a very common case), this
 additional term has no impact. Even for many modifications (e.g., bug
-fixes) this causes no issues because in many cases the DoD has no
+fixes) this causes no issues because in many cases the DoW has no
 interest in keeping those changes confidential.
 
 However, if the GPL software must be mixed with other
@@ -1658,7 +1659,7 @@ changed.
 
 The GPL and government "unlimited rights" terms have similar goals, but
 differ in details. This isn't usually an issue because of how typical
-DoD contract clauses work under the DFARS.
+DoW contract clauses work under the DFARS.
 
 The government normally gets "unlimited rights" in software when that
 software is created in the performance of a contract with government
@@ -1768,7 +1769,7 @@ proprietary software (at least in terms of use, modification, and
 distribution). That said, other factors may be more important for a
 given circumstance.
 
-The DoD does not have a single required process for evaluating OSS. The
+The DoW does not have a single required process for evaluating OSS. The
 following externally-developed evaluation processes or tips may be of
 use:
 
@@ -1837,7 +1838,7 @@ cannot patch your servers.
 
 ### Q: Am I required to have commercial support for OSS?
 
-No, DoD policy does not require you to have commercial support for OSS,
+No, DoW policy does not require you to have commercial support for OSS,
 but you must have *some* plan for support. The 2022 DoD CIO memorandum
 "Software Development and Open Source Software" says, in Attachment 2,
 paragraph 2.F, that "OSS components of DoD systems require product
@@ -1889,7 +1890,7 @@ the best approach in all cases; system/program managers and DAAs must
 look at the specific situation to make a determination.
 
 **Navy and Marine Corps commands should note an additional requirement.**
-The answer above describes DoD-wide policy. [SECNAVINST
+The answer above describes DoW-wide policy. [SECNAVINST
 5230.15](https://www.doncio.navy.mil/ContentView.aspx?id=1897) establishes
 as Department of the Navy policy that "all COTS software in use across the
 Department shall be vendor supported", and paragraph 4.c applies that
@@ -1936,7 +1937,7 @@ forbid more extensive sharing (e.g., the government only has
 government-purpose rights to the software). GOTS software should not
 be released when it implements a strategic innovation, i.e. when it
 implements novel functionality which is not already available to the
-public, and which significantly improves DoD mission outcomes or
+public, and which significantly improves DoW mission outcomes or
 business processes.  (Note that such software would often be classifed.)
 
 Unlike proprietary COTS, GOTS has the advantage that the government
@@ -1980,9 +1981,9 @@ then it can be as costly as GOTS.
 
 ### Q: What are the risks of failing to consider the use of OSS components or approaches?
 
-For the DoD, the risks of failing to consider the use of OSS where
+For the DoW, the risks of failing to consider the use of OSS where
 appropriate are of increased cost, increased schedule, and/or reduced
-performance (including reduced innovation or security) to the DoD due to
+performance (including reduced innovation or security) to the DoW due to
 the failure to use the commercial software that best meets the needs
 (when that is the case). It also risks reduced flexibility (including
 against cyberattack), since OSS permits arbitrary later modification by
@@ -1993,12 +1994,12 @@ of exactly which license it uses), and specifically instructs
 departments to pass this requirement to consider commercial items down
 to contractors and their suppliers at all tiers.
 
-DoD contractors who always ignore components because they are OSS, or
+DoW contractors who always ignore components because they are OSS, or
 because they have a particular OSS license they don't prefer, risk
 losing projects to more competitive bidders. If that competitor's use of
-OSS results in an advantage to the DoD (such as lower cost, faster
+OSS results in an advantage to the DoW (such as lower cost, faster
 schedule, increased performance, or other factors such as increased
-flexibility), contractors should expect that the DoD will choose the
+flexibility), contractors should expect that the DoW will choose the
 better bid. This does not mean that existing OSS elements should always
 be chosen, but it means that they must be considered.
 
@@ -2049,7 +2050,7 @@ this risk include:
     are innocent until proven guilty, so if there *is* such a charge,
     investigate the charges' merits instead of presuming guilt.
 
-### Q: Is there a large risk to DoD contractors that widely-used OSS violates enforceable software patents?
+### Q: Is there a large risk to DoW contractors that widely-used OSS violates enforceable software patents?
 
 Typically not, though the risk varies depending on their contract and
 specific circumstance. Note, however, that this risk has little to do
@@ -2074,12 +2075,12 @@ requirement for "non-obviousness", which probably renders unenforceable
 some already-granted software patents, but at this time it is difficult
 to determine which ones are affected. As a result, it is difficult to
 develop software and be confident that it does not violate enforceable
-patents. The DoD has not expressed a position on whether or not software
+patents. The DoW has not expressed a position on whether or not software
 should be patented, but it *is* interested in ensuring that software
 that effectively supports its missions can be developed in a
 cost-effective, timely, and legal manner.
 
-U.S. government contractors (including those in the DoD) are often
+U.S. government contractors (including those in the DoW) are often
 indemnified from patent infringement by the U.S. government as part of
 their contract. This greatly reduces contractors' risks, enabling them
 to get work done (given this complex environment). They can obtain this
@@ -2373,11 +2374,11 @@ the contractor often keeps and exercise the rights of a copyright
 holder, which enables them to release that software as open source
 software (as long as other laws and regulations are met).
 
-For DoD contractors, if the standard DFARS contract clauses are used (in
+For DoW contractors, if the standard DFARS contract clauses are used (in
 particular DFARS 252.227-7014) then the contractor who developed the
 software retains the copyright to the software and has the right to
 release it to others, even if the software was developed exclusively
-with government funds. In some cases a DoD contractor may be required to
+with government funds. In some cases a DoW contractor may be required to
 transfer copyright to the government for works produced under contract
 (see DFARS 252.227-7020). If this is the case, then the contractor
 cannot release the software as OSS without permission, because the
@@ -2419,8 +2420,8 @@ also be limited by patent and trademark law.
 In many cases, yes, but this depends on the specific contract and
 circumstances. The government can typically release software as open
 source software once it has "unlimited rights" to the software. The
-usual DoD contract clause (DFARS 252.227-7014) permits this by default.
-The usual federal non-DoD clause (FAR 52.227-14) also permits this by
+usual DoW contract clause (DFARS 252.227-7014) permits this by default.
+The usual federal non-DoW clause (FAR 52.227-14) also permits this by
 default as long as the government has not granted the contractor the
 right to assert copyright. If the government has received copyright
 (e.g., because the FAR 52.227-17 or DFARS 252.227-7020 clauses apply)
@@ -2753,7 +2754,7 @@ may be helpful in identifying existing hosting facilities, as well as
 some of their pros and cons. Each hosting service tends to be focused on
 particular kinds of projects, so prefer a hosting service that
 well-matches the project. Using industry OSS project hosting services
-makes it easier to collaborate with other parties outside the U.S. DoD
+makes it easier to collaborate with other parties outside the U.S. DoW
 or U.S. government. 
 
 If the project is likely to become large, or must perform filtering for
@@ -2869,11 +2870,11 @@ Yes:
 Other sources of information on OSS
 -----------------------------------
 
-### Q: What additional material is available on OSS in the government or DoD?
+### Q: What additional material is available on OSS in the government or DoW?
 
 Other documents that you may find useful include:
 
--   [*Code.mil*](https://code.mil): Information about Open Source Software in the DoD.
+-   [*Code.mil*](https://code.mil): Information about Open Source Software in the DoW.
 -   [*Frequently Asked Questions About Copyright and Computer Software -
     Issues affecting the U.S. Government with Special Emphasis on Open
     Source Software*](https://cendi.gov/pdf/FAQ_Copyright_30jan18.pdf),
