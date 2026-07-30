@@ -455,18 +455,15 @@ namely the [Federal Acquisition Regulation
 (FAR)](http://www.acquisition.gov/far/) and the [Defense Federal
 Acquisition Regulation Supplement
 (DFARS)](https://www.acquisition.gov/dfarspgi).
-[40 CFR, Section 252.227-7014 Rights in Noncommercial Computer
-Software and Noncommercial Computer Software
+[DFARS 252.227-7014, Rights in Noncommercial Computer Software and
+Noncommercial Computer Software
 Documentation](https://www.acquisition.gov/dfars/252.227-7014-rights-noncommercial-computer-software-and-noncommercial-computer-software-documentation.)
-defines "Commercial computer software" as "software developed or
-regularly used for non-governmental purposes which: (i) Has been sold,
-leased, or licensed to the public; (ii) Has been offered for sale,
-lease, or license to the public; (iii) Has not been offered, sold,
-leased, or licensed to the public but will be available for commercial
-sale, lease, or license in time to satisfy the delivery requirements
-of this contract; or (iv) Satisfies a criterion expressed in paragraph
-(a)(1)(i), (ii), or (iii) of this clause and would require only minor
-modification to meet the requirements of this contract."
+(48 CFR 252.227-7014) defines "commercial computer software" as software
+developed or regularly used for non-governmental purposes that has been
+sold, leased or licensed to the public, has been offered for such sale,
+lease or license, will be available commercially in time to satisfy the
+contract's delivery requirements, or meets one of those tests and would
+need only minor modification to meet the contract's requirements.
 
 There are many other reasons to believe nearly all OSS is commercial
 software:
@@ -488,9 +485,7 @@ commercial offerings, in accordance with Section 2377 of Title 10,
 U.S.C." (now [10 U.S.C.
 3453](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title10-section3453&num=0&edition=prelim)),
 citing also FAR 2.101(b), 12.000, and 12.101, and DFARS 212.212, 208.74,
-227.7202, and 252.227-7014(a)(1). The same conclusion was reached by the
-superseded 2009 memorandum "Clarifying Guidance Regarding Open Source
-Software (OSS)". For more discussion on this topic, see
+227.7202, and 252.227-7014(a)(1). For more discussion on this topic, see
 the article [Open Source Software Is
 Commercial](https://www.csiac.org/journal-article/open-source-software-is-commercial/).
 
@@ -517,43 +512,20 @@ formerly 10 U.S.C. 2377, renumbered by Public Law 116-283 § 1821(a)(2))
 requires a preference for commercial products for procurement of
 supplies or services. 10 U.S.C. 3453 requires that the head of an agency
 shall ensure that procurement officials in that agency, to the maximum
-extent practicable:
+extent practicable: acquire commercial products and services to meet
+agency needs; require prime contractors and subcontractors to
+incorporate them as components; modify requirements where doing so
+would let commercial products meet them; state specifications in terms
+that encourage offerors to propose commercial products; remove
+impediments to commercial acquisition from agency procurement policy;
+and train personnel in commercial acquisition.
 
-1.  "acquire commercial services, commercial products, or
-    nondevelopmental items other than commercial products to meet the
-    needs of the agency;
-2.  require prime contractors and subcontractors at all levels under
-    the agency contracts to incorporate commercial services,
-    commercial products, or nondevelopmental items other than
-    commercial products as components of items supplied to the agency;
-3.  modify requirements in appropriate cases to ensure that the
-    requirements can be met by commercial services or commercial
-    products or, to the extent that commercial products suitable to
-    meet the agency's needs are not available, nondevelopmental items
-    other than commercial products in response to agency solicitations;
-4.  state specifications in terms that enable and encourage bidders
-    and offerors to supply commercial services or commercial products
-    or, to the extent that commercial products suitable to meet the
-    agency's needs are not available, nondevelopmental items other
-    than commercial products in response to the agency solicitations;
-5.  revise the agency's procurement policies, practices, and
-    procedures not required by law to reduce any impediments in those
-    policies, practices, and procedures to the acquisition of
-    commercial products and commercial services; and
-6.  require training of appropriate personnel in the acquisition of
-    commercial products and commercial services."
-
-Similarly, it requires preliminary market research to determine
-"whether there are commercial services or commercial products or, to
-the extent that commercial products suitable to meet the agency's
-needs are not available, nondevelopmental items other than commercial
-items available" that "(A) meet the agency's requirements; (B) could
-be modified to meet the agency's requirements; or (C) could meet the
-agency's requirements if those requirements were modified to a
-reasonable extent." This market research should occur "before
-developing new specifications for a procurement by that agency; and
-before soliciting bids or proposals for a contract in excess of the
-simplified acquisition threshold."
+The same section requires market research to determine whether
+commercial products are available that meet the agency's requirements,
+could be modified to meet them, or could meet them if the requirements
+themselves were modified to a reasonable extent. That research must
+occur before the agency develops new specifications, and before it
+solicits any contract above the simplified acquisition threshold.
 
 An agency that failed to consider open source software, and instead only
 considered proprietary software, would fail to comply with these laws,
@@ -773,13 +745,10 @@ is a commercial product as defined by US Law (Title 41) and regulation
 (the FAR).
 
 The Buy American Act does not apply to information technology that is a
-commercial item, so there is usually no problem for OSS. As stated in
-FAR 25.103 Exceptions item (e), "The restriction on purchasing foreign
-end products does not apply to the acquisition of information technology
-that is a commercial item, when using fiscal year 2004 or subsequent
-fiscal year funds (Section 535(a) of Division F, Title V, Consolidated
-Appropriations Act, 2004, and similar sections in subsequent
-appropriations acts)."
+commercial item, so there is usually no problem for OSS. [FAR
+25.103(e)](https://www.acquisition.gov/far/25.103) exempts commercial
+information technology from the restriction on purchasing foreign end
+products, for fiscal year 2004 and subsequent fiscal year funds.
 
 OSS Licenses
 ------------
@@ -815,26 +784,19 @@ consult with legal counsel.
 The [U.S. Court of Appeals for the Federal Circuit's 2008 ruling on
 Jacobsen v. Katzer](https://cafc.uscourts.gov/opinions-orders/08-1001.pdf)
 made it clear that OSS licenses are enforceable, even if money is not
-exchanged.  It noted that a copyright holder may dedicate a "certain
-work to free public use and yet enforce an 'open source' copyright
-license to control the future distribution and modification of that
-work... Open source licensing has become a widely used method of
-creative collaboration that serves to advance the arts and sciences in a
-manner and at a pace that few could have imagined just a few decades
-ago... Traditionally, copyright owners sold their copyrighted material
-in exchange for money. The lack of money changing hands in open source
-licensing should not be presumed to mean that there is no economic
-consideration, however. There are substantial benefits, including
-economic benefits, to the creation and distribution of copyrighted works
-under public licenses that range far beyond traditional license
-royalties... The choice to exact consideration in the form of compliance
-with the open source requirements of disclosure and explanation of
-changes, rather than as a dollar-denominated fee, is entitled to no less
-legal recognition. Indeed, because a calculation of damages is
-inherently speculative, these types of license restrictions might well
-be rendered meaningless absent the ability to enforce through injunctive
-relief." In short, it determined that the OSS license at issue in the
-case (the Artistic license) was indeed an enforceable license.
+exchanged.  The court held that a copyright holder may dedicate a
+"certain work to free public use and yet enforce an 'open source'
+copyright license to control the future distribution and modification of
+that work". On the absence of a fee it was explicit: "The lack of money
+changing hands in open source licensing should not be presumed to mean
+that there is no economic consideration... The choice to exact
+consideration in the form of compliance with the open source
+requirements of disclosure and explanation of changes, rather than as a
+dollar-denominated fee, is entitled to no less legal recognition." The
+court also observed that because damages in these cases are inherently
+speculative, license restrictions of this kind could be rendered
+meaningless without injunctive relief. It determined that the OSS
+license at issue, the Artistic License, was an enforceable license.
 
 In 2017, the United States District Court for the Northern District of
 California, in Artifex Software, Inc. v. Hancom, Inc., No. 16-cv-06982
@@ -1109,16 +1071,16 @@ the government.
 
 For software delivered under federal contracts, any "choice of venue"
 clauses in the license generally conflict with the Contract Disputes
-Act. However, the required FAR Clause 52.212-4(d) establishes that "This
-contract is subject to the Contract Disputes Act of 1978, as amended (41
-U.S.C. 7101-7109)." Furthermore, 52.212-4(s) says: "(s) Order of
-precedence. Any inconsistencies in this solicitation or contract shall
-be resolved by giving precedence in the following order: (1) the
-schedule of supplies/services; (2) the Assignments, Disputes, Payments,
-Invoice, Other Compliances, and Compliance with Laws Unique to
-Government Contracts paragraphs of this clause; (3) the clause at
-52.212-5; (4) addenda to this solicitation or contract, including any
-license agreements for computer software; ..."
+Act. However, the required [FAR
+52.212-4](https://www.acquisition.gov/far/52.212-4)(d) establishes that
+the contract is subject to the Contract Disputes Act of 1978, as amended
+(41 U.S.C. 7101-7109). Its order of precedence clause at 52.212-4(s)
+then resolves inconsistencies in this order: (1) the schedule of
+supplies or services; (2) the Assignments, Disputes, Payments, Invoice,
+Other Compliances, and Compliance with Laws Unique to Government
+Contracts paragraphs of that clause; (3) the clause at 52.212-5; and (4)
+addenda to the solicitation or contract, including any license
+agreements for computer software.
 
 This clause establishes that the choice of venue clause (category 4) is
 superseded by the Contract Disputes Act (category 2), and thus the
@@ -1231,17 +1193,11 @@ OSS:
 
 ### Q: Is there a risk of malicious code becoming embedded into OSS?
 
-The use of *any* commercially-available software, be it proprietary or
-OSS, creates the risk of executing malicious code embedded in the
-software. Even if a commercial program did not originally have
-vulnerabilities, both proprietary and OSS program binaries can be
-modified (e.g., with a "hex editor" or virus) so that it includes
-malicious code. It may be illegal to modify proprietary software, but
-that will normally not slow an attacker. Thankfully, there are ways to
-reduce the risk of executing malicious code when using commercial
-software (both proprietary and OSS). It is impossible to completely
-eliminate all risks; instead, focus on reducing risks to acceptable
-levels.
+Yes, and the same is true of proprietary software. Binaries of either
+kind can be modified after release to add malicious code; that
+modification may be illegal, but illegality does not slow an attacker.
+The risk cannot be eliminated, only reduced to an acceptable level, and
+there are ways to do so.
 
 The use of software with a proprietary license provides absolutely no
 guarantee that the software is free of malicious code. Indeed, many
@@ -1336,14 +1292,12 @@ Government."
 
 The [CBP
 ruling](http://assets.fiercemarkets.net/public/sites/govit/software_cbpadvisoryruling_country_of_origin_talend.pdf)
-points out that 19 U.S.C. § 2518(4)(B) says that, "An article is a
-product of a country or instrumentality only if (i) it is wholly the
-growth, product, or manufacture of that country or instrumentality, or
-(ii) in the case of an article which consists in whole or in part of
-materials from another country or instrumentality, it has been
-substantially transformed into a new and different article of commerce
-with a name, character, or use distinct from that of the article or
-articles from which it was so transformed." The CBP also pointed out a
+points out that 19 U.S.C. § 2518(4)(B) treats an article as a product of
+a country only if it is wholly grown, produced or manufactured there,
+or, where it incorporates materials from elsewhere, if it has been
+"substantially transformed into a new and different article of commerce
+with a name, character, or use distinct from" what it was made from. The
+CBP also pointed out a
 ruling (Data General v. United States, 4 CIT 182 (1982)), that
 programming a PROM performed a substantial transformation. Under the
 same reasoning, the CBP determined that building an object file from
@@ -1574,31 +1528,21 @@ The [2003 MITRE study section
 outlines several ways to legally mix GPL with proprietary or classified
 software:
 
--   Distribution Mixing – GPL and other software can be stored and
-    transmitted together. Example: GPL software can be stored on the
-    same computer disk as (most kinds of) proprietary software.
--   Execution Mixing – GPL and other software can run at the same time
-    on the same computer or network. Example: GPL and (unrelated)
-    proprietary applications can be running at the same time on a
-    desktop PC.
--   Application Mixing – GPL can rely on other software to provide it
-    with services, provided either that those services are either
-    generic (e.g., operating system services) or have been explicitly
-    exempted by the GPL software designer as non-GPL components.
-    Examples include GPL applications running on proprietary operating
-    systems or wrappers, and GPL applications that use proprietary
-    components explicitly marked as non-GPL. Windows Services for UNIX
-    3.0 is a good example of commercial use of GPL application mixing.
--   Service Mixing – GPL can provide generic services to other software.
-    These services must be genuinely generic in the sense that the
-    applications that use them must not depend on the detailed design of
-    the GPL software to work. An example is (connecting) a GPL utility
-    to a proprietary software component by using the Unix "pipe"
-    mechanism, which allows one-way flow of data to move between
-    software components. This is the tightest form of mixing possible
-    with GPL and other types of software, but it must be used with care
-    to ensure that the GPL software remains generic and is not tightly
-    bound to any one proprietary software component.
+-   **Distribution Mixing** – storing and transmitting GPL and other
+    software together, such as on the same disk.
+-   **Execution Mixing** – running GPL and unrelated proprietary
+    software at the same time on the same computer or network.
+-   **Application Mixing** – GPL software relying on other software for
+    services, provided those services are generic (operating system
+    services, for example) or the GPL software's designer has explicitly
+    exempted them as non-GPL components.
+-   **Service Mixing** – GPL software providing generic services to
+    other software. The services must be genuinely generic, meaning the
+    applications using them must not depend on the detailed design of
+    the GPL software. Connecting a GPL utility to a proprietary
+    component through a Unix pipe is one example. This is the tightest
+    mixing possible, and it must be used carefully to keep the GPL
+    software generic rather than bound to one proprietary component.
 
 Often such separation can occur by separating information into data and
 a program that uses it, or by defining distinct layers. As long as a GPL
@@ -1692,42 +1636,33 @@ Congress will subsequently recognize a moral obligation to pay for the
 benefits conferred.
 
 Part of the ADA, Pub.L. 97-258, 96 Stat. 923, is in
-[31 U.S.C. § 1342, Limitation on voluntary services](https://uscode.house.gov/view.xhtml?req=%28title:31%20section:1342%20edition:prelim%29%20OR%20%28granuleid:USC-prelim-title31-section1342%29&f=treesort&edition=prelim&num=0&jumpTo=true). This statute says
-that, "An officer or employee of the United States Government or of the
-District of Columbia government may not accept voluntary services for
-either government or employ personal services exceeding that authorized
-by law except for emergencies involving the safety of human life or the
-protection of property."
+[31 U.S.C. § 1342, Limitation on voluntary services](https://uscode.house.gov/view.xhtml?req=%28title:31%20section:1342%20edition:prelim%29%20OR%20%28granuleid:USC-prelim-title31-section1342%29&f=treesort&edition=prelim&num=0&jumpTo=true),
+which bars government officers and employees from accepting voluntary
+services, or employing personal services beyond what law authorizes,
+except in emergencies involving the safety of human life or the
+protection of property.
 
 The [US Government Accountability Office (GAO) Office of the General
 Counsel's "Principles of Federal Appropriations Law" (aka the "Red
-Book")](https://www.gao.gov/legal/appropriations-law/red-book) explains federal
-appropriation law. Volume II of its third edition, section 6.C.3,
-describes in detail this prohibition on voluntary services. Section
-6.C.3.a notes that the voluntary services provision is not new; it first
-appeared, in almost identical form, back in 1884. The red book explains
-its purpose; since "an agency cannot directly obligate in excess or
-advance of its appropriations, it should not be able to accomplish the
-same thing indirectly by accepting ostensibly ‘voluntary' services and
-then presenting Congress with the bill, in the hope that Congress will
-recognize a ‘moral obligation' to pay for the benefits conferred..."
+Book")](https://www.gao.gov/legal/appropriations-law/red-book) explains
+this provision at Volume II, section 6.C.3 of its third edition. The
+prohibition dates to 1884 in almost identical form, and its purpose is
+to stop an agency from doing indirectly what it cannot do directly:
+obligating beyond its appropriations by accepting ostensibly voluntary
+services and then presenting Congress with the bill.
 
-The red book section 6.C.3.b explains this prohibition in more detail.
-It states that in 1913, the Attorney General developed an opinion (30
-Op. Att'y Gen. 51 (1913)) that "has become the leading case construing
-31 U.S.C. § 1342... the Attorney General drew a distinction that the
-Comptroller of the Treasury thereafter adopted, and that GAO and the
-Justice Department continue to follow to this day—the distinction
-between ‘voluntary services' and ‘gratuitous services.'" Some key text
-from this opinion, as identified by the red book, are:
+Section 6.C.3.b turns on a distinction drawn by the Attorney General in
+1913 (30 Op. Att'y Gen. 51), which the Red Book calls "the leading case
+construing 31 U.S.C. § 1342" and which GAO and the Justice Department
+follow to this day — the distinction between *voluntary* services and
+*gratuitous* services:
 
-"[I]t seems plain that the words ‘voluntary service' were not intended
-to be synonymous with ‘gratuitous service' ... it is evident that the
+"[I]t seems plain that the words 'voluntary service' were not intended
+to be synonymous with 'gratuitous service' ... it is evident that the
 evil at which Congress was aiming was not appointment or employment for
 authorized services without compensation, but the acceptance of
 unauthorized services not intended or agreed to be gratuitous and
-therefore likely to afford a basis for a future claim upon Congress. . .
-."
+therefore likely to afford a basis for a future claim upon Congress."
 
 More recent decisions, such as [the 1982 decision B-204326 by the U.S.
 Comptroller General](https://www.gao.gov/products/b-204326), continue
@@ -1851,25 +1786,9 @@ the OSS component" as alternative risk mitigations. Organic
 and in-house government support are specifically identified as
 possibly-appropriate approaches.
 
-The superseded 2009 memo stated the same principle in different terms
-(attachment 2, 2(d)): "The use of any software without appropriate
-maintenance and support presents an information assurance risk. Before
-approving the use of software (including OSS), system/program managers,
-and ultimately Designated Approving Authorities (DAAs), must ensure that
-the plan for software support (e.g., commercial or Government program
-office support) is adequate for mission need."
-
-As noted in the article [Open Source memo doesn't mandate a support
-vendor (by David Perera, FierceGovernmentIT, May 23,
-2012)](https://web.archive.org/web/20120528201042/http://www.fiercegovernmentit.com/story/dod-official-open-source-memo-doesnt-mandate-support-vendor/2012-05-23),
-the intent "of the memo was not to issue a blanket requirement that all
-open source software come bundled with contractor support or else it
-can't be used... If a Defense agency is able to sustain the open source
-software with 'its own skills and talents' then that can be enough to
-satisfy the intent of the memo." In addition, "How robust the support
-plan need be can also vary on the nature of the software itself... For
-command and control software, the degree would have to be greater than
-for something that's not so critical to mission execution...".
+How robust that plan needs to be varies with the software. Command and
+control software warrants a more demanding support plan than something
+less critical to mission execution.
 
 Community OSS support is never enough by *itself* to provide this
 support, because the OSS community cannot patch your servers or
@@ -2099,15 +2018,13 @@ assignments](https://www.acquisition.gov/dfars/part-227-patents-data-and-copyrig
 and
 [28 USC 1498](https://uscode.house.gov/view.xhtml?req=%28title:28%20section:1498%20edition:prelim%29%20OR%20%28granuleid:USC-prelim-title28-section1498%29&f=treesort&edition=prelim&num=0&jumpTo=true).
 
-As noted in [FAR
-27.201-1](https://www.acquisition.gov/far/27.201-1),
-"Pursuant to 28 U.S.C. 1498, the exclusive remedy for patent or
-copyright infringement by or on behalf of the Government is a suit for
-monetary damages against the Government in the Court of Federal Claims.
-There is no injunctive relief available, and there is no direct cause of
-action against a contractor that is infringing a patent or copyright
-with the authorization or consent of the Government (e.g., while
-performing a contract)."
+As [FAR 27.201-1](https://www.acquisition.gov/far/27.201-1) explains,
+28 U.S.C. 1498 makes a suit for monetary damages in the Court of Federal
+Claims the exclusive remedy for patent or copyright infringement by or
+on behalf of the Government. No injunctive relief is available, and
+there is no direct cause of action against a contractor infringing with
+the Government's authorization or consent, such as while performing a
+contract.
 
 There are other ways to reduce the risk of software patent infringement
 (in the U.S.) as well:
@@ -2430,18 +2347,14 @@ DFARS 252.227-7014(a)(15) defines "unlimited rights" as "rights to use,
 modify, reproduce, release, perform, display, or disclose computer
 software or computer software documentation in whole or in part, in any
 manner and for any purpose whatsoever, and to have or authorize others
-to do so". As noted in "Technical Data and Computer Software: A Guide to
-Rights and Responsibilities Under Federal Contracts, Grants and
-Cooperative Agreements" by the Council on Governmental Relations (COGR),
-"This unlimited license enables the government to act on its own behalf
-and to authorize others to do the same things that it can do, thus
-giving the government essentially the same rights as the copyright
-owner." In short, once the government has unlimited rights, it has
-essentially the same rights as a copyright holder, and can then use
-those rights to release that software under a variety of conditions
-(including an open source software license), because it has the use and
-modify the software at will, *and* has the right to authorize others to
-do so.
+to do so". As the Council on Governmental Relations (COGR) puts it in
+"Technical Data and Computer Software: A Guide to Rights and
+Responsibilities Under Federal Contracts, Grants and Cooperative
+Agreements", this unlimited license gives the government "essentially
+the same rights as the copyright owner". Because the government may both
+use and modify the software at will *and* authorize others to do the
+same, it can release that software under a variety of conditions,
+including an open source software license.
 
 If the standard DFARS contract clauses are used (see DFARS
 252.227-7014), then unless other arrangements are made, the government

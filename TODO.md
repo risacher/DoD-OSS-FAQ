@@ -94,6 +94,43 @@ Working list from the July 2026 review of `faq.md` against current policy.
 - [ ] `dau.edu` now redirects to `waru.edu`; expect similar churn across `.mil`
       and `.gov` links from the department renaming.
 
+## Content currency
+
+- [ ] **Update and validate the military-specific OSS examples.** The list under
+      "What are some military-specific open source software programs?" has eight
+      entries: DDF, OSSIM, OMAR, BRL-CAD, Opticks, Delta3D, Ozone Widget
+      Framework, and REDHAWK SDR. Several date from the DCGS/OWF era and may be
+      dormant or archived even where the URL still resolves — Ozone in
+      particular. Check each for actual project activity (recent commits,
+      releases, a maintained site) rather than a 200 response, drop the dead
+      ones, and add current examples. Note that a stale list here is worse than
+      a short one: this is the answer a skeptic uses to argue the Department
+      does not really do this.
+
+- [ ] **Refresh the malicious-code examples.** Every example in "Is there a risk
+      of malicious code becoming embedded into OSS?" is from 2001–2003: the
+      Linux kernel subversion attempt (2003), SourceForge/Apache (2001), Debian
+      (2003), and Borland InterBase/Firebird. The argument is sound but the
+      evidence looks antique.
+
+      Candidates: **xz-utils / liblzma (CVE-2024-3094, March 2024)** for OSS,
+      and **SolarWinds SUNBURST (2020)** for proprietary. Others worth
+      considering: event-stream (npm, 2018), Codecov (2021), and 3CX (2023).
+
+      xz deserves care rather than avoidance. It cuts both ways — a multi-year
+      social-engineering campaign that won maintainer trust and nearly shipped a
+      backdoor into major distributions, but it was caught before wide
+      deployment, by an outsider investigating a performance anomaly, because
+      the source and build were inspectable. It also illustrates maintainer
+      burnout as an attack surface, which the current answer does not address.
+      Presenting it honestly is more persuasive than omitting it, and it maps
+      directly onto the 2022 memo's SCRM factors on trusted sources, component
+      integrity, and dependencies.
+
+      Keep the distinction between malicious code and mere vulnerabilities
+      clear: Log4Shell and Heartbleed are not examples of malicious code and
+      belong in the unintentional-vulnerabilities answer if used at all.
+
 ## Structure and naming
 
 - [ ] Decide DoD vs. DoW convention. Recommended: prospective/organizational voice
