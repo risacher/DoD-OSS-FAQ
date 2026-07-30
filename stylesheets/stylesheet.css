@@ -105,8 +105,10 @@ footer p {
 }
 
 a {
-  text-decoration: none;
-  color: #007edf;
+  /* Underlined so links are not distinguished by colour alone (WCAG 1.4.1),
+     and darkened to reach 4.5:1 against white (WCAG 1.4.3). */
+  text-decoration: underline;
+  color: #0072cc;
   text-shadow: none;
 
   transition: color 0.5s ease;
@@ -273,7 +275,8 @@ Full-Width Styles
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
-  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+  /* Darkened from #0090ff to reach 4.5:1 with white text (WCAG 1.4.3). */
+  background: url('../images/blacktocat.png') #0074c4 no-repeat 95% 50%;
   font-weight: 700;
   box-shadow: 0 0 10px rgba(0,0,0,.5);
   border-bottom-left-radius: 2px;
@@ -356,6 +359,40 @@ Full-Width Styles
 
 #main_content {
   padding-top: 40px;
+}
+
+/* Skip link: off-screen until it receives keyboard focus (WCAG 2.4.1). */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 20;
+  padding: 10px 16px;
+  background: #ffffff;
+  color: #0072cc;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+/* Chrome links are visually obvious controls, and the table of contents is a
+   list in which every item is a link, so neither needs an underline to be
+   distinguishable from surrounding text. */
+#forkme_banner,
+#downloads a,
+#TOC a {
+  text-decoration: none;
+}
+
+#forkme_banner:hover,
+#forkme_banner:focus,
+#downloads a:hover,
+#downloads a:focus,
+#TOC a:hover,
+#TOC a:focus {
+  text-decoration: underline;
 }
 
 #footer_wrap {
