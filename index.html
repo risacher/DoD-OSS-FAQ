@@ -465,8 +465,8 @@ Assurance (IA) Policy?</h3>
 source code, so that the software can be maintained when necessary by
 the supplier or the government. Since OSS provides source code, there is
 no problem.</p>
-<p xmlns="http://www.w3.org/1999/xhtml">Specifically, the federal government’s IA controls, as documented in
-<a href="http://csrc.nist.gov/publications/PubsSPs.html">NIST SP 800-53
+<p xmlns="http://www.w3.org/1999/xhtml">Specifically, the federal government’s security controls, as
+documented in <a href="http://csrc.nist.gov/publications/PubsSPs.html">NIST SP 800-53
 revision 5</a> includes a control enhancement, CM-7(8). Control
 enhancement CM-7(8) states that an organization must prohibit “the use
 of binary or machine-executable code from sources with limited or no
@@ -1518,26 +1518,42 @@ What are some military-specific open source software programs?</h3>
 <p xmlns="http://www.w3.org/1999/xhtml">Some more military-specific OSS programs created-by or used in the
 military include:</p>
 <ul xmlns="http://www.w3.org/1999/xhtml">
+<li><a href="https://github.com/NationalSecurityAgency/ghidra">Ghidra</a> -
+software reverse engineering (SRE) framework developed by the National
+Security Agency and released as OSS in 2019</li>
 <li><a href="https://codice.org/ddf/">The Distributed Data Framework
 (DDF)</a> - data integration framework developed for the Distributed
 Common Ground/Surface System (DCGS) Family of Systems</li>
-<li><a href="http://www.ossim.org/OSSIM/OSSIM_Home.html">Open Source
-Software for Imagery &amp; Mapping (OSSIM)</a> - geospatial image
-viewing (with classified plugins)</li>
-<li><a href="http://www.ossim.org/OSSIM/OMAR.html">OSSIM Mapping
-ARchieve System (OMAR)</a> - video indexing</li>
+<li><a href="https://github.com/ossimlabs">Open Source Software for
+Imagery &amp; Mapping (OSSIM)</a> - geospatial image viewing (with
+classified plugins)</li>
+<li><a href="https://github.com/ossimlabs">OSSIM Mapping ARchive
+(OMAR)</a> - a suite of web services built on OSSIM for cataloging,
+serving, and disseminating imagery. Both OSSIM and OMAR are maintained
+as individual repositories in the OSSIM Labs organization</li>
 <li><a href="https://brlcad.org/">BRL-CAD</a> - solid modeling
 (Army)</li>
-<li><a href="https://github.com/opticks-org/opticks">Opticks</a> -
-Remote sensing platform &amp; MASINT toolset</li>
-<li><a href="https://github.com/delta3d/delta3d/">Delta3D</a> -
-Game/Simulation engine for modeling and simulation (e.g., for military
-training/exercises)</li>
-<li><a href="https://github.com/ozoneplatform/ozone">Ozone Widget
-Framework / Ozone Platform</a> - framework for composable web
-applications</li>
 <li><a href="https://redhawksdr.org/">REDHAWK SDR</a> - a
 software-defined radio (SDR) framework</li>
+<li><a href="https://github.com/deptofdefense/AndroidTacticalAssaultKit-CIV">Android
+Tactical Assault Kit, Civil (ATAK-CIV)</a> - geospatial situational
+awareness application originally developed by the Air Force Research
+Laboratory, now also widely used by civil first responders (see also <a href="https://tak.gov/">TAK.gov</a>)</li>
+<li><a href="https://github.com/afrl-rq/OpenUxAS">OpenUxAS</a> and <a href="https://github.com/afrl-rq/OpenAMASE">OpenAMASE</a> - cooperative
+decision making for multiple unmanned vehicles, and simulation of
+multi-vehicle missions, from the Air Force Research Laboratory</li>
+<li><a href="https://github.com/nsacyber/HIRS">Host Integrity at Runtime
+and Start-up (HIRS)</a> and <a href="https://github.com/nsacyber/paccor">paccor</a> - Trusted Platform
+Module (TPM) provisioning, attestation, and supply chain validation
+tools released by NSA Cybersecurity</li>
+<li>The National Geospatial-Intelligence Agency maintains an extensive
+<a href="https://github.com/ngageoint">portfolio of geospatial OSS</a>,
+including <a href="https://ngageoint.github.io/GeoPackage/">GeoPackage</a> libraries
+implementing the OGC GeoPackage standard across several platforms, <a href="https://github.com/ngageoint/hootenanny">Hootenanny</a> for
+conflating multiple maps into a single seamless map, the <a href="https://github.com/ngageoint/mage-server">Mobile Awareness GEOINT
+Environment (MAGE)</a>, and <a href="https://github.com/ngageoint/sarpy">SarPy</a> for reading,
+writing, and processing complex synthetic aperture radar (SAR) data in
+the NGA SICD format</li>
 </ul>
 <p xmlns="http://www.w3.org/1999/xhtml">There are many others.</p>
 <h3 xmlns="http://www.w3.org/1999/xhtml" id="q-how-can-i-find-open-source-software-that-meets-my-specific-needs">Q:
@@ -1907,11 +1923,12 @@ qualified staff to implement the upgrades/enhancements developed by the
 community.</p>
 <p xmlns="http://www.w3.org/1999/xhtml">If you have concerns about using in-house staff, augmented by the OSS
 community for those components, then select and pay a commercial
-organization to provide the necessary support. Many programs and DAAs do
-choose to use commercial support, and in many cases that is the best
-approach. However, using a support vendor is not the only approach or
-the best approach in all cases; system/program managers and DAAs must
-look at the specific situation to make a determination.</p>
+organization to provide the necessary support. Many programs and
+Authorizing Officials do choose to use commercial support, and in many
+cases that is the best approach. However, using a support vendor is not
+the only approach or the best approach in all cases; system/program
+managers and Authorizing Officials must look at the specific situation
+to make a determination.</p>
 <p xmlns="http://www.w3.org/1999/xhtml"><strong>Navy and Marine Corps commands should note an additional
 requirement.</strong> The answer above describes DoW-wide policy. <a href="https://www.doncio.navy.mil/ContentView.aspx?id=1897">SECNAVINST
 5230.15</a> establishes as Department of the Navy policy that “all COTS
@@ -2171,11 +2188,19 @@ Has the U.S. government released OSS projects or improvements?</h3>
 been developed using U.S. government funds. There are far too many
 examples to list; a few examples are:</p>
 <ul xmlns="http://www.w3.org/1999/xhtml">
-<li><a href="https://github.com/delta3d/delta3d/">Delta3D</a> - Open
-Source Gaming and Simulation Engine</li>
 <li><a href="http://en.wikipedia.org/wiki/Selinux">Security-Enhanced
-Linux (SELinux)</a> - Security enhancements to Linux-based operating
-systems</li>
+Linux (SELinux)</a> - mandatory access control and other security
+enhancements to Linux-based operating systems, developed by the National
+Security Agency and merged into the mainline Linux kernel in 2003</li>
+<li><a href="https://accumulo.apache.org/">Apache Accumulo</a> -
+distributed key-value store with cell-level access control, begun by the
+National Security Agency in 2008 and contributed to the Apache Software
+Foundation incubator in 2011, where it became a top-level project in
+2012</li>
+<li><a href="https://nifi.apache.org/">Apache NiFi</a> - dataflow
+automation system, developed by the National Security Agency as
+“Niagarafiles” and contributed to the Apache Software Foundation in
+2014</li>
 <li><a href="https://en.wikipedia.org/wiki/VistA">VistA</a> and <a href="http://www.hardhats.org/">Hardhats</a> - Implementations of US
 Veterans Affairs’ enterprise grade health care information system</li>
 <li><a href="https://core.tcl-lang.org/expect/index">Expect</a> - Tool
@@ -2204,10 +2229,10 @@ software used for geospatial data management and analysis, image
 processing, graphics/maps production, spatial modeling, and
 visualization developed by the Army Corps of Engineers’ Construction
 Engineering Research Laboratory</li>
-<li><a href="http://www.ossim.org/OSSIM/OSSIM_Home.html">OSSIM</a> -
-geo-spatial image processing for remote sensing, photogrammetry, and
-Geographic Information Systems (GIS), originally developed by Harris
-Corporation for the Intelligence Community.</li>
+<li><a href="https://github.com/ossimlabs">OSSIM</a> - geo-spatial image
+processing for remote sensing, photogrammetry, and Geographic
+Information Systems (GIS), originally developed by Harris Corporation
+for the Intelligence Community.</li>
 <li><a href="http://brlcad.org/">BRL-CAD</a> - cross-platform
 combinatorial Constructive Solid Geometry (CSG) solid modeling
 system</li>

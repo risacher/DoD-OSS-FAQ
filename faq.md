@@ -222,7 +222,7 @@ No. At a high-level, DoW policy requires commercial software
 that the software can be maintained when necessary by the supplier or
 the government. Since OSS provides source code, there is no problem.
 
-Specifically, the federal government's IA controls, as documented in
+Specifically, the federal government's security controls, as documented in
 [NIST SP 800-53 revision
 5](http://csrc.nist.gov/publications/PubsSPs.html) includes a control
 enhancement, CM-7(8).  Control enhancement CM-7(8) states that an
@@ -1393,19 +1393,44 @@ particular product or supplier.
 
 Some more military-specific OSS programs created-by or used in the military include:
 
+-   [Ghidra](https://github.com/NationalSecurityAgency/ghidra) - software
+    reverse engineering (SRE) framework developed by the National Security
+    Agency and released as OSS in 2019
 -   [The Distributed Data Framework (DDF)](https://codice.org/ddf/) - data integration
     framework developed for the Distributed Common Ground/Surface System (DCGS) Family of Systems
 -   [Open Source Software for Imagery & Mapping
-    (OSSIM)](http://www.ossim.org/OSSIM/OSSIM_Home.html) - geospatial
+    (OSSIM)](https://github.com/ossimlabs) - geospatial
     image viewing (with classified plugins)
--   [OSSIM Mapping ARchieve System
-    (OMAR)](http://www.ossim.org/OSSIM/OMAR.html) - video indexing
+-   [OSSIM Mapping ARchive (OMAR)](https://github.com/ossimlabs) - a suite of
+    web services built on OSSIM for cataloging, serving, and disseminating
+    imagery. Both OSSIM and OMAR are maintained as individual repositories
+    in the OSSIM Labs organization
 -   [BRL-CAD](https://brlcad.org/) - solid modeling (Army)
--   [Opticks](https://github.com/opticks-org/opticks) - Remote sensing platform & MASINT toolset
--   [Delta3D](https://github.com/delta3d/delta3d/) - Game/Simulation engine for
-    modeling and simulation (e.g., for military training/exercises)
--   [Ozone Widget Framework / Ozone Platform](https://github.com/ozoneplatform/ozone) - framework for composable web applications
 -   [REDHAWK SDR](https://redhawksdr.org/) - a software-defined radio (SDR) framework
+-   [Android Tactical Assault Kit, Civil
+    (ATAK-CIV)](https://github.com/deptofdefense/AndroidTacticalAssaultKit-CIV) -
+    geospatial situational awareness application originally developed by the
+    Air Force Research Laboratory, now also widely used by civil first
+    responders (see also [TAK.gov](https://tak.gov/))
+-   [OpenUxAS](https://github.com/afrl-rq/OpenUxAS) and
+    [OpenAMASE](https://github.com/afrl-rq/OpenAMASE) - cooperative decision
+    making for multiple unmanned vehicles, and simulation of multi-vehicle
+    missions, from the Air Force Research Laboratory
+-   [Host Integrity at Runtime and Start-up
+    (HIRS)](https://github.com/nsacyber/HIRS) and
+    [paccor](https://github.com/nsacyber/paccor) - Trusted Platform Module
+    (TPM) provisioning, attestation, and supply chain validation tools
+    released by NSA Cybersecurity
+-   The National Geospatial-Intelligence Agency maintains an extensive
+    [portfolio of geospatial OSS](https://github.com/ngageoint), including
+    [GeoPackage](https://ngageoint.github.io/GeoPackage/) libraries
+    implementing the OGC GeoPackage standard across several platforms,
+    [Hootenanny](https://github.com/ngageoint/hootenanny) for conflating
+    multiple maps into a single seamless map, the [Mobile Awareness GEOINT
+    Environment (MAGE)](https://github.com/ngageoint/mage-server), and
+    [SarPy](https://github.com/ngageoint/sarpy) for reading, writing, and
+    processing complex synthetic aperture radar (SAR) data in the NGA SICD
+    format
 
 There are many others.
 
@@ -1801,11 +1826,12 @@ the community.
 
 If you have concerns about using in-house staff, augmented by the OSS
 community for those components, then select and pay a commercial
-organization to provide the necessary support. Many programs and DAAs do
-choose to use commercial support, and in many cases that is the best
-approach. However, using a support vendor is not the only approach or
-the best approach in all cases; system/program managers and DAAs must
-look at the specific situation to make a determination.
+organization to provide the necessary support. Many programs and
+Authorizing Officials do choose to use commercial support, and in many
+cases that is the best approach. However, using a support vendor is not
+the only approach or the best approach in all cases; system/program
+managers and Authorizing Officials must look at the specific situation to
+make a determination.
 
 **Navy and Marine Corps commands should note an additional requirement.**
 The answer above describes DoW-wide policy. [SECNAVINST
@@ -2085,11 +2111,18 @@ Yes, both entirely new programs and improvements of existing OSS have
 been developed using U.S. government funds. There are far too many
 examples to list; a few examples are:
 
--   [Delta3D](https://github.com/delta3d/delta3d/) - Open Source Gaming and
-    Simulation Engine
 -   [Security-Enhanced Linux
-    (SELinux)](http://en.wikipedia.org/wiki/Selinux) - Security
-    enhancements to Linux-based operating systems
+    (SELinux)](http://en.wikipedia.org/wiki/Selinux) - mandatory access
+    control and other security enhancements to Linux-based operating
+    systems, developed by the National Security Agency and merged into the
+    mainline Linux kernel in 2003
+-   [Apache Accumulo](https://accumulo.apache.org/) - distributed key-value
+    store with cell-level access control, begun by the National Security
+    Agency in 2008 and contributed to the Apache Software Foundation
+    incubator in 2011, where it became a top-level project in 2012
+-   [Apache NiFi](https://nifi.apache.org/) - dataflow automation system,
+    developed by the National Security Agency as "Niagarafiles" and
+    contributed to the Apache Software Foundation in 2014
 -   [VistA](https://en.wikipedia.org/wiki/VistA) and
     [Hardhats](http://www.hardhats.org/) - Implementations of US
     Veterans Affairs' enterprise grade health care information system
@@ -2118,7 +2151,7 @@ examples to list; a few examples are:
     (GIS) software used for geospatial data management and analysis,
     image processing, graphics/maps production, spatial modeling, and
     visualization developed by the Army Corps of Engineers' Construction Engineering Research Laboratory
--   [OSSIM](http://www.ossim.org/OSSIM/OSSIM_Home.html) - geo-spatial
+-   [OSSIM](https://github.com/ossimlabs) - geo-spatial
     image processing for remote sensing, photogrammetry, and Geographic
     Information Systems (GIS), originally developed by Harris Corporation for the Intelligence Community.
 -   [BRL-CAD](http://brlcad.org/) - cross-platform combinatorial
